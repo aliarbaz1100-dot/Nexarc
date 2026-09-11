@@ -1,0 +1,12 @@
+{
+  "name": "NEXARC — Play Online",
+  "short_name": "NEXARC",
+  "description": "Premium browser games, playable instantly.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#080808",
+  "theme_color": "#080808",
+  "orientation": "any",
+  "categories": ["games", "entertainment"]
+}
