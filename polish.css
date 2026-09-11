@@ -24,3 +24,12 @@
   .quickDock{padding-bottom:16px}.qualityBar{margin-top:3px}.searchPanel{backdrop-filter:blur(28px);background:rgba(5,5,5,.94)}
   footer{padding-bottom:118px}
 }
+
+
+/* premium4: header, footer and interaction polish */
+html{scrollbar-gutter:stable both-edges}.brand b{transition:filter .2s ease,text-shadow .2s ease}.brand:hover b,.brand:focus-visible b{filter:brightness(1.08);text-shadow:0 0 24px rgba(229,9,20,.28)}
+header nav a{position:relative;padding-block:25px}header nav a:after{content:"";position:absolute;left:0;right:100%;bottom:15px;height:2px;border-radius:99px;background:#e50914;transition:right .22s ease}header nav a:hover:after,header nav a:focus-visible:after{right:0}
+header #searchBtn{transition:transform .18s ease,border-color .18s ease,background .18s ease}header #searchBtn:hover,header #searchBtn:focus-visible{transform:scale(1.05);border-color:rgba(229,9,20,.55);background:#1a0b0d}
+footer{position:relative;overflow:hidden}footer:before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 8% 0,rgba(229,9,20,.08),transparent 26%)}footer>*{position:relative}footer a{color:#a8a8a8;text-decoration:none;transition:color .18s ease}footer a:hover,footer a:focus-visible{color:#fff}footer .brand b{font-size:24px}
+button,a{-webkit-tap-highlight-color:transparent}button{touch-action:manipulation}.card,.categoryBar a,.quickDock button{user-select:none}
+@media(max-width:700px){html{scrollbar-gutter:auto}header #searchBtn{width:44px;height:44px}.brand b{font-size:22px}.heroActions .primary{min-height:44px;padding-inline:18px}.categoryBar a,.quickDock button{min-height:42px;display:inline-flex;align-items:center;justify-content:center}footer{padding-inline:18px}.trustStrip span{line-height:1.35}}
