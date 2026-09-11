@@ -11,6 +11,29 @@
   "theme_color": "#e50914",
   "orientation": "any",
   "categories": ["games", "entertainment"],
+  "shortcuts": [
+    {
+      "name": "All Games",
+      "short_name": "Games",
+      "description": "Open the full NEXARC games library.",
+      "url": "/all-games.html?source=shortcut",
+      "icons": [{"src":"/icon.svg","sizes":"any","type":"image/svg+xml"}]
+    },
+    {
+      "name": "Trending Games",
+      "short_name": "Trending",
+      "description": "Open trending browser games.",
+      "url": "/trending.html?source=shortcut",
+      "icons": [{"src":"/icon.svg","sizes":"any","type":"image/svg+xml"}]
+    },
+    {
+      "name": "Install Help",
+      "short_name": "Install",
+      "description": "Open app install instructions.",
+      "url": "/install.html?source=shortcut",
+      "icons": [{"src":"/icon.svg","sizes":"any","type":"image/svg+xml"}]
+    }
+  ],
   "icons": [
     {
       "src": "/icon.svg",
@@ -26,6 +49,13 @@
       "type": "image/svg+xml",
       "form_factor": "narrow",
       "label": "NEXARC mobile app icon"
+    },
+    {
+      "src": "/icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "form_factor": "wide",
+      "label": "NEXARC desktop app icon"
     }
   ],
   "prefer_related_applications": false
