@@ -1,6 +1,6 @@
 (function(){
   'use strict';
-  var BUILD='20260912-20664loadfix';
+  var BUILD='20260912-20664crashfix1';
   var allGames=[];
   var active=null;
   var heroIndex=0;
