@@ -1,12 +1,15 @@
 {
-  "name": "NEXARC — Play Online",
+  "id": "/",
+  "name": "NEXARC — Play Online Games",
   "short_name": "NEXARC",
-  "description": "Premium browser games, playable instantly.",
-  "start_url": "/",
+  "description": "Play premium browser games instantly on NEXARC — no download required.",
+  "start_url": "/?source=app",
   "scope": "/",
   "display": "standalone",
-  "background_color": "#080808",
-  "theme_color": "#080808",
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
+  "background_color": "#050505",
+  "theme_color": "#050505",
   "orientation": "any",
-  "categories": ["games", "entertainment"]
+  "categories": ["games", "entertainment"],
+  "prefer_related_applications": false
 }
