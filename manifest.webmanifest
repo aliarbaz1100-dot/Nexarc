@@ -2,14 +2,31 @@
   "id": "/",
   "name": "NEXARC — Play Online Games",
   "short_name": "NEXARC",
-  "description": "Play premium browser games instantly on NEXARC — no download required.",
+  "description": "Play 120 premium browser games instantly on NEXARC — no download required.",
   "start_url": "/?source=app",
   "scope": "/",
   "display": "standalone",
   "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
   "background_color": "#050505",
-  "theme_color": "#050505",
+  "theme_color": "#e50914",
   "orientation": "any",
   "categories": ["games", "entertainment"],
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "form_factor": "narrow",
+      "label": "NEXARC mobile app icon"
+    }
+  ],
   "prefer_related_applications": false
 }
