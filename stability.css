@@ -1,2 +1,10 @@
 /* NEXARC stability layer */
 .recoverBanner{position:fixed;left:50%;top:76px;z-index:95;width:min(620px,calc(100% - 28px));transform:translateX(-50%) translateY(-12px);opacity:0;pointer-events:none;display:flex;align-items:center;gap:12px;padding:13px 14px;border:1px solid rgba(255,255,255,.12);border-radius:16px;background:rgba(10,10,10,.93);backdrop-filter:blur(18px);box-shadow:0 24px 64px rgba(0,0,0,.62),0 0 28px rgba(229,9,20,.15);transition:.24s ease;color:#fff}.recoverBanner.show{opacity:1;pointer-events:auto;transform:translateX(-50%) translateY(0)}.recoverBanner b{font-size:13px}.recoverBanner small{display:block;margin-top:2px;color:#bdbdbd;font-size:11px}.recoverBanner button{margin-left:auto;border:0;border-radius:999px;background:#fff;color:#050505;font-size:11px;font-weight:950;padding:9px 12px}.recoverDot{width:10px;height:10px;border-radius:50%;background:#e50914;box-shadow:0 0 18px rgba(229,9,20,.75);flex:none}.safeMode .hero,.safeMode .card,.safeMode .rowBlock{animation:none!important}.safeMode .intro{display:none!important}@media(max-width:700px){.recoverBanner{top:62px;border-radius:14px;padding:11px}.recoverBanner b{font-size:12px}.recoverBanner small{font-size:10px}.recoverBanner button{padding:8px 10px}}@media(prefers-reduced-motion:reduce){.recoverBanner{transition:none}}
+
+
+/* premium6: recovery banner visual refinement */
+.recoverBanner{border-color:rgba(255,255,255,.14);background:rgba(8,8,8,.95);box-shadow:0 24px 70px rgba(0,0,0,.72),0 0 30px rgba(229,9,20,.12)}
+.recoverBanner button{min-height:38px;padding-inline:14px;box-shadow:0 10px 24px rgba(0,0,0,.28)}
+.recoverDot{animation:nxRecoverPulse 1.8s ease-in-out infinite}@keyframes nxRecoverPulse{0%,100%{transform:scale(.9);opacity:.72}50%{transform:scale(1.08);opacity:1}}
+@media(max-width:700px){.recoverBanner{top:64px;border-radius:16px}.recoverBanner button{min-height:36px}.recoverDot{width:9px;height:9px}}
+@media(prefers-reduced-motion:reduce){.recoverDot{animation:none}}
