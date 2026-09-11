@@ -33,3 +33,27 @@ header #searchBtn{transition:transform .18s ease,border-color .18s ease,backgrou
 footer{position:relative;overflow:hidden}footer:before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 8% 0,rgba(229,9,20,.08),transparent 26%)}footer>*{position:relative}footer a{color:#a8a8a8;text-decoration:none;transition:color .18s ease}footer a:hover,footer a:focus-visible{color:#fff}footer .brand b{font-size:24px}
 button,a{-webkit-tap-highlight-color:transparent}button{touch-action:manipulation}.card,.categoryBar a,.quickDock button{user-select:none}
 @media(max-width:700px){html{scrollbar-gutter:auto}header #searchBtn{width:44px;height:44px}.brand b{font-size:22px}.heroActions .primary{min-height:44px;padding-inline:18px}.categoryBar a,.quickDock button{min-height:42px;display:inline-flex;align-items:center;justify-content:center}footer{padding-inline:18px}.trustStrip span{line-height:1.35}}
+
+
+/* premium5: responsive laptop + small-phone refinement, CSS only */
+.sectionHead>span{box-shadow:inset 0 1px 0 rgba(255,255,255,.05),0 8px 22px rgba(0,0,0,.22)}
+.heroActions .primary,.heroActions .secondary{min-width:138px;text-align:center;justify-content:center}
+.cardMeta b{letter-spacing:-.01em}.cardMeta small{letter-spacing:.015em}.rowTitle{letter-spacing:-.035em}
+@media(min-width:1200px) and (max-width:1500px){
+  header{padding-inline:3.2%}.hero{padding-inline:4%;padding-bottom:78px}.library{padding-inline:3.2%}.categoryBar{width:93.6%}
+  .rail{grid-auto-columns:clamp(235px,21vw,300px)}.hero h1{font-size:clamp(52px,5.4vw,76px)}
+}
+@media(min-width:1501px){
+  header{padding-inline:4.5%}.hero{padding-inline:5.2%}.library{padding-inline:4.5%}.categoryBar{width:91%}
+  .rail{grid-auto-columns:clamp(285px,20vw,350px)}.rowTitle{font-size:24px}.sectionHead h2{font-size:34px}
+}
+@media(max-width:520px){
+  .hero{height:69vh;min-height:520px;padding-inline:16px;padding-bottom:64px}.heroCopy{max-width:96%}.hero h1{font-size:clamp(38px,12.4vw,52px);letter-spacing:-1.4px}
+  .heroActions{width:100%}.heroActions .primary{flex:1;min-width:0}.categoryBar{padding-inline:12px}.library{padding-inline:12px}
+  .rail{grid-auto-columns:82vw}.card{border-radius:16px}.cardMeta{padding-inline:14px}.rowTitle{font-size:22px}.sectionHead h2{font-size:26px}
+  .trustStrip{padding-inline:8px}.trustStrip span{font-size:9.5px}.quickDock{padding-inline:12px}.mobileNav{width:calc(100% - 12px)}
+}
+@media(max-width:360px){
+  header{padding-inline:10px}.brand b{font-size:20px}.hero{padding-inline:13px}.hero h1{font-size:40px}.heroActions .primary{font-size:11px;padding-inline:12px}
+  .rail{grid-auto-columns:86vw}.sectionHead>span{display:none}.rowTitle{font-size:21px}.categoryBar a{padding-inline:14px}.quickDock button{padding-inline:12px}
+}
