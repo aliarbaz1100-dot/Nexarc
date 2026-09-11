@@ -1,7 +1,26 @@
 {
-  "project": "NEXARC",
-  "target": 120,
-  "fullyTested": 0,
-  "qaDefinition": "final_pass only after load, controls, gameplay and restart/retry verification",
-  "games": []
+  "project":"NEXARC","target":120,"fullyTested":0,
+  "qaDefinition":"final_pass only after load, controls, gameplay and restart/retry verification",
+  "games":[
+    {"id":"ninja-run","title":"Ninja on the Run","category":"Action","embedUrl":"https://html5.gamemonetize.co/t8s82rq1o8991w55wzdccw4gv683i5sp/","source":"GameMonetize","qaStatus":"source_verified"},
+    {"id":"rise-zombies","title":"Rise Zombies","category":"Zombie","embedUrl":"https://html5.gamemonetize.co/z7qsjaenzkjwxxygugf00vkpti9kxc90/","source":"GameMonetize","qaStatus":"source_verified"},
+    {"id":"moto-x3m","title":"Moto X3M Bike Race","category":"Racing","embedUrl":"https://html5.gamemonetize.co/8kw0dtf9ucqguktev18480kx7wttl4mu/","source":"GameMonetize","qaStatus":"source_verified"},
+    {"id":"turbo-horizon","title":"Turbo Horizon Racing","category":"Racing","embedUrl":"https://html5.gamemonetize.co/h0mf9hr6povgwh9bkon32fqc9k5o6e6h/","source":"GameMonetize","qaStatus":"source_verified"},
+    {"id":"stock-car","title":"Stock Car Racing","category":"Racing","embedUrl":"https://html5.gamemonetize.co/1w6coppqgr7sdpn9esapoqrezqbcaizc/","source":"GameMonetize","qaStatus":"source_verified"},
+    {"id":"offroad-moto","title":"Offroad Moto Bike Racing","category":"Racing","embedUrl":"https://html5.gamemonetize.co/2gqe1qjo3qgtzkzcwklyrik5b1bt28d3/","source":"GameMonetize","qaStatus":"source_verified"},
+    {"id":"football-champs","title":"Football Champs","category":"Sports","embedUrl":"https://html5.gamemonetize.co/j6hp4zd200pbn92izelxerdfsqfoz8pp/","source":"GameMonetize","qaStatus":"source_verified"},
+    {"id":"football-flick","title":"Football Flick","category":"Sports","embedUrl":"https://html5.gamemonetize.co/necs6mnhw2igl2f96padhtfjc4gyhyz4/","source":"GameMonetize","qaStatus":"source_verified"},
+    {"id":"football-heads","title":"Football Heads","category":"Sports","embedUrl":"https://html5.gamemonetize.co/uzkm3h1igndrx9is3e3mzrhmwfpzv3zp/","source":"GameMonetize","qaStatus":"source_verified"},
+    {"id":"soccer-hero","title":"Soccer Hero","category":"Sports","embedUrl":"https://html5.gamemonetize.co/cl9ik2kgtk7kxt89jl9hr1dbzfxmv7k5/","source":"GameMonetize","qaStatus":"source_verified"},
+    {"id":"commando","title":"Commando Gun Shooting","category":"Action","embedUrl":"https://html5.gamemonetize.co/t2a672cdfu2471c0ek19v6fr26za27z7/","source":"GameMonetize","qaStatus":"source_verified"},
+    {"id":"dead-paradise","title":"Dead Paradise","category":"Action","embedUrl":"https://html5.gamemonetize.co/td7r994z5ls02swod3lm0gk9h2jl2jmi/","source":"GameMonetize","qaStatus":"source_verified"},
+    {"id":"survivalist","title":"Survivalist","category":"Action","embedUrl":"https://html5.gamemonetize.co/crvt23bbv3zouz2yvv9aktx282cpvn6p/","source":"GameMonetize","qaStatus":"source_verified"},
+    {"id":"stickman-archer","title":"Stickman Archer Bow Fight","category":"Action","embedUrl":"https://html5.gamemonetize.co/79tq8bz4t8p6wer1vuwiixv16ocbs42p/","source":"GameMonetize","qaStatus":"source_verified"},
+    {"id":"rocket-clash","title":"Rocket Clash","category":"Action","embedUrl":"https://html5.gamemonetize.co/9m57qag1zs48t89ofhg6ty6rudzydbdm/","source":"GameMonetize","qaStatus":"source_verified"},
+    {"id":"zombie-survival","title":"Zombie Survival","category":"Zombie","embedUrl":"https://html5.gamemonetize.co/b15gire8ae8p3yg8unwqjwzpbtbor7h3/","source":"GameMonetize","qaStatus":"source_verified"},
+    {"id":"stop-zombies","title":"Stop Zombies","category":"Zombie","embedUrl":"https://html5.gamemonetize.co/8sttq4hfxsvoveqhy43cp39updyjcs48/","source":"GameMonetize","qaStatus":"source_verified"},
+    {"id":"tower-defense-zombies","title":"Tower Defense Zombies","category":"Zombie","embedUrl":"https://html5.gamemonetize.co/79erubfx45uiq8ksuuxofo7h79s9b1t0/","source":"GameMonetize","qaStatus":"source_verified"},
+    {"id":"sliding-tile","title":"Sliding Tile Puzzle Game","category":"Puzzle","embedUrl":"https://html5.gamemonetize.co/v48ve1i2snfou1bv4yidv7pup1en4zu2/","source":"GameMonetize","qaStatus":"source_verified"},
+    {"id":"perfect-match","title":"Perfect Match","category":"Puzzle","embedUrl":"https://html5.gamemonetize.co/1rn5xojfk4bldj0pkjnzygz5o5k8n4f2/","source":"GameMonetize","qaStatus":"source_verified"}
+  ]
 }
