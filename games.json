@@ -1095,7 +1095,19 @@
       "category": "Racing",
       "embedUrl": "https://html5.gamemonetize.co/977st5cgsyw1dys3i4xahgkpgigjikgd/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12",
+      "qaNote": "Smoke pass on desktop/mobile; targeted mobile retest confirmed visual progression."
     },
     {
       "id": "rocketcar-cup",
@@ -1103,7 +1115,19 @@
       "category": "Racing",
       "embedUrl": "https://html5.gamemonetize.co/y771xcn0bnakil1525c08uyvt7mfqv9l/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12",
+      "qaNote": "Smoke pass on desktop/mobile. Mobile build requests device rotation; game UI rendered correctly."
     },
     {
       "id": "soccer-basketball",
@@ -1111,7 +1135,18 @@
       "category": "Sports",
       "embedUrl": "https://html5.gamemonetize.co/5y6gjagh93gmo9djb7gy8722p0wlsdb4/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "football-manager-26",
@@ -1119,7 +1154,19 @@
       "category": "Sports",
       "embedUrl": "https://html5.gamemonetize.co/fiih5qxie686wa2oszjoeutdqgp4mvxc/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12",
+      "qaNote": "Smoke pass on desktop/mobile; targeted retest reached manager profile UI after initial loading."
     },
     {
       "id": "rolling-football",
@@ -1127,7 +1174,19 @@
       "category": "Sports",
       "embedUrl": "https://html5.gamemonetize.co/gmuqkrerl1mifnmjpsf8pqd0g6hlqxl5/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_needs_manual",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input_attempted",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12",
+      "qaNote": "Needs manual gameplay review. Desktop/mobile iframe and canvas render, but mobile retest still logged 'container is not defined' and remained in loading/ad state; actual gameplay start was not confirmed."
     },
     {
       "id": "flag-football",
@@ -1135,7 +1194,18 @@
       "category": "Sports",
       "embedUrl": "https://html5.gamemonetize.co/skz07eggczn35qcq6zopnwt0ud9csnqe/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "dream-football",
@@ -1143,7 +1213,18 @@
       "category": "Sports",
       "embedUrl": "https://html5.gamemonetize.co/9kf9ege0zx40lxndzubqdvgz542eie30/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "foot-starts",
@@ -1151,7 +1232,19 @@
       "category": "Sports",
       "embedUrl": "https://html5.gamemonetize.co/6xtnv9ynct84av1hck4ig1utvxzwfyh1/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_needs_manual",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input_attempted",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12",
+      "qaNote": "Needs manual gameplay review. Game canvas renders and visual activity occurs, but repeated document.domain errors plus a missing offlineClient.js (404) were observed on desktop/mobile."
     },
     {
       "id": "challenge-football",
@@ -1159,7 +1252,18 @@
       "category": "Sports",
       "embedUrl": "https://html5.gamemonetize.co/jws990g64cr674h2secv6y9spw77y9db/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "football-crash-2",
@@ -1167,7 +1271,18 @@
       "category": "Sports",
       "embedUrl": "https://html5.gamemonetize.co/xiwve7mg3u1ei5h9n6x1upih5ls84qrv/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "kick-off",
@@ -1175,7 +1290,19 @@
       "category": "Sports",
       "embedUrl": "https://html5.gamemonetize.co/xa6u972vuf7i1xoe352yzjm7lxvhpkve/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12",
+      "qaNote": "Smoke pass on desktop/mobile. Initial mobile audio fetch warnings were transient; clean targeted retest showed normal render/activity."
     },
     {
       "id": "footyzag",
@@ -1183,7 +1310,18 @@
       "category": "Sports",
       "embedUrl": "https://html5.gamemonetize.co/v0re5iv7fc887jwvc5lb22ni5pv05hb0/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "home-defense-zombie",
@@ -1191,7 +1329,19 @@
       "category": "Zombie",
       "embedUrl": "https://html5.gamemonetize.co/n31s33uesmu0ymd3sss4955m963p0bxu/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12",
+      "qaNote": "Smoke pass on desktop/mobile; targeted retest confirmed loading advanced from single digits to 56%."
     },
     {
       "id": "flower-defense-zombie",
@@ -1199,7 +1349,19 @@
       "category": "Zombie",
       "embedUrl": "https://html5.gamemonetize.co/ogj0ipawf9eikvnvsyyf3qevbit5j2z7/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12",
+      "qaNote": "Smoke pass on desktop/mobile. One transient mobile permissions-check warning appeared, but clean fresh-page retest rendered and closed normally."
     },
     {
       "id": "pixel-zombie",
@@ -1207,7 +1369,18 @@
       "category": "Zombie",
       "embedUrl": "https://html5.gamemonetize.co/kpasc6vjdgao256pi48ztikww4uc382o/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "zombie-survivor",
@@ -1215,7 +1388,18 @@
       "category": "Zombie",
       "embedUrl": "https://html5.gamemonetize.co/74graul7w2wrhnb7m18nshiacptvyp6m/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "join-runner-clash",
@@ -1223,7 +1407,19 @@
       "category": "Arcade",
       "embedUrl": "https://html5.gamemonetize.co/0exm6eka5rsasl3wfbxsvwnmi80ngyvz/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12",
+      "qaNote": "Smoke pass on desktop/mobile. A missing font returned 404, but targeted mobile retest showed strong visual progression."
     },
     {
       "id": "join-clash",
@@ -1231,7 +1427,18 @@
       "category": "Arcade",
       "embedUrl": "https://html5.gamemonetize.co/h6tfvxjb9mkpzmatgb86974olr8u3aul/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "happy-moving-car",
@@ -1239,7 +1446,18 @@
       "category": "Arcade",
       "embedUrl": "https://html5.gamemonetize.co/k50yr8ykopqeks4f6ol0wnspxio8ybgp/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "html5-parking-car",
@@ -1247,7 +1465,19 @@
       "category": "Racing",
       "embedUrl": "https://html5.gamemonetize.co/4ynpg8qokk8483984z658mdddoscwm10/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12",
+      "qaNote": "Smoke pass on desktop/mobile. A transient desktop script error was not reproduced in fresh mobile retest; render and visual progression were confirmed."
     },
     {
       "id": "circle-drive",
@@ -1625,11 +1855,11 @@
       "qaStatus": "source_verified"
     }
   ],
-  "smokeTested": 55,
-  "smokeTestedDesktop": 55,
-  "smokeTestedMobile": 55,
+  "smokeTested": 73,
+  "smokeTestedDesktop": 73,
+  "smokeTestedMobile": 73,
   "smokeTestDate": "2026-09-12",
   "smokeTestDefinition": "Live Vercel smoke test: game launch, iframe render, basic pointer/keyboard input, visual activity where needed, and close/return flow. This is not the same as final level-completion gameplay QA.",
-  "smokeNeedsManual": 5,
-  "smokeReviewed": 60
+  "smokeNeedsManual": 7,
+  "smokeReviewed": 80
 }
