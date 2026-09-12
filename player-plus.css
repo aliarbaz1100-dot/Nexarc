@@ -13,3 +13,6 @@
   .player.open iframe{height:calc(100dvh - 108px - env(safe-area-inset-top) - env(safe-area-inset-bottom))}
   .player.open .loading{inset:calc(108px + env(safe-area-inset-top)) 0 env(safe-area-inset-bottom)}
 }
+
+/* premium7: keep NEXARC controls above embedded games */
+.player.open .playerTop{position:relative;z-index:5}.player.open iframe{position:relative;z-index:1}.player.open .loading{z-index:2}
