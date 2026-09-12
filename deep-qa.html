@@ -11,7 +11,7 @@
   <style>
     .qaTop{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:18px 0}
     .qaStat{padding:16px;border:1px solid rgba(255,255,255,.12);border-radius:14px;background:rgba(255,255,255,.035)}
-    .qaStat b{display:block;font-size:26px;margin-top:6px}.qaStat span{opacity:.7;font-size:13px}
+    .qaStat b{display:block;font-size:26px;margin-top:6px}.qaStat span{opacity:.7;font-size:13px}.launchGate{margin:14px 0;padding:14px 16px;border-radius:14px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.035);font-weight:700}.launchGate.ready{border-color:rgba(105,227,138,.45)}.launchGate.hold{border-color:rgba(255,200,87,.4)}.progressTrack{height:7px;border-radius:999px;background:rgba(255,255,255,.08);overflow:hidden;margin-top:8px}.progressTrack span{display:block;height:100%;background:currentColor;width:0}
     .batch{margin:16px 0;padding:16px;border:1px solid rgba(255,255,255,.12);border-radius:16px;background:rgba(255,255,255,.025)}
     .batchHead{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:10px}
     .badge{font-size:12px;padding:5px 9px;border-radius:999px;background:rgba(229,9,20,.18);border:1px solid rgba(229,9,20,.35)}
@@ -30,6 +30,7 @@
       <p>10-game batches. A title counts as fully tested only after required gameplay/control checks are genuinely verified.</p>
     </section>
     <section id="summary" class="qaTop"></section>
+    <section id="gate" class="launchGate hold">Launch gate calculating…</section>
     <section id="batches"></section>
   </main>
   <script>
@@ -39,11 +40,19 @@
     const isPassed=g=>required.every(k=>g.deepQa&&g.deepQa.checks&&g.deepQa.checks[k]===true);
     const completed=games.filter(isPassed).length;
     const pending=games.length-completed;
+    const failed=games.filter(g=>g.deepQa&&g.deepQa.failure&&g.deepQa.failure.code).length;
+    const replacements=games.filter(g=>g.deepQa&&g.deepQa.failure&&g.deepQa.failure.replacementRequired===true).length;
     document.getElementById('summary').innerHTML=
       '<div class="qaStat"><span>Total games</span><b>'+games.length+'</b></div>'+
       '<div class="qaStat"><span>Fully tested</span><b>'+completed+'</b></div>'+
       '<div class="qaStat"><span>Pending</span><b>'+pending+'</b></div>'+
-      '<div class="qaStat"><span>High priority</span><b>'+(dq.highPriority||0)+'</b></div>';
+      '<div class="qaStat"><span>High priority</span><b>'+(dq.highPriority||0)+'</b></div>'+
+      '<div class="qaStat"><span>Failures logged</span><b>'+failed+'</b></div>'+
+      '<div class="qaStat"><span>Replacement flags</span><b>'+replacements+'</b></div>';
+    const gate=document.getElementById('gate');
+    const ready=completed>=games.length&&games.length>0;
+    gate.className='launchGate '+(ready?'ready':'hold');
+    gate.textContent=ready?'LAUNCH READY — all '+games.length+' games passed required deep QA checks.':'DOMAIN HOLD — '+completed+'/'+games.length+' fully tested, '+pending+' pending, '+failed+' with logged failures.';
     const batches=dq.batchPlan||[];
     document.getElementById('batches').innerHTML=batches.map(b=>{
       const rows=(b.ids||[]).map(id=>{
@@ -52,7 +61,7 @@
         const done=req.filter(k=>c[k]===true).length;
         const fail=d.failure||{}; const failTxt=fail.code?(' · FAIL: '+fail.code+(fail.platform?' / '+fail.platform:'')):' '; const live='/index.html?qaGame='+encodeURIComponent(id)+'#play-'+encodeURIComponent(id); return '<div class="gameRow"><div class="pos">#'+(d.queuePosition||'—')+'</div><div><strong>'+(g.title||id)+'</strong><div class="checks">'+done+'/7 required checks · '+(g.category||'')+failTxt+'</div><div class="qaActions"><a class="qaBtn" href="'+live+'" target="_blank" rel="noopener">Open Live NEXARC</a><a class="qaBtn" href="'+g.embedUrl+'" target="_blank" rel="noopener">Open Direct Game</a></div></div><div class="status '+(isPassed(g)?'passed':'pending')+'">'+(isPassed(g)?'passed':'pending')+'</div></div>';
       }).join('');
-      return '<section class="batch"><div class="batchHead"><h2>Batch '+b.batch+'</h2><span class="badge">'+(b.priority==='high'?'HIGH PRIORITY':'STANDARD')+'</span></div>'+rows+'</section>';
+      const ids=b.ids||[]; const bp=ids.filter(id=>isPassed(byId[id]||{})).length; const pct=ids.length?Math.round(bp/ids.length*100):0; const current=(dq.currentBatch||1)===b.batch; return '<section class="batch"'+(current?' data-current="true"':'')+'><div class="batchHead"><div><h2>Batch '+b.batch+(current?' · CURRENT':'')+'</h2><div class="checks">'+bp+'/'+ids.length+' passed · '+pct+'%</div><div class="progressTrack"><span style="width:'+pct+'%"></span></div></div><span class="badge">'+(b.priority==='high'?'HIGH PRIORITY':'STANDARD')+'</span></div>'+rows+'</section>';
     }).join('');
   }).catch(()=>{document.getElementById('batches').innerHTML='<section class="legalCard"><p>QA data could not be loaded.</p></section>'});
   </script>
