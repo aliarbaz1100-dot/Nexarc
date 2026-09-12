@@ -4626,6 +4626,12 @@
         "passed": 0,
         "pending": 10
       }
-    ]
+    ],
+    "derivation": "fullyTested is derived only when every required deep QA check is true; manual status alone does not count.",
+    "launchGate": {
+      "requiredFullyTested": 120,
+      "currentFullyTested": 0,
+      "ready": false
+    }
   }
 }
