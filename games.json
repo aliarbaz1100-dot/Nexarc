@@ -73,7 +73,38 @@
           "mobile_touch": false
         },
         "batch": 1,
-        "queuePosition": 1
+        "queuePosition": 1,
+        "testPlan": {
+          "desktop": {
+            "start_game": "Launch from NEXARC player and reach playable state.",
+            "gameplay_progression": "Perform meaningful gameplay long enough to confirm the game advances/responds.",
+            "primary_controls": "Verify primary keyboard/pointer controls actually affect gameplay.",
+            "retry_restart": "Use NEXARC Retry and confirm a clean reload/restart path.",
+            "fullscreen_exit": "Enter host fullscreen, exit fullscreen, and confirm player remains usable.",
+            "close_return": "Close player and confirm return to library without broken scroll/navigation."
+          },
+          "mobile": {
+            "start_game": "Launch from mobile NEXARC and reach playable state.",
+            "gameplay_progression": "Confirm visible gameplay progression on touch device.",
+            "primary_controls": "Verify primary touch controls respond correctly.",
+            "retry_restart": "Use Retry and confirm the title reloads cleanly.",
+            "fullscreen_exit": "Enter/exit supported fullscreen flow without trapping the user.",
+            "close_return": "Close and return to library; bottom navigation remains usable.",
+            "mobile_touch": "Verify taps/swipes/virtual controls do not conflict with host UI."
+          }
+        },
+        "failure": {
+          "code": null,
+          "note": null,
+          "platform": null,
+          "firstSeen": null,
+          "retestCount": 0,
+          "replacementRequired": false
+        },
+        "evidence": {
+          "desktop": null,
+          "mobile": null
+        }
       }
     },
     {
@@ -179,7 +210,38 @@
           "mobile_touch": false
         },
         "batch": 1,
-        "queuePosition": 2
+        "queuePosition": 2,
+        "testPlan": {
+          "desktop": {
+            "start_game": "Launch from NEXARC player and reach playable state.",
+            "gameplay_progression": "Perform meaningful gameplay long enough to confirm the game advances/responds.",
+            "primary_controls": "Verify primary keyboard/pointer controls actually affect gameplay.",
+            "retry_restart": "Use NEXARC Retry and confirm a clean reload/restart path.",
+            "fullscreen_exit": "Enter host fullscreen, exit fullscreen, and confirm player remains usable.",
+            "close_return": "Close player and confirm return to library without broken scroll/navigation."
+          },
+          "mobile": {
+            "start_game": "Launch from mobile NEXARC and reach playable state.",
+            "gameplay_progression": "Confirm visible gameplay progression on touch device.",
+            "primary_controls": "Verify primary touch controls respond correctly.",
+            "retry_restart": "Use Retry and confirm the title reloads cleanly.",
+            "fullscreen_exit": "Enter/exit supported fullscreen flow without trapping the user.",
+            "close_return": "Close and return to library; bottom navigation remains usable.",
+            "mobile_touch": "Verify taps/swipes/virtual controls do not conflict with host UI."
+          }
+        },
+        "failure": {
+          "code": null,
+          "note": null,
+          "platform": null,
+          "firstSeen": null,
+          "retestCount": 0,
+          "replacementRequired": false
+        },
+        "evidence": {
+          "desktop": null,
+          "mobile": null
+        }
       }
     },
     {
@@ -461,7 +523,38 @@
           "mobile_touch": false
         },
         "batch": 1,
-        "queuePosition": 3
+        "queuePosition": 3,
+        "testPlan": {
+          "desktop": {
+            "start_game": "Launch from NEXARC player and reach playable state.",
+            "gameplay_progression": "Perform meaningful gameplay long enough to confirm the game advances/responds.",
+            "primary_controls": "Verify primary keyboard/pointer controls actually affect gameplay.",
+            "retry_restart": "Use NEXARC Retry and confirm a clean reload/restart path.",
+            "fullscreen_exit": "Enter host fullscreen, exit fullscreen, and confirm player remains usable.",
+            "close_return": "Close player and confirm return to library without broken scroll/navigation."
+          },
+          "mobile": {
+            "start_game": "Launch from mobile NEXARC and reach playable state.",
+            "gameplay_progression": "Confirm visible gameplay progression on touch device.",
+            "primary_controls": "Verify primary touch controls respond correctly.",
+            "retry_restart": "Use Retry and confirm the title reloads cleanly.",
+            "fullscreen_exit": "Enter/exit supported fullscreen flow without trapping the user.",
+            "close_return": "Close and return to library; bottom navigation remains usable.",
+            "mobile_touch": "Verify taps/swipes/virtual controls do not conflict with host UI."
+          }
+        },
+        "failure": {
+          "code": null,
+          "note": null,
+          "platform": null,
+          "firstSeen": null,
+          "retestCount": 0,
+          "replacementRequired": false
+        },
+        "evidence": {
+          "desktop": null,
+          "mobile": null
+        }
       }
     },
     {
@@ -532,7 +625,38 @@
           "mobile_touch": false
         },
         "batch": 1,
-        "queuePosition": 4
+        "queuePosition": 4,
+        "testPlan": {
+          "desktop": {
+            "start_game": "Launch from NEXARC player and reach playable state.",
+            "gameplay_progression": "Perform meaningful gameplay long enough to confirm the game advances/responds.",
+            "primary_controls": "Verify primary keyboard/pointer controls actually affect gameplay.",
+            "retry_restart": "Use NEXARC Retry and confirm a clean reload/restart path.",
+            "fullscreen_exit": "Enter host fullscreen, exit fullscreen, and confirm player remains usable.",
+            "close_return": "Close player and confirm return to library without broken scroll/navigation."
+          },
+          "mobile": {
+            "start_game": "Launch from mobile NEXARC and reach playable state.",
+            "gameplay_progression": "Confirm visible gameplay progression on touch device.",
+            "primary_controls": "Verify primary touch controls respond correctly.",
+            "retry_restart": "Use Retry and confirm the title reloads cleanly.",
+            "fullscreen_exit": "Enter/exit supported fullscreen flow without trapping the user.",
+            "close_return": "Close and return to library; bottom navigation remains usable.",
+            "mobile_touch": "Verify taps/swipes/virtual controls do not conflict with host UI."
+          }
+        },
+        "failure": {
+          "code": null,
+          "note": null,
+          "platform": null,
+          "firstSeen": null,
+          "retestCount": 0,
+          "replacementRequired": false
+        },
+        "evidence": {
+          "desktop": null,
+          "mobile": null
+        }
       }
     },
     {
@@ -603,7 +727,38 @@
           "mobile_touch": false
         },
         "batch": 1,
-        "queuePosition": 5
+        "queuePosition": 5,
+        "testPlan": {
+          "desktop": {
+            "start_game": "Launch from NEXARC player and reach playable state.",
+            "gameplay_progression": "Perform meaningful gameplay long enough to confirm the game advances/responds.",
+            "primary_controls": "Verify primary keyboard/pointer controls actually affect gameplay.",
+            "retry_restart": "Use NEXARC Retry and confirm a clean reload/restart path.",
+            "fullscreen_exit": "Enter host fullscreen, exit fullscreen, and confirm player remains usable.",
+            "close_return": "Close player and confirm return to library without broken scroll/navigation."
+          },
+          "mobile": {
+            "start_game": "Launch from mobile NEXARC and reach playable state.",
+            "gameplay_progression": "Confirm visible gameplay progression on touch device.",
+            "primary_controls": "Verify primary touch controls respond correctly.",
+            "retry_restart": "Use Retry and confirm the title reloads cleanly.",
+            "fullscreen_exit": "Enter/exit supported fullscreen flow without trapping the user.",
+            "close_return": "Close and return to library; bottom navigation remains usable.",
+            "mobile_touch": "Verify taps/swipes/virtual controls do not conflict with host UI."
+          }
+        },
+        "failure": {
+          "code": null,
+          "note": null,
+          "platform": null,
+          "firstSeen": null,
+          "retestCount": 0,
+          "replacementRequired": false
+        },
+        "evidence": {
+          "desktop": null,
+          "mobile": null
+        }
       }
     },
     {
@@ -744,7 +899,38 @@
           "mobile_touch": false
         },
         "batch": 1,
-        "queuePosition": 6
+        "queuePosition": 6,
+        "testPlan": {
+          "desktop": {
+            "start_game": "Launch from NEXARC player and reach playable state.",
+            "gameplay_progression": "Perform meaningful gameplay long enough to confirm the game advances/responds.",
+            "primary_controls": "Verify primary keyboard/pointer controls actually affect gameplay.",
+            "retry_restart": "Use NEXARC Retry and confirm a clean reload/restart path.",
+            "fullscreen_exit": "Enter host fullscreen, exit fullscreen, and confirm player remains usable.",
+            "close_return": "Close player and confirm return to library without broken scroll/navigation."
+          },
+          "mobile": {
+            "start_game": "Launch from mobile NEXARC and reach playable state.",
+            "gameplay_progression": "Confirm visible gameplay progression on touch device.",
+            "primary_controls": "Verify primary touch controls respond correctly.",
+            "retry_restart": "Use Retry and confirm the title reloads cleanly.",
+            "fullscreen_exit": "Enter/exit supported fullscreen flow without trapping the user.",
+            "close_return": "Close and return to library; bottom navigation remains usable.",
+            "mobile_touch": "Verify taps/swipes/virtual controls do not conflict with host UI."
+          }
+        },
+        "failure": {
+          "code": null,
+          "note": null,
+          "platform": null,
+          "firstSeen": null,
+          "retestCount": 0,
+          "replacementRequired": false
+        },
+        "evidence": {
+          "desktop": null,
+          "mobile": null
+        }
       }
     },
     {
@@ -780,7 +966,38 @@
           "mobile_touch": false
         },
         "batch": 1,
-        "queuePosition": 7
+        "queuePosition": 7,
+        "testPlan": {
+          "desktop": {
+            "start_game": "Launch from NEXARC player and reach playable state.",
+            "gameplay_progression": "Perform meaningful gameplay long enough to confirm the game advances/responds.",
+            "primary_controls": "Verify primary keyboard/pointer controls actually affect gameplay.",
+            "retry_restart": "Use NEXARC Retry and confirm a clean reload/restart path.",
+            "fullscreen_exit": "Enter host fullscreen, exit fullscreen, and confirm player remains usable.",
+            "close_return": "Close player and confirm return to library without broken scroll/navigation."
+          },
+          "mobile": {
+            "start_game": "Launch from mobile NEXARC and reach playable state.",
+            "gameplay_progression": "Confirm visible gameplay progression on touch device.",
+            "primary_controls": "Verify primary touch controls respond correctly.",
+            "retry_restart": "Use Retry and confirm the title reloads cleanly.",
+            "fullscreen_exit": "Enter/exit supported fullscreen flow without trapping the user.",
+            "close_return": "Close and return to library; bottom navigation remains usable.",
+            "mobile_touch": "Verify taps/swipes/virtual controls do not conflict with host UI."
+          }
+        },
+        "failure": {
+          "code": null,
+          "note": null,
+          "platform": null,
+          "firstSeen": null,
+          "retestCount": 0,
+          "replacementRequired": false
+        },
+        "evidence": {
+          "desktop": null,
+          "mobile": null
+        }
       }
     },
     {
@@ -1167,7 +1384,38 @@
           "mobile_touch": false
         },
         "batch": 1,
-        "queuePosition": 8
+        "queuePosition": 8,
+        "testPlan": {
+          "desktop": {
+            "start_game": "Launch from NEXARC player and reach playable state.",
+            "gameplay_progression": "Perform meaningful gameplay long enough to confirm the game advances/responds.",
+            "primary_controls": "Verify primary keyboard/pointer controls actually affect gameplay.",
+            "retry_restart": "Use NEXARC Retry and confirm a clean reload/restart path.",
+            "fullscreen_exit": "Enter host fullscreen, exit fullscreen, and confirm player remains usable.",
+            "close_return": "Close player and confirm return to library without broken scroll/navigation."
+          },
+          "mobile": {
+            "start_game": "Launch from mobile NEXARC and reach playable state.",
+            "gameplay_progression": "Confirm visible gameplay progression on touch device.",
+            "primary_controls": "Verify primary touch controls respond correctly.",
+            "retry_restart": "Use Retry and confirm the title reloads cleanly.",
+            "fullscreen_exit": "Enter/exit supported fullscreen flow without trapping the user.",
+            "close_return": "Close and return to library; bottom navigation remains usable.",
+            "mobile_touch": "Verify taps/swipes/virtual controls do not conflict with host UI."
+          }
+        },
+        "failure": {
+          "code": null,
+          "note": null,
+          "platform": null,
+          "firstSeen": null,
+          "retestCount": 0,
+          "replacementRequired": false
+        },
+        "evidence": {
+          "desktop": null,
+          "mobile": null
+        }
       }
     },
     {
@@ -1203,7 +1451,38 @@
           "mobile_touch": false
         },
         "batch": 1,
-        "queuePosition": 9
+        "queuePosition": 9,
+        "testPlan": {
+          "desktop": {
+            "start_game": "Launch from NEXARC player and reach playable state.",
+            "gameplay_progression": "Perform meaningful gameplay long enough to confirm the game advances/responds.",
+            "primary_controls": "Verify primary keyboard/pointer controls actually affect gameplay.",
+            "retry_restart": "Use NEXARC Retry and confirm a clean reload/restart path.",
+            "fullscreen_exit": "Enter host fullscreen, exit fullscreen, and confirm player remains usable.",
+            "close_return": "Close player and confirm return to library without broken scroll/navigation."
+          },
+          "mobile": {
+            "start_game": "Launch from mobile NEXARC and reach playable state.",
+            "gameplay_progression": "Confirm visible gameplay progression on touch device.",
+            "primary_controls": "Verify primary touch controls respond correctly.",
+            "retry_restart": "Use Retry and confirm the title reloads cleanly.",
+            "fullscreen_exit": "Enter/exit supported fullscreen flow without trapping the user.",
+            "close_return": "Close and return to library; bottom navigation remains usable.",
+            "mobile_touch": "Verify taps/swipes/virtual controls do not conflict with host UI."
+          }
+        },
+        "failure": {
+          "code": null,
+          "note": null,
+          "platform": null,
+          "firstSeen": null,
+          "retestCount": 0,
+          "replacementRequired": false
+        },
+        "evidence": {
+          "desktop": null,
+          "mobile": null
+        }
       }
     },
     {
@@ -1344,7 +1623,38 @@
           "mobile_touch": false
         },
         "batch": 1,
-        "queuePosition": 10
+        "queuePosition": 10,
+        "testPlan": {
+          "desktop": {
+            "start_game": "Launch from NEXARC player and reach playable state.",
+            "gameplay_progression": "Perform meaningful gameplay long enough to confirm the game advances/responds.",
+            "primary_controls": "Verify primary keyboard/pointer controls actually affect gameplay.",
+            "retry_restart": "Use NEXARC Retry and confirm a clean reload/restart path.",
+            "fullscreen_exit": "Enter host fullscreen, exit fullscreen, and confirm player remains usable.",
+            "close_return": "Close player and confirm return to library without broken scroll/navigation."
+          },
+          "mobile": {
+            "start_game": "Launch from mobile NEXARC and reach playable state.",
+            "gameplay_progression": "Confirm visible gameplay progression on touch device.",
+            "primary_controls": "Verify primary touch controls respond correctly.",
+            "retry_restart": "Use Retry and confirm the title reloads cleanly.",
+            "fullscreen_exit": "Enter/exit supported fullscreen flow without trapping the user.",
+            "close_return": "Close and return to library; bottom navigation remains usable.",
+            "mobile_touch": "Verify taps/swipes/virtual controls do not conflict with host UI."
+          }
+        },
+        "failure": {
+          "code": null,
+          "note": null,
+          "platform": null,
+          "firstSeen": null,
+          "retestCount": 0,
+          "replacementRequired": false
+        },
+        "evidence": {
+          "desktop": null,
+          "mobile": null
+        }
       }
     },
     {
@@ -4632,6 +4942,19 @@
       "requiredFullyTested": 120,
       "currentFullyTested": 0,
       "ready": false
-    }
+    },
+    "failureCodes": [
+      "load_failure",
+      "stuck_loader",
+      "no_gameplay_progression",
+      "controls_unresponsive",
+      "mobile_touch_conflict",
+      "retry_failure",
+      "fullscreen_trap",
+      "close_return_failure",
+      "fatal_console_or_asset_error",
+      "other"
+    ],
+    "retestPolicy": "A failed title is not marked passed. Retest after a clean reload; if the same launch-blocking/control-blocking issue repeats, flag replacementRequired=true."
   }
 }
