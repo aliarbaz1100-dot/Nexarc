@@ -8365,6 +8365,21 @@
       "fatal_console_or_asset_error",
       "other"
     ],
-    "retestPolicy": "A failed title is not marked passed. Retest after a clean reload; if the same launch-blocking/control-blocking issue repeats, flag replacementRequired=true."
+    "retestPolicy": "A failed title is not marked passed. Retest after a clean reload; if the same launch-blocking/control-blocking issue repeats, flag replacementRequired=true.",
+    "progressPolicy": "Advance currentBatch only after every game in the active batch passes all required deep QA checks or is replaced and then passes.",
+    "failurePolicy": {
+      "blockingFailureCodes": [
+        "load_failure",
+        "stuck_loader",
+        "no_gameplay_progression",
+        "controls_unresponsive",
+        "mobile_touch_conflict",
+        "retry_failure",
+        "fullscreen_trap",
+        "close_return_failure",
+        "fatal_console_or_asset_error"
+      ],
+      "repeatedBlockingFailureAction": "Flag replacementRequired=true after reproducible blocking failure on clean retest."
+    }
   }
 }
