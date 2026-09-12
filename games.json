@@ -22,7 +22,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "medium",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "zombie-defense-last-stand",
@@ -42,7 +56,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "high",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "moto-x3m",
@@ -61,7 +89,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "medium",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "turbo-horizon",
@@ -80,7 +122,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "medium",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "stock-car",
@@ -100,7 +156,21 @@
         "close_return"
       ],
       "qaNote": "Smoke pass on desktop/mobile. Non-fatal bseg1_side console error observed; canvas continued rendering and visual progression was confirmed.",
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "high",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "offroad-moto",
@@ -119,7 +189,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "medium",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "fiva-26-soccer",
@@ -139,7 +223,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "medium",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "football-flick",
@@ -158,7 +256,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "medium",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "football-heads",
@@ -177,7 +289,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "medium",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "soccer-hero",
@@ -196,7 +322,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "medium",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "commando",
@@ -215,7 +355,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "medium",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "dead-paradise",
@@ -234,7 +388,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "medium",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "survivalist",
@@ -254,7 +422,21 @@
         "close_return"
       ],
       "qaNote": "Smoke pass on desktop/mobile. One missing external forge.webp asset returned 404, but game canvas loaded and gameplay scene rendered.",
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "high",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "stickman-archer",
@@ -273,7 +455,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "medium",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "rocket-clash",
@@ -293,7 +489,21 @@
         "close_return"
       ],
       "qaNote": "Smoke pass on desktop/mobile. Browser accelerometer permissions-policy warning observed; game canvas rendered normally.",
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "high",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "zombie-survival",
@@ -312,7 +522,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "medium",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "stop-zombies",
@@ -332,7 +556,21 @@
         "close_return"
       ],
       "qaDate": "2026-09-12",
-      "qaNote": "Smoke pass on desktop/mobile. A transient desktop audio fetch warning appeared on first run; clean retest loaded without the warning."
+      "qaNote": "Smoke pass on desktop/mobile. A transient desktop audio fetch warning appeared on first run; clean retest loaded without the warning.",
+      "deepQa": {
+        "priority": "high",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "tower-defense-zombies",
@@ -351,7 +589,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "medium",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "sliding-tile",
@@ -370,7 +622,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "medium",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "perfect-match",
@@ -389,7 +655,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "medium",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "cycle-racing",
@@ -409,7 +689,21 @@
         "close_return"
       ],
       "qaNote": "Smoke pass on desktop/mobile. One transient sandbox cache/WASM warning occurred on first desktop run; clean retest rendered and progressed normally.",
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "high",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "neon-bike",
@@ -429,7 +723,21 @@
         "close_return"
       ],
       "qaNote": "Smoke pass on desktop/mobile. Non-fatal gdApi/DNS console warning observed; canvas continued rendering and visual progression was confirmed.",
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "high",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "crash-racing",
@@ -448,7 +756,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "medium",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "formula-stunt",
@@ -467,7 +789,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "medium",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "car-jump",
@@ -486,7 +822,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "medium",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "traffic-run",
@@ -505,7 +855,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "medium",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "vehicle-master",
@@ -524,7 +888,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "medium",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "moto-winter",
@@ -543,7 +921,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "medium",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "moto-pool",
@@ -562,7 +954,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "medium",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "car-driving-master",
@@ -581,7 +987,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "medium",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "car-arctic",
@@ -601,7 +1021,21 @@
         "close_return"
       ],
       "qaDate": "2026-09-12",
-      "qaNote": "Smoke pass on desktop/mobile; visual progression confirmed in targeted mobile retest."
+      "qaNote": "Smoke pass on desktop/mobile; visual progression confirmed in targeted mobile retest.",
+      "deepQa": {
+        "priority": "medium",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "mad-cars",
@@ -620,7 +1054,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "medium",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "car-out",
@@ -640,7 +1088,21 @@
         "close_return"
       ],
       "qaDate": "2026-09-12",
-      "qaNote": "Smoke pass on desktop/mobile. Initial desktop audio fetch warnings were transient; clean retest rendered and visual activity was confirmed."
+      "qaNote": "Smoke pass on desktop/mobile. Initial desktop audio fetch warnings were transient; clean retest rendered and visual activity was confirmed.",
+      "deepQa": {
+        "priority": "high",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "car-traffic",
@@ -660,7 +1122,21 @@
         "close_return"
       ],
       "qaDate": "2026-09-12",
-      "qaNote": "Smoke pass on desktop/mobile; loader progressed to 99% and visual activity was confirmed in targeted mobile retest."
+      "qaNote": "Smoke pass on desktop/mobile; loader progressed to 99% and visual activity was confirmed in targeted mobile retest.",
+      "deepQa": {
+        "priority": "high",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "car-parking-driving",
@@ -679,7 +1155,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "medium",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "doodle-car",
@@ -698,7 +1188,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "medium",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "tank-force",
@@ -717,7 +1221,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "medium",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "combat-pixel",
@@ -737,7 +1255,21 @@
         "close_return"
       ],
       "qaDate": "2026-09-12",
-      "qaNote": "Smoke pass on desktop/mobile. Initial Unity asset download warnings were transient; targeted mobile retest rendered canvas and visual activity."
+      "qaNote": "Smoke pass on desktop/mobile. Initial Unity asset download warnings were transient; targeted mobile retest rendered canvas and visual activity.",
+      "deepQa": {
+        "priority": "high",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "zombie-base",
@@ -757,7 +1289,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "high",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "garden-defense",
@@ -777,7 +1323,21 @@
         "close_return"
       ],
       "qaDate": "2026-09-12",
-      "qaNote": "Smoke pass on desktop/mobile; targeted retest confirmed loading progress advanced substantially."
+      "qaNote": "Smoke pass on desktop/mobile; targeted retest confirmed loading progress advanced substantially.",
+      "deepQa": {
+        "priority": "medium",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "connect-game",
@@ -796,7 +1356,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "medium",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "hurdles",
@@ -815,7 +1389,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "medium",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "faster-car",
@@ -834,7 +1422,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "medium",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "snow-ball-race",
@@ -853,7 +1455,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "medium",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "water-race",
@@ -873,7 +1489,21 @@
         "close_return"
       ],
       "qaDate": "2026-09-12",
-      "qaNote": "Smoke pass on desktop/mobile. A transient mobile WebAssembly streaming warning fell back to ArrayBuffer loading; game canvas still rendered."
+      "qaNote": "Smoke pass on desktop/mobile. A transient mobile WebAssembly streaming warning fell back to ArrayBuffer loading; game canvas still rendered.",
+      "deepQa": {
+        "priority": "high",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "package-deliver",
@@ -892,7 +1522,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "medium",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "vossk",
@@ -911,7 +1555,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "medium",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "shoot-down",
@@ -930,7 +1588,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "medium",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "wiggly-worm",
@@ -949,7 +1621,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "medium",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "weight-puzzle",
@@ -968,7 +1654,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "medium",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "serpento",
@@ -987,7 +1687,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "medium",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "feather-dash",
@@ -1006,7 +1720,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "medium",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "car-modified",
@@ -1025,7 +1753,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "medium",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "death-car-racing",
@@ -1045,7 +1787,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "medium",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "home-car-builder",
@@ -1065,7 +1821,21 @@
         "close_return"
       ],
       "qaDate": "2026-09-12",
-      "qaNote": "Smoke pass on desktop/mobile. Legacy Unity Pointer_stringify warning observed, but render and visual activity continued."
+      "qaNote": "Smoke pass on desktop/mobile. Legacy Unity Pointer_stringify warning observed, but render and visual activity continued.",
+      "deepQa": {
+        "priority": "high",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "car-truck-parking",
@@ -1084,7 +1854,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "medium",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "football-score",
@@ -1104,7 +1888,21 @@
         "close_return"
       ],
       "qaDate": "2026-09-12",
-      "qaNote": "Previously held because embedded fullscreen could intercept NEXARC controls. Premium7 now keeps fullscreen under host-player control; desktop/mobile retest closed normally. A non-fatal showBanner console warning remains."
+      "qaNote": "Previously held because embedded fullscreen could intercept NEXARC controls. Premium7 now keeps fullscreen under host-player control; desktop/mobile retest closed normally. A non-fatal showBanner console warning remains.",
+      "deepQa": {
+        "priority": "high",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "derby-war",
@@ -1124,7 +1922,21 @@
         "close_return"
       ],
       "qaDate": "2026-09-12",
-      "qaNote": "Smoke pass on desktop/mobile; targeted mobile retest confirmed visual progression."
+      "qaNote": "Smoke pass on desktop/mobile; targeted mobile retest confirmed visual progression.",
+      "deepQa": {
+        "priority": "medium",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "rocketcar-cup",
@@ -1144,7 +1956,21 @@
         "close_return"
       ],
       "qaDate": "2026-09-12",
-      "qaNote": "Smoke pass on desktop/mobile. Mobile build requests device rotation; game UI rendered correctly."
+      "qaNote": "Smoke pass on desktop/mobile. Mobile build requests device rotation; game UI rendered correctly.",
+      "deepQa": {
+        "priority": "medium",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "soccer-basketball",
@@ -1163,7 +1989,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "normal",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "football-manager-26",
@@ -1183,7 +2023,21 @@
         "close_return"
       ],
       "qaDate": "2026-09-12",
-      "qaNote": "Smoke pass on desktop/mobile; targeted retest reached manager profile UI after initial loading."
+      "qaNote": "Smoke pass on desktop/mobile; targeted retest reached manager profile UI after initial loading.",
+      "deepQa": {
+        "priority": "normal",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "world-soccer-championship",
@@ -1203,7 +2057,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "high",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "flag-football",
@@ -1222,7 +2090,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "normal",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "dream-football",
@@ -1241,7 +2123,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "normal",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "football-manager-simulator",
@@ -1261,7 +2157,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "high",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "challenge-football",
@@ -1280,7 +2190,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "normal",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "football-crash-2",
@@ -1299,7 +2223,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "normal",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "kick-off",
@@ -1319,7 +2257,21 @@
         "close_return"
       ],
       "qaDate": "2026-09-12",
-      "qaNote": "Smoke pass on desktop/mobile. Initial mobile audio fetch warnings were transient; clean targeted retest showed normal render/activity."
+      "qaNote": "Smoke pass on desktop/mobile. Initial mobile audio fetch warnings were transient; clean targeted retest showed normal render/activity.",
+      "deepQa": {
+        "priority": "high",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "footyzag",
@@ -1338,7 +2290,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "normal",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "home-defense-zombie",
@@ -1358,7 +2324,21 @@
         "close_return"
       ],
       "qaDate": "2026-09-12",
-      "qaNote": "Smoke pass on desktop/mobile; targeted retest confirmed loading advanced from single digits to 56%."
+      "qaNote": "Smoke pass on desktop/mobile; targeted retest confirmed loading advanced from single digits to 56%.",
+      "deepQa": {
+        "priority": "normal",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "flower-defense-zombie",
@@ -1378,7 +2358,21 @@
         "close_return"
       ],
       "qaDate": "2026-09-12",
-      "qaNote": "Smoke pass on desktop/mobile. One transient mobile permissions-check warning appeared, but clean fresh-page retest rendered and closed normally."
+      "qaNote": "Smoke pass on desktop/mobile. One transient mobile permissions-check warning appeared, but clean fresh-page retest rendered and closed normally.",
+      "deepQa": {
+        "priority": "high",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "pixel-zombie",
@@ -1397,7 +2391,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "normal",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "zombie-survivor",
@@ -1416,7 +2424,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "normal",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "join-runner-clash",
@@ -1436,7 +2458,21 @@
         "close_return"
       ],
       "qaDate": "2026-09-12",
-      "qaNote": "Smoke pass on desktop/mobile. A missing font returned 404, but targeted mobile retest showed strong visual progression."
+      "qaNote": "Smoke pass on desktop/mobile. A missing font returned 404, but targeted mobile retest showed strong visual progression.",
+      "deepQa": {
+        "priority": "high",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "join-clash",
@@ -1455,7 +2491,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "normal",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "happy-moving-car",
@@ -1474,7 +2524,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "normal",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "html5-parking-car",
@@ -1494,7 +2558,21 @@
         "close_return"
       ],
       "qaDate": "2026-09-12",
-      "qaNote": "Smoke pass on desktop/mobile. A transient desktop script error was not reproduced in fresh mobile retest; render and visual progression were confirmed."
+      "qaNote": "Smoke pass on desktop/mobile. A transient desktop script error was not reproduced in fresh mobile retest; render and visual progression were confirmed.",
+      "deepQa": {
+        "priority": "high",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "circle-drive",
@@ -1513,7 +2591,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "normal",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "agile-driver",
@@ -1533,7 +2625,21 @@
         "close_return"
       ],
       "qaDate": "2026-09-12",
-      "qaNote": "Smoke pass on desktop/mobile. A transient mobile showBanner error appeared on first run but was not reproduced in fresh targeted retest; visual progression confirmed."
+      "qaNote": "Smoke pass on desktop/mobile. A transient mobile showBanner error appeared on first run but was not reproduced in fresh targeted retest; visual progression confirmed.",
+      "deepQa": {
+        "priority": "high",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "turn-left",
@@ -1552,7 +2658,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "normal",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "car-sea-adventure",
@@ -1572,7 +2692,21 @@
         "close_return"
       ],
       "qaDate": "2026-09-12",
-      "qaNote": "Smoke pass on desktop/mobile; targeted mobile retest confirmed loading/ad progression."
+      "qaNote": "Smoke pass on desktop/mobile; targeted mobile retest confirmed loading/ad progression.",
+      "deepQa": {
+        "priority": "normal",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "ok-parking",
@@ -1592,7 +2726,21 @@
         "close_return"
       ],
       "qaDate": "2026-09-12",
-      "qaNote": "Smoke pass on desktop/mobile; targeted mobile retest advanced loader to 56% and showed rotate-device UI."
+      "qaNote": "Smoke pass on desktop/mobile; targeted mobile retest advanced loader to 56% and showed rotate-device UI.",
+      "deepQa": {
+        "priority": "high",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "parking-jam",
@@ -1611,7 +2759,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "normal",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "billiard-hustlers",
@@ -1630,7 +2792,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "normal",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "wizard-io",
@@ -1649,7 +2825,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "normal",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "highway-car-racer",
@@ -1668,7 +2858,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "normal",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "highway-car-racing",
@@ -1687,7 +2891,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "normal",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "highway-racers",
@@ -1706,7 +2924,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "normal",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "offroad-monster-truck",
@@ -1725,7 +2957,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "normal",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "extreme-gear-shift",
@@ -1745,7 +2991,21 @@
         "close_return"
       ],
       "qaDate": "2026-09-12",
-      "qaNote": "Smoke pass on desktop/mobile; targeted mobile retest advanced loader to 90%."
+      "qaNote": "Smoke pass on desktop/mobile; targeted mobile retest advanced loader to 90%.",
+      "deepQa": {
+        "priority": "high",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "euro-truck-parking",
@@ -1764,7 +3024,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "normal",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "american-truck-driver",
@@ -1783,7 +3057,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "normal",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "taxi-rush",
@@ -1803,7 +3091,21 @@
         "close_return"
       ],
       "qaDate": "2026-09-12",
-      "qaNote": "Smoke pass on desktop/mobile; targeted mobile retest advanced loader to 90%."
+      "qaNote": "Smoke pass on desktop/mobile; targeted mobile retest advanced loader to 90%.",
+      "deepQa": {
+        "priority": "high",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "mud-monster-truck",
@@ -1822,7 +3124,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "normal",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "octopus-run",
@@ -1841,7 +3157,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "normal",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "urban-farm-simulator",
@@ -1860,7 +3190,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "normal",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "magic-battle-online",
@@ -1880,7 +3224,21 @@
         "close_return"
       ],
       "qaNote": "Smoke pass on desktop/mobile. External 404 console noise observed; visual progression confirmed in retest.",
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "high",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "mob-runner-master",
@@ -1900,7 +3258,21 @@
         "close_return"
       ],
       "qaDate": "2026-09-12",
-      "qaNote": "Smoke pass on desktop/mobile. A transient WebAssembly streaming warning fell back to ArrayBuffer loading on first mobile run; clean targeted retest rendered normally."
+      "qaNote": "Smoke pass on desktop/mobile. A transient WebAssembly streaming warning fell back to ArrayBuffer loading on first mobile run; clean targeted retest rendered normally.",
+      "deepQa": {
+        "priority": "high",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "sport-sort-puzzle",
@@ -1919,7 +3291,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "normal",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "toilet-rush-race",
@@ -1938,7 +3324,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "normal",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "find-the-set",
@@ -1957,7 +3357,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "normal",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "puzzle-pieces",
@@ -1977,7 +3391,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "high",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "new-mahjong-2026",
@@ -1997,7 +3425,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "high",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "fun-memory",
@@ -2016,7 +3458,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "normal",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "running-man-2026",
@@ -2036,7 +3492,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "high",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "zombie-bros-frozen",
@@ -2055,7 +3525,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "normal",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "worm-slither",
@@ -2074,7 +3558,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "normal",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "piecealive",
@@ -2094,7 +3592,21 @@
         "close_return"
       ],
       "qaDate": "2026-09-12",
-      "qaNote": "Smoke pass on desktop/mobile; interactive puzzle selection UI rendered correctly."
+      "qaNote": "Smoke pass on desktop/mobile; interactive puzzle selection UI rendered correctly.",
+      "deepQa": {
+        "priority": "normal",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "unravel",
@@ -2114,7 +3626,21 @@
         "close_return"
       ],
       "qaDate": "2026-09-12",
-      "qaNote": "Smoke pass on desktop/mobile; interactive puzzle UI and canvas rendered correctly."
+      "qaNote": "Smoke pass on desktop/mobile; interactive puzzle UI and canvas rendered correctly.",
+      "deepQa": {
+        "priority": "normal",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "guess-which-game",
@@ -2133,7 +3659,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "normal",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "block-puzzle-brain-blast",
@@ -2152,7 +3692,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "normal",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "primezy",
@@ -2171,7 +3725,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "normal",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "grid3",
@@ -2190,7 +3758,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "normal",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "find-n-match",
@@ -2210,7 +3792,21 @@
         "close_return"
       ],
       "qaDate": "2026-09-12",
-      "qaNote": "Smoke pass on desktop/mobile; targeted retest progressed from resource loading to Ready to play / START GAME."
+      "qaNote": "Smoke pass on desktop/mobile; targeted retest progressed from resource loading to Ready to play / START GAME.",
+      "deepQa": {
+        "priority": "normal",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "bridge-rush",
@@ -2229,7 +3825,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "normal",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "box-rush",
@@ -2248,7 +3858,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "normal",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "race-through-traffic",
@@ -2268,7 +3892,21 @@
         "close_return"
       ],
       "qaDate": "2026-09-12",
-      "qaNote": "Smoke pass on desktop/mobile. A transient WebAssembly streaming warning on first mobile run was not reproduced in fresh retest; visual activity confirmed."
+      "qaNote": "Smoke pass on desktop/mobile. A transient WebAssembly streaming warning on first mobile run was not reproduced in fresh retest; visual activity confirmed.",
+      "deepQa": {
+        "priority": "high",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "triangle-run",
@@ -2287,7 +3925,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "normal",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "drive-pro-3d",
@@ -2307,7 +3959,21 @@
         "close_return"
       ],
       "qaDate": "2026-09-12",
-      "qaNote": "Smoke pass on desktop/mobile; mobile ad/loading surface rendered normally before gameplay."
+      "qaNote": "Smoke pass on desktop/mobile; mobile ad/loading surface rendered normally before gameplay.",
+      "deepQa": {
+        "priority": "normal",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     },
     {
       "id": "boat-race-deluxe",
@@ -2326,7 +3992,21 @@
         "basic_input",
         "close_return"
       ],
-      "qaDate": "2026-09-12"
+      "qaDate": "2026-09-12",
+      "deepQa": {
+        "priority": "normal",
+        "status": "pending",
+        "checks": {
+          "start_game": false,
+          "gameplay_progression": false,
+          "primary_controls": false,
+          "pause_resume": false,
+          "retry_restart": false,
+          "fullscreen_exit": false,
+          "close_return": false,
+          "mobile_touch": false
+        }
+      }
     }
   ],
   "smokeTested": 120,
@@ -2345,5 +4025,146 @@
     "missingQaChecks": 0,
     "normalizedQaDates": 20,
     "note": "Source-level QA metadata audit complete. Deep gameplay/control verification remains separate and only genuinely verified games count toward fullyTested."
+  },
+  "deepQa": {
+    "definition": "Manual/interactive verification of actual gameplay progression and controls; do not count a game as fullyTested until all required checks are genuinely verified.",
+    "requiredChecks": [
+      "start_game",
+      "gameplay_progression",
+      "primary_controls",
+      "retry_restart",
+      "fullscreen_exit",
+      "close_return",
+      "mobile_touch"
+    ],
+    "optionalChecks": [
+      "pause_resume"
+    ],
+    "total": 120,
+    "completed": 0,
+    "pending": 120,
+    "highPriority": 30,
+    "queue": [
+      "zombie-defense-last-stand",
+      "stock-car",
+      "survivalist",
+      "rocket-clash",
+      "stop-zombies",
+      "cycle-racing",
+      "neon-bike",
+      "car-out",
+      "car-traffic",
+      "combat-pixel",
+      "zombie-base",
+      "water-race",
+      "home-car-builder",
+      "football-score",
+      "world-soccer-championship",
+      "football-manager-simulator",
+      "kick-off",
+      "flower-defense-zombie",
+      "join-runner-clash",
+      "html5-parking-car",
+      "agile-driver",
+      "ok-parking",
+      "extreme-gear-shift",
+      "taxi-rush",
+      "magic-battle-online",
+      "mob-runner-master",
+      "puzzle-pieces",
+      "new-mahjong-2026",
+      "running-man-2026",
+      "race-through-traffic",
+      "ninja-run",
+      "moto-x3m",
+      "turbo-horizon",
+      "offroad-moto",
+      "fiva-26-soccer",
+      "football-flick",
+      "football-heads",
+      "soccer-hero",
+      "commando",
+      "dead-paradise",
+      "stickman-archer",
+      "zombie-survival",
+      "tower-defense-zombies",
+      "sliding-tile",
+      "perfect-match",
+      "crash-racing",
+      "formula-stunt",
+      "car-jump",
+      "traffic-run",
+      "vehicle-master",
+      "moto-winter",
+      "moto-pool",
+      "car-driving-master",
+      "car-arctic",
+      "mad-cars",
+      "car-parking-driving",
+      "doodle-car",
+      "tank-force",
+      "garden-defense",
+      "connect-game",
+      "hurdles",
+      "faster-car",
+      "snow-ball-race",
+      "package-deliver",
+      "vossk",
+      "shoot-down",
+      "wiggly-worm",
+      "weight-puzzle",
+      "serpento",
+      "feather-dash",
+      "car-modified",
+      "death-car-racing",
+      "car-truck-parking",
+      "derby-war",
+      "rocketcar-cup",
+      "soccer-basketball",
+      "football-manager-26",
+      "flag-football",
+      "dream-football",
+      "challenge-football",
+      "football-crash-2",
+      "footyzag",
+      "home-defense-zombie",
+      "pixel-zombie",
+      "zombie-survivor",
+      "join-clash",
+      "happy-moving-car",
+      "circle-drive",
+      "turn-left",
+      "car-sea-adventure",
+      "parking-jam",
+      "billiard-hustlers",
+      "wizard-io",
+      "highway-car-racer",
+      "highway-car-racing",
+      "highway-racers",
+      "offroad-monster-truck",
+      "euro-truck-parking",
+      "american-truck-driver",
+      "mud-monster-truck",
+      "octopus-run",
+      "urban-farm-simulator",
+      "sport-sort-puzzle",
+      "toilet-rush-race",
+      "find-the-set",
+      "fun-memory",
+      "zombie-bros-frozen",
+      "worm-slither",
+      "piecealive",
+      "unravel",
+      "guess-which-game",
+      "block-puzzle-brain-blast",
+      "primezy",
+      "grid3",
+      "find-n-match",
+      "bridge-rush",
+      "box-rush",
+      "triangle-run",
+      "drive-pro-3d",
+      "boat-race-deluxe"
+    ]
   }
 }
