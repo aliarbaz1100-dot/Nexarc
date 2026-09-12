@@ -1926,7 +1926,18 @@
       "category": "Puzzle",
       "embedUrl": "https://html5.gamemonetize.co/n7hoa1t36i9lx3gc6isv255w706btl1q/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "find-gems",
@@ -1934,7 +1945,19 @@
       "category": "Puzzle",
       "embedUrl": "https://html5.gamemonetize.co/r42v3ogyi0lsuenn0hseh814ng007ymx/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_needs_manual",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input_attempted",
+        "quality_review"
+      ],
+      "qaDate": "2026-09-12",
+      "qaNote": "Needs manual quality review. Desktop/mobile gameplay surface renders and visual activity is present, but the game repeatedly returns a missing gamemusic.ogg (404) and audio decode/orientation warnings on mobile."
     },
     {
       "id": "connectors",
@@ -1942,7 +1965,19 @@
       "category": "Puzzle",
       "embedUrl": "https://html5.gamemonetize.co/2knrg0az59suqmu62j8y6x6kum26f3o5/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_needs_manual",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input_attempted",
+        "quality_review"
+      ],
+      "qaDate": "2026-09-12",
+      "qaNote": "Needs manual quality review. Desktop/mobile canvas renders and visual activity is present, but multiple game image assets (2x/3x/4x/6x etc.) repeatedly return 404 responses."
     },
     {
       "id": "fun-memory",
@@ -1950,7 +1985,18 @@
       "category": "Puzzle",
       "embedUrl": "https://html5.gamemonetize.co/k1r2dkdoou2kg75ym4qx23wgykntcd1e/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "jelly-runner-platform",
@@ -1958,7 +2004,19 @@
       "category": "Arcade",
       "embedUrl": "https://html5.gamemonetize.co/u4mf9621e9skpp79vz8n5gzew8re8ur0/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_needs_manual",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input_attempted",
+        "quality_review"
+      ],
+      "qaDate": "2026-09-12",
+      "qaNote": "Needs manual quality review. Desktop/mobile game UI and canvas render with visual activity, but the game repeatedly returns a missing index.css (404)."
     },
     {
       "id": "zombie-bros-frozen",
@@ -1966,7 +2024,18 @@
       "category": "Adventure",
       "embedUrl": "https://html5.gamemonetize.co/3bie9gh9000sf6wfduhindyvh4bri9la/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "worm-slither",
@@ -1974,7 +2043,18 @@
       "category": "Adventure",
       "embedUrl": "https://html5.gamemonetize.co/9370pw88tjmrs2v2uootxu74ibhx28u7/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "piecealive",
@@ -1982,7 +2062,19 @@
       "category": "Puzzle",
       "embedUrl": "https://html5.gamemonetize.co/to3c5gpnbjp89rm6ukj013k0s8h4ro4g/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12",
+      "qaNote": "Smoke pass on desktop/mobile; interactive puzzle selection UI rendered correctly."
     },
     {
       "id": "unravel",
@@ -1990,7 +2082,19 @@
       "category": "Puzzle",
       "embedUrl": "https://html5.gamemonetize.co/1ka6bh13g6z23cuqzph39csds5wkkr3e/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12",
+      "qaNote": "Smoke pass on desktop/mobile; interactive puzzle UI and canvas rendered correctly."
     },
     {
       "id": "guess-which-game",
@@ -1998,7 +2102,18 @@
       "category": "Puzzle",
       "embedUrl": "https://html5.gamemonetize.co/3ez9t0zu338on4x8jtegad0agtvtuuq8/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "block-puzzle-brain-blast",
@@ -2006,7 +2121,18 @@
       "category": "Puzzle",
       "embedUrl": "https://html5.gamemonetize.co/5ffvw6wtu21wks8rstfahyhmgkpccl9d/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "primezy",
@@ -2014,7 +2140,18 @@
       "category": "Arcade",
       "embedUrl": "https://html5.gamemonetize.co/a81xdurs0gzcsq0ob11jfa3uxnsr1nrq/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "grid3",
@@ -2022,7 +2159,18 @@
       "category": "Puzzle",
       "embedUrl": "https://html5.gamemonetize.co/ij0aqcaitnj9et6bnntx3o4uvf0a9u0f/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "find-n-match",
@@ -2030,7 +2178,19 @@
       "category": "Puzzle",
       "embedUrl": "https://html5.gamemonetize.co/20isw2akjl2dyo0x7i9jlhqdtjyx6met/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12",
+      "qaNote": "Smoke pass on desktop/mobile; targeted retest progressed from resource loading to Ready to play / START GAME."
     },
     {
       "id": "bridge-rush",
@@ -2038,7 +2198,18 @@
       "category": "Puzzle",
       "embedUrl": "https://html5.gamemonetize.co/p6lzu4o7qvpphso6oh0yjluih0y8oty1/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "box-rush",
@@ -2046,7 +2217,18 @@
       "category": "Adventure",
       "embedUrl": "https://html5.gamemonetize.co/0es3qpy89wxp1ty9snpry32z5mslffju/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "race-through-traffic",
@@ -2054,7 +2236,19 @@
       "category": "Racing",
       "embedUrl": "https://html5.gamemonetize.co/n9x2du1o2347maqbv6k6cciawua39sus/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12",
+      "qaNote": "Smoke pass on desktop/mobile. A transient WebAssembly streaming warning on first mobile run was not reproduced in fresh retest; visual activity confirmed."
     },
     {
       "id": "triangle-run",
@@ -2062,7 +2256,18 @@
       "category": "Arcade",
       "embedUrl": "https://html5.gamemonetize.co/hh0b4hjo7nx6qx4gasf2hl6zzcpkupg9/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "drive-pro-3d",
@@ -2070,7 +2275,19 @@
       "category": "Racing",
       "embedUrl": "https://html5.gamemonetize.co/jqwz9v6dty5x1y6ug4cpb7xyjoimawu8/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12",
+      "qaNote": "Smoke pass on desktop/mobile; mobile ad/loading surface rendered normally before gameplay."
     },
     {
       "id": "boat-race-deluxe",
@@ -2078,14 +2295,26 @@
       "category": "Sports",
       "embedUrl": "https://html5.gamemonetize.co/kff040x5mrkm23wczpkjbga5su9teg1y/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     }
   ],
-  "smokeTested": 93,
-  "smokeTestedDesktop": 93,
-  "smokeTestedMobile": 93,
+  "smokeTested": 110,
+  "smokeTestedDesktop": 110,
+  "smokeTestedMobile": 110,
   "smokeTestDate": "2026-09-12",
   "smokeTestDefinition": "Live Vercel smoke test: game launch, iframe render, basic pointer/keyboard input, visual activity where needed, and close/return flow. This is not the same as final level-completion gameplay QA.",
-  "smokeNeedsManual": 7,
-  "smokeReviewed": 100
+  "smokeNeedsManual": 10,
+  "smokeReviewed": 120,
+  "smokeUnreviewed": 0
 }
