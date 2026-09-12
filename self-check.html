@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>NEXARC Self Check</title>
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="legal.css?v=20260912-selfcheck1">
+</head>
+<body>
+<main class="legalWrap">
+  <a class="back" href="/status.html">← Back to Status</a>
+  <section class="legalHero">
+    <span>INTERNAL QA</span>
+    <h1>Deployment Self Check</h1>
+    <p>Verifies catalog structure and critical host-player integration after deployment.</p>
+  </section>
+  <section class="legalCard">
+    <h2>Checks</h2>
+    <ul id="checks"><li>Running checks…</li></ul>
+  </section>
+</main>
+<script>
+(async()=>{
+ const out=document.getElementById('checks'), rows=[];
+ const add=(name,ok,detail)=>rows.push({name,ok,detail});
+ try{
+   const r=await fetch('/games.json?selfcheck=1',{cache:'no-store'});
+   const d=await r.json(), games=d.games||[], dq=d.deepQa||{}, req=dq.requiredChecks||[];
+   const ids=games.map(g=>g.id), queue=dq.queue||[], batches=(dq.batchPlan||[]).flatMap(b=>b.ids||[]);
+   const uniq=a=>new Set(a).size===a.length;
+   const passed=games.filter(g=>req.every(k=>g.deepQa&&g.deepQa.checks&&g.deepQa.checks[k]===true)).length;
+   add('Catalog count',games.length===120,games.length+'/120');
+   add('Unique game IDs',uniq(ids),new Set(ids).size+'/'+ids.length);
+   add('QA queue coverage',queue.length===games.length&&ids.every(id=>queue.includes(id)),queue.length+'/'+games.length);
+   add('Batch coverage',batches.length===games.length&&uniq(batches),batches.length+'/'+games.length);
+   add('Derived fullyTested',Number(d.fullyTested||0)===passed,passed+' derived');
+   add('Integrity snapshot',d.qaIntegrity&&d.qaIntegrity.status==='pass',d.qaIntegrity?d.qaIntegrity.status:'missing');
+ }catch(e){ add('games.json fetch',false,String(e&&e.message||e)); }
+ try{
+   const r=await fetch('/index.html?selfcheck=1',{cache:'no-store'}), html=await r.text();
+   add('Player shell',/id=["']player["']/.test(html),'#player');
+   add('Game iframe',/id=["']gameFrame["']/.test(html),'#gameFrame');
+   add('Retry control',/id=["']retry["']/.test(html),'#retry');
+   add('Fullscreen control',/id=["']full["']/.test(html),'#full');
+   add('Close control',/id=["']close["']/.test(html),'#close');
+ }catch(e){ add('index.html fetch',false,String(e&&e.message||e)); }
+ const ok=rows.filter(x=>x.ok).length;
+ out.innerHTML='<li><strong>'+ok+'/'+rows.length+' checks passed</strong></li>'+rows.map(x=>'<li><strong>'+(x.ok?'PASS':'FAIL')+'</strong> — '+x.name+' <small>'+x.detail+'</small></li>').join('');
+})();
+</script>
+</body>
+</html>
