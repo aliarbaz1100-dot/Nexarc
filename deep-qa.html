@@ -15,7 +15,7 @@
     .batch{margin:16px 0;padding:16px;border:1px solid rgba(255,255,255,.12);border-radius:16px;background:rgba(255,255,255,.025)}
     .batchHead{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:10px}
     .badge{font-size:12px;padding:5px 9px;border-radius:999px;background:rgba(229,9,20,.18);border:1px solid rgba(229,9,20,.35)}
-    .gameRow{display:grid;grid-template-columns:44px 1fr auto;gap:10px;align-items:center;padding:10px 0;border-top:1px solid rgba(255,255,255,.07)}
+    .gameRow{display:grid;grid-template-columns:44px 1fr auto;gap:10px;align-items:center;padding:10px 0;border-top:1px solid rgba(255,255,255,.07)} .qaActions{display:flex;gap:7px;flex-wrap:wrap;margin-top:7px}.qaBtn{display:inline-flex;align-items:center;justify-content:center;padding:6px 9px;border-radius:9px;border:1px solid rgba(255,255,255,.14);text-decoration:none;font-size:11px;background:rgba(255,255,255,.05)}
     .gameRow:first-of-type{border-top:0}.pos{opacity:.55}.status{font-size:12px;text-transform:uppercase;letter-spacing:.04em}
     .status.passed{color:#69e38a}.status.pending{color:#ffc857}.checks{font-size:12px;opacity:.62;margin-top:3px}
     @media(max-width:720px){.qaTop{grid-template-columns:repeat(2,minmax(0,1fr))}.gameRow{grid-template-columns:34px 1fr}}
@@ -50,7 +50,7 @@
         const g=byId[id]||{}, d=g.deepQa||{}, c=d.checks||{};
         const req=required;
         const done=req.filter(k=>c[k]===true).length;
-        const fail=d.failure||{}; const failTxt=fail.code?(' · FAIL: '+fail.code+(fail.platform?' / '+fail.platform:'')):' '; return '<div class="gameRow"><div class="pos">#'+(d.queuePosition||'—')+'</div><div><strong>'+(g.title||id)+'</strong><div class="checks">'+done+'/7 required checks · '+(g.category||'')+failTxt+'</div></div><div class="status '+(isPassed(g)?'passed':'pending')+'">'+(isPassed(g)?'passed':'pending')+'</div></div>';
+        const fail=d.failure||{}; const failTxt=fail.code?(' · FAIL: '+fail.code+(fail.platform?' / '+fail.platform:'')):' '; const live='/index.html?qaGame='+encodeURIComponent(id)+'#play-'+encodeURIComponent(id); return '<div class="gameRow"><div class="pos">#'+(d.queuePosition||'—')+'</div><div><strong>'+(g.title||id)+'</strong><div class="checks">'+done+'/7 required checks · '+(g.category||'')+failTxt+'</div><div class="qaActions"><a class="qaBtn" href="'+live+'" target="_blank" rel="noopener">Open Live NEXARC</a><a class="qaBtn" href="'+g.embedUrl+'" target="_blank" rel="noopener">Open Direct Game</a></div></div><div class="status '+(isPassed(g)?'passed':'pending')+'">'+(isPassed(g)?'passed':'pending')+'</div></div>';
       }).join('');
       return '<section class="batch"><div class="batchHead"><h2>Batch '+b.batch+'</h2><span class="badge">'+(b.priority==='high'?'HIGH PRIORITY':'STANDARD')+'</span></div>'+rows+'</section>';
     }).join('');
