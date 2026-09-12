@@ -45,7 +45,7 @@
     </section>
   </main>
   <script>
-  fetch("/games.json?status=live",{cache:"no-store"}).then(r=>r.json()).then(d=>{const total=(d.games||[]).length;const tested=Number(d.fullyTested||0);const pending=Math.max(0,total-tested);const batch=d.deepQa&&d.deepQa.currentBatch||1;const ready=!!(d.deepQa&&d.deepQa.launchGate&&d.deepQa.launchGate.ready);const el=document.getElementById("liveQaText");if(el)el.textContent=(ready?"LAUNCH READY":"DOMAIN HOLD")+" — "+tested+"/"+total+" fully tested, "+pending+" pending, current batch "+batch+"."}).catch(()=>{const el=document.getElementById("liveQaText");if(el)el.textContent="Current QA data could not be loaded.";});
+  fetch("/games.json?status=live",{cache:"no-store"}).then(r=>r.json()).then(d=>{const games=d.games||[];const req=d.deepQa&&d.deepQa.requiredChecks||["start_game","gameplay_progression","primary_controls","retry_restart","fullscreen_exit","close_return","mobile_touch"];const isPassed=g=>req.every(k=>g.deepQa&&g.deepQa.checks&&g.deepQa.checks[k]===true);const total=games.length;const tested=games.filter(isPassed).length;const pending=Math.max(0,total-tested);const batch=d.deepQa&&d.deepQa.currentBatch||1;const ready=total>0&&tested===total;const mismatch=Number(d.fullyTested||0)!==tested;const el=document.getElementById("liveQaText");if(el)el.textContent=(ready?"LAUNCH READY":"DOMAIN HOLD")+" — "+tested+"/"+total+" fully tested, "+pending+" pending, current batch "+batch+(mismatch?" · QA count mismatch detected":"")+"."}).catch(()=>{const el=document.getElementById("liveQaText");if(el)el.textContent="Current QA data could not be loaded.";});
   </script>
 </body>
 </html>
