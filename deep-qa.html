@@ -31,6 +31,7 @@
     </section>
     <section id="summary" class="qaTop"></section>
     <section id="gate" class="launchGate hold">Launch gate calculating…</section>
+    <section id="integrity" class="launchGate">QA integrity calculating…</section>
     <section id="batches"></section>
   </main>
   <script>
@@ -53,6 +54,7 @@
     const ready=completed>=games.length&&games.length>0;
     gate.className='launchGate '+(ready?'ready':'hold');
     gate.textContent=ready?'LAUNCH READY — all '+games.length+' games passed required deep QA checks.':'DOMAIN HOLD — '+completed+'/'+games.length+' fully tested, '+pending+' pending, '+failed+' with logged failures.';
+    const queue=dq.queue||[]; const ids=games.map(g=>g.id); const uniqQueue=new Set(queue); const dupQueue=queue.length-uniqQueue.size; const missingQueue=ids.filter(id=>!uniqQueue.has(id)); const unknownQueue=queue.filter(id=>!byId[id]); const countMismatch=Number(data.fullyTested||0)!==completed; const batchIds=(dq.batchPlan||[]).flatMap(b=>b.ids||[]); const batchDup=batchIds.length-new Set(batchIds).size; const integrityIssues=[]; if(dupQueue)integrityIssues.push(dupQueue+' duplicate queue entries'); if(missingQueue.length)integrityIssues.push(missingQueue.length+' games missing from queue'); if(unknownQueue.length)integrityIssues.push(unknownQueue.length+' unknown queue IDs'); if(countMismatch)integrityIssues.push('fullyTested mismatch'); if(batchDup)integrityIssues.push(batchDup+' duplicate batch entries'); if(queue.length!==games.length)integrityIssues.push('queue size '+queue.length+' vs games '+games.length); const integ=document.getElementById('integrity'); integ.className='launchGate '+(integrityIssues.length?'hold':'ready'); integ.textContent=integrityIssues.length?'QA INTEGRITY WARNING — '+integrityIssues.join(' · '):'QA INTEGRITY PASS — queue, batches and derived fully-tested count are consistent.';
     const batches=dq.batchPlan||[];
     document.getElementById('batches').innerHTML=batches.map(b=>{
       const rows=(b.ids||[]).map(id=>{
