@@ -29,7 +29,19 @@
       "category": "Zombie",
       "embedUrl": "https://html5.gamemonetize.co/z7qsjaenzkjwxxygugf00vkpti9kxc90/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_needs_manual",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input_attempted",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12",
+      "qaNote": "Needs manual gameplay review. Desktop/mobile iframe and canvas load, but repeated retest still showed a container-not-defined error and persistent loading/ad state; basic gameplay progression was not confirmed."
     },
     {
       "id": "moto-x3m",
@@ -110,7 +122,19 @@
       "category": "Sports",
       "embedUrl": "https://html5.gamemonetize.co/j6hp4zd200pbn92izelxerdfsqfoz8pp/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_needs_manual",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input_attempted",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12",
+      "qaNote": "Needs manual gameplay review. Desktop/mobile iframe loads and canvas appears, but repeated automated input produced no visual progression, so actual gameplay start was not confirmed."
     },
     {
       "id": "football-flick",
@@ -118,7 +142,18 @@
       "category": "Sports",
       "embedUrl": "https://html5.gamemonetize.co/necs6mnhw2igl2f96padhtfjc4gyhyz4/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "football-heads",
@@ -126,7 +161,18 @@
       "category": "Sports",
       "embedUrl": "https://html5.gamemonetize.co/uzkm3h1igndrx9is3e3mzrhmwfpzv3zp/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "soccer-hero",
@@ -134,7 +180,18 @@
       "category": "Sports",
       "embedUrl": "https://html5.gamemonetize.co/cl9ik2kgtk7kxt89jl9hr1dbzfxmv7k5/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "commando",
@@ -234,7 +291,18 @@
       "category": "Zombie",
       "embedUrl": "https://html5.gamemonetize.co/b15gire8ae8p3yg8unwqjwzpbtbor7h3/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "stop-zombies",
@@ -242,7 +310,19 @@
       "category": "Zombie",
       "embedUrl": "https://html5.gamemonetize.co/8sttq4hfxsvoveqhy43cp39updyjcs48/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12",
+      "qaNote": "Smoke pass on desktop/mobile. A transient desktop audio fetch warning appeared on first run; clean retest loaded without the warning."
     },
     {
       "id": "tower-defense-zombies",
@@ -250,7 +330,18 @@
       "category": "Zombie",
       "embedUrl": "https://html5.gamemonetize.co/79erubfx45uiq8ksuuxofo7h79s9b1t0/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "sliding-tile",
@@ -258,7 +349,18 @@
       "category": "Puzzle",
       "embedUrl": "https://html5.gamemonetize.co/v48ve1i2snfou1bv4yidv7pup1en4zu2/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "perfect-match",
@@ -266,7 +368,18 @@
       "category": "Puzzle",
       "embedUrl": "https://html5.gamemonetize.co/1rn5xojfk4bldj0pkjnzygz5o5k8n4f2/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "cycle-racing",
@@ -348,7 +461,18 @@
       "category": "Racing",
       "embedUrl": "https://html5.gamemonetize.co/8qi0zo4m46avak8k5la1rwde9p2b02jd/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "traffic-run",
@@ -356,7 +480,18 @@
       "category": "Racing",
       "embedUrl": "https://html5.gamemonetize.co/4ajil6uv2opb56xkcffrmvyh7mqih6ov/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "vehicle-master",
@@ -364,7 +499,18 @@
       "category": "Racing",
       "embedUrl": "https://html5.gamemonetize.co/jhkb3n1agv7y3e0gag14h8gvparlwpft/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "moto-winter",
@@ -372,7 +518,18 @@
       "category": "Racing",
       "embedUrl": "https://html5.gamemonetize.co/1gjwgvl2j0ipdd9ybezeavu04y1nqjen/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "moto-pool",
@@ -380,7 +537,18 @@
       "category": "Racing",
       "embedUrl": "https://html5.gamemonetize.co/mim4uot21hygwai6uek2u1t2ovb3lkzd/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "car-driving-master",
@@ -388,7 +556,18 @@
       "category": "Racing",
       "embedUrl": "https://html5.gamemonetize.co/xk1nqd29lfgovjgpt417nfaonvul8fi2/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "car-arctic",
@@ -396,7 +575,19 @@
       "category": "Racing",
       "embedUrl": "https://html5.gamemonetize.co/tjfsfsiwef7r77fwey3g68cujt80yg6l/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12",
+      "qaNote": "Smoke pass on desktop/mobile; visual progression confirmed in targeted mobile retest."
     },
     {
       "id": "mad-cars",
@@ -404,7 +595,18 @@
       "category": "Racing",
       "embedUrl": "https://html5.gamemonetize.co/jw0nujwmxmzfhvdfopkq6hfeurkkxy5r/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "car-out",
@@ -412,7 +614,19 @@
       "category": "Puzzle",
       "embedUrl": "https://html5.gamemonetize.co/z09m6jk5itmxc23saedn5da7fxkemubv/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12",
+      "qaNote": "Smoke pass on desktop/mobile. Initial desktop audio fetch warnings were transient; clean retest rendered and visual activity was confirmed."
     },
     {
       "id": "car-traffic",
@@ -420,7 +634,19 @@
       "category": "Racing",
       "embedUrl": "https://html5.gamemonetize.co/0qvb855964kkew909me31p69it98c0k2/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12",
+      "qaNote": "Smoke pass on desktop/mobile; loader progressed to 99% and visual activity was confirmed in targeted mobile retest."
     },
     {
       "id": "car-parking-driving",
@@ -1172,9 +1398,11 @@
       "qaStatus": "source_verified"
     }
   ],
-  "smokeTested": 20,
-  "smokeTestedDesktop": 20,
-  "smokeTestedMobile": 20,
+  "smokeTested": 38,
+  "smokeTestedDesktop": 38,
+  "smokeTestedMobile": 38,
   "smokeTestDate": "2026-09-12",
-  "smokeTestDefinition": "Live Vercel smoke test: game launch, iframe render, basic pointer/keyboard input, visual activity where needed, and close/return flow. This is not the same as final level-completion gameplay QA."
+  "smokeTestDefinition": "Live Vercel smoke test: game launch, iframe render, basic pointer/keyboard input, visual activity where needed, and close/return flow. This is not the same as final level-completion gameplay QA.",
+  "smokeNeedsManual": 2,
+  "smokeReviewed": 40
 }
