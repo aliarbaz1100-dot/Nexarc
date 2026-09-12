@@ -1,6 +1,6 @@
 (function(){
   'use strict';
-  var BUILD='20260912-20664premium7';
+  var BUILD='20260912-20664premium8';
   var allGames=[];
   var active=null;
   var heroIndex=0;
