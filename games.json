@@ -35,7 +35,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 4,
+        "queuePosition": 31
       }
     },
     {
@@ -69,7 +71,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 1,
+        "queuePosition": 1
       }
     },
     {
@@ -102,7 +106,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 4,
+        "queuePosition": 32
       }
     },
     {
@@ -135,7 +141,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 4,
+        "queuePosition": 33
       }
     },
     {
@@ -169,7 +177,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 1,
+        "queuePosition": 2
       }
     },
     {
@@ -202,7 +212,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 4,
+        "queuePosition": 34
       }
     },
     {
@@ -236,7 +248,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 4,
+        "queuePosition": 35
       }
     },
     {
@@ -269,7 +283,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 4,
+        "queuePosition": 36
       }
     },
     {
@@ -302,7 +318,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 4,
+        "queuePosition": 37
       }
     },
     {
@@ -335,7 +353,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 4,
+        "queuePosition": 38
       }
     },
     {
@@ -368,7 +388,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 4,
+        "queuePosition": 39
       }
     },
     {
@@ -401,7 +423,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 4,
+        "queuePosition": 40
       }
     },
     {
@@ -435,7 +459,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 1,
+        "queuePosition": 3
       }
     },
     {
@@ -468,7 +494,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 5,
+        "queuePosition": 41
       }
     },
     {
@@ -502,7 +530,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 1,
+        "queuePosition": 4
       }
     },
     {
@@ -535,7 +565,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 5,
+        "queuePosition": 42
       }
     },
     {
@@ -569,7 +601,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 1,
+        "queuePosition": 5
       }
     },
     {
@@ -602,7 +636,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 5,
+        "queuePosition": 43
       }
     },
     {
@@ -635,7 +671,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 5,
+        "queuePosition": 44
       }
     },
     {
@@ -668,7 +706,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 5,
+        "queuePosition": 45
       }
     },
     {
@@ -702,7 +742,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 1,
+        "queuePosition": 6
       }
     },
     {
@@ -736,7 +778,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 1,
+        "queuePosition": 7
       }
     },
     {
@@ -769,7 +813,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 5,
+        "queuePosition": 46
       }
     },
     {
@@ -802,7 +848,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 5,
+        "queuePosition": 47
       }
     },
     {
@@ -835,7 +883,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 5,
+        "queuePosition": 48
       }
     },
     {
@@ -868,7 +918,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 5,
+        "queuePosition": 49
       }
     },
     {
@@ -901,7 +953,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 5,
+        "queuePosition": 50
       }
     },
     {
@@ -934,7 +988,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 6,
+        "queuePosition": 51
       }
     },
     {
@@ -967,7 +1023,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 6,
+        "queuePosition": 52
       }
     },
     {
@@ -1000,7 +1058,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 6,
+        "queuePosition": 53
       }
     },
     {
@@ -1034,7 +1094,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 6,
+        "queuePosition": 54
       }
     },
     {
@@ -1067,7 +1129,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 6,
+        "queuePosition": 55
       }
     },
     {
@@ -1101,7 +1165,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 1,
+        "queuePosition": 8
       }
     },
     {
@@ -1135,7 +1201,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 1,
+        "queuePosition": 9
       }
     },
     {
@@ -1168,7 +1236,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 6,
+        "queuePosition": 56
       }
     },
     {
@@ -1201,7 +1271,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 6,
+        "queuePosition": 57
       }
     },
     {
@@ -1234,7 +1306,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 6,
+        "queuePosition": 58
       }
     },
     {
@@ -1268,7 +1342,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 1,
+        "queuePosition": 10
       }
     },
     {
@@ -1302,7 +1378,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 2,
+        "queuePosition": 11
       }
     },
     {
@@ -1336,7 +1414,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 6,
+        "queuePosition": 59
       }
     },
     {
@@ -1369,7 +1449,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 6,
+        "queuePosition": 60
       }
     },
     {
@@ -1402,7 +1484,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 7,
+        "queuePosition": 61
       }
     },
     {
@@ -1435,7 +1519,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 7,
+        "queuePosition": 62
       }
     },
     {
@@ -1468,7 +1554,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 7,
+        "queuePosition": 63
       }
     },
     {
@@ -1502,7 +1590,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 2,
+        "queuePosition": 12
       }
     },
     {
@@ -1535,7 +1625,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 7,
+        "queuePosition": 64
       }
     },
     {
@@ -1568,7 +1660,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 7,
+        "queuePosition": 65
       }
     },
     {
@@ -1601,7 +1695,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 7,
+        "queuePosition": 66
       }
     },
     {
@@ -1634,7 +1730,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 7,
+        "queuePosition": 67
       }
     },
     {
@@ -1667,7 +1765,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 7,
+        "queuePosition": 68
       }
     },
     {
@@ -1700,7 +1800,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 7,
+        "queuePosition": 69
       }
     },
     {
@@ -1733,7 +1835,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 7,
+        "queuePosition": 70
       }
     },
     {
@@ -1766,7 +1870,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 8,
+        "queuePosition": 71
       }
     },
     {
@@ -1800,7 +1906,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 8,
+        "queuePosition": 72
       }
     },
     {
@@ -1834,7 +1942,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 2,
+        "queuePosition": 13
       }
     },
     {
@@ -1867,7 +1977,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 8,
+        "queuePosition": 73
       }
     },
     {
@@ -1901,7 +2013,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 2,
+        "queuePosition": 14
       }
     },
     {
@@ -1935,7 +2049,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 8,
+        "queuePosition": 74
       }
     },
     {
@@ -1969,7 +2085,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 8,
+        "queuePosition": 75
       }
     },
     {
@@ -2002,7 +2120,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 8,
+        "queuePosition": 76
       }
     },
     {
@@ -2036,7 +2156,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 8,
+        "queuePosition": 77
       }
     },
     {
@@ -2070,7 +2192,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 2,
+        "queuePosition": 15
       }
     },
     {
@@ -2103,7 +2227,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 8,
+        "queuePosition": 78
       }
     },
     {
@@ -2136,7 +2262,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 8,
+        "queuePosition": 79
       }
     },
     {
@@ -2170,7 +2298,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 2,
+        "queuePosition": 16
       }
     },
     {
@@ -2203,7 +2333,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 8,
+        "queuePosition": 80
       }
     },
     {
@@ -2236,7 +2368,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 9,
+        "queuePosition": 81
       }
     },
     {
@@ -2270,7 +2404,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 2,
+        "queuePosition": 17
       }
     },
     {
@@ -2303,7 +2439,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 9,
+        "queuePosition": 82
       }
     },
     {
@@ -2337,7 +2475,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 9,
+        "queuePosition": 83
       }
     },
     {
@@ -2371,7 +2511,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 2,
+        "queuePosition": 18
       }
     },
     {
@@ -2404,7 +2546,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 9,
+        "queuePosition": 84
       }
     },
     {
@@ -2437,7 +2581,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 9,
+        "queuePosition": 85
       }
     },
     {
@@ -2471,7 +2617,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 2,
+        "queuePosition": 19
       }
     },
     {
@@ -2504,7 +2652,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 9,
+        "queuePosition": 86
       }
     },
     {
@@ -2537,7 +2687,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 9,
+        "queuePosition": 87
       }
     },
     {
@@ -2571,7 +2723,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 2,
+        "queuePosition": 20
       }
     },
     {
@@ -2604,7 +2758,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 9,
+        "queuePosition": 88
       }
     },
     {
@@ -2638,7 +2794,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 3,
+        "queuePosition": 21
       }
     },
     {
@@ -2671,7 +2829,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 9,
+        "queuePosition": 89
       }
     },
     {
@@ -2705,7 +2865,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 9,
+        "queuePosition": 90
       }
     },
     {
@@ -2739,7 +2901,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 3,
+        "queuePosition": 22
       }
     },
     {
@@ -2772,7 +2936,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 10,
+        "queuePosition": 91
       }
     },
     {
@@ -2805,7 +2971,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 10,
+        "queuePosition": 92
       }
     },
     {
@@ -2838,7 +3006,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 10,
+        "queuePosition": 93
       }
     },
     {
@@ -2871,7 +3041,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 10,
+        "queuePosition": 94
       }
     },
     {
@@ -2904,7 +3076,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 10,
+        "queuePosition": 95
       }
     },
     {
@@ -2937,7 +3111,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 10,
+        "queuePosition": 96
       }
     },
     {
@@ -2970,7 +3146,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 10,
+        "queuePosition": 97
       }
     },
     {
@@ -3004,7 +3182,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 3,
+        "queuePosition": 23
       }
     },
     {
@@ -3037,7 +3217,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 10,
+        "queuePosition": 98
       }
     },
     {
@@ -3070,7 +3252,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 10,
+        "queuePosition": 99
       }
     },
     {
@@ -3104,7 +3288,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 3,
+        "queuePosition": 24
       }
     },
     {
@@ -3137,7 +3323,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 10,
+        "queuePosition": 100
       }
     },
     {
@@ -3170,7 +3358,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 11,
+        "queuePosition": 101
       }
     },
     {
@@ -3203,7 +3393,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 11,
+        "queuePosition": 102
       }
     },
     {
@@ -3237,7 +3429,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 3,
+        "queuePosition": 25
       }
     },
     {
@@ -3271,7 +3465,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 3,
+        "queuePosition": 26
       }
     },
     {
@@ -3304,7 +3500,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 11,
+        "queuePosition": 103
       }
     },
     {
@@ -3337,7 +3535,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 11,
+        "queuePosition": 104
       }
     },
     {
@@ -3370,7 +3570,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 11,
+        "queuePosition": 105
       }
     },
     {
@@ -3404,7 +3606,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 3,
+        "queuePosition": 27
       }
     },
     {
@@ -3438,7 +3642,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 3,
+        "queuePosition": 28
       }
     },
     {
@@ -3471,7 +3677,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 11,
+        "queuePosition": 106
       }
     },
     {
@@ -3505,7 +3713,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 3,
+        "queuePosition": 29
       }
     },
     {
@@ -3538,7 +3748,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 11,
+        "queuePosition": 107
       }
     },
     {
@@ -3571,7 +3783,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 11,
+        "queuePosition": 108
       }
     },
     {
@@ -3605,7 +3819,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 11,
+        "queuePosition": 109
       }
     },
     {
@@ -3639,7 +3855,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 11,
+        "queuePosition": 110
       }
     },
     {
@@ -3672,7 +3890,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 12,
+        "queuePosition": 111
       }
     },
     {
@@ -3705,7 +3925,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 12,
+        "queuePosition": 112
       }
     },
     {
@@ -3738,7 +3960,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 12,
+        "queuePosition": 113
       }
     },
     {
@@ -3771,7 +3995,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 12,
+        "queuePosition": 114
       }
     },
     {
@@ -3805,7 +4031,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 12,
+        "queuePosition": 115
       }
     },
     {
@@ -3838,7 +4066,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 12,
+        "queuePosition": 116
       }
     },
     {
@@ -3871,7 +4101,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 12,
+        "queuePosition": 117
       }
     },
     {
@@ -3905,7 +4137,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 3,
+        "queuePosition": 30
       }
     },
     {
@@ -3938,7 +4172,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 12,
+        "queuePosition": 118
       }
     },
     {
@@ -3972,7 +4208,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 12,
+        "queuePosition": 119
       }
     },
     {
@@ -4005,7 +4243,9 @@
           "fullscreen_exit": false,
           "close_return": false,
           "mobile_touch": false
-        }
+        },
+        "batch": 12,
+        "queuePosition": 120
       }
     }
   ],
@@ -4165,6 +4405,227 @@
       "triangle-run",
       "drive-pro-3d",
       "boat-race-deluxe"
+    ],
+    "batchSize": 10,
+    "totalBatches": 12,
+    "currentBatch": 1,
+    "batchPlan": [
+      {
+        "batch": 1,
+        "ids": [
+          "zombie-defense-last-stand",
+          "stock-car",
+          "survivalist",
+          "rocket-clash",
+          "stop-zombies",
+          "cycle-racing",
+          "neon-bike",
+          "car-out",
+          "car-traffic",
+          "combat-pixel"
+        ],
+        "priority": "high",
+        "passed": 0,
+        "pending": 10
+      },
+      {
+        "batch": 2,
+        "ids": [
+          "zombie-base",
+          "water-race",
+          "home-car-builder",
+          "football-score",
+          "world-soccer-championship",
+          "football-manager-simulator",
+          "kick-off",
+          "flower-defense-zombie",
+          "join-runner-clash",
+          "html5-parking-car"
+        ],
+        "priority": "high",
+        "passed": 0,
+        "pending": 10
+      },
+      {
+        "batch": 3,
+        "ids": [
+          "agile-driver",
+          "ok-parking",
+          "extreme-gear-shift",
+          "taxi-rush",
+          "magic-battle-online",
+          "mob-runner-master",
+          "puzzle-pieces",
+          "new-mahjong-2026",
+          "running-man-2026",
+          "race-through-traffic"
+        ],
+        "priority": "high",
+        "passed": 0,
+        "pending": 10
+      },
+      {
+        "batch": 4,
+        "ids": [
+          "ninja-run",
+          "moto-x3m",
+          "turbo-horizon",
+          "offroad-moto",
+          "fiva-26-soccer",
+          "football-flick",
+          "football-heads",
+          "soccer-hero",
+          "commando",
+          "dead-paradise"
+        ],
+        "priority": "standard",
+        "passed": 0,
+        "pending": 10
+      },
+      {
+        "batch": 5,
+        "ids": [
+          "stickman-archer",
+          "zombie-survival",
+          "tower-defense-zombies",
+          "sliding-tile",
+          "perfect-match",
+          "crash-racing",
+          "formula-stunt",
+          "car-jump",
+          "traffic-run",
+          "vehicle-master"
+        ],
+        "priority": "standard",
+        "passed": 0,
+        "pending": 10
+      },
+      {
+        "batch": 6,
+        "ids": [
+          "moto-winter",
+          "moto-pool",
+          "car-driving-master",
+          "car-arctic",
+          "mad-cars",
+          "car-parking-driving",
+          "doodle-car",
+          "tank-force",
+          "garden-defense",
+          "connect-game"
+        ],
+        "priority": "standard",
+        "passed": 0,
+        "pending": 10
+      },
+      {
+        "batch": 7,
+        "ids": [
+          "hurdles",
+          "faster-car",
+          "snow-ball-race",
+          "package-deliver",
+          "vossk",
+          "shoot-down",
+          "wiggly-worm",
+          "weight-puzzle",
+          "serpento",
+          "feather-dash"
+        ],
+        "priority": "standard",
+        "passed": 0,
+        "pending": 10
+      },
+      {
+        "batch": 8,
+        "ids": [
+          "car-modified",
+          "death-car-racing",
+          "car-truck-parking",
+          "derby-war",
+          "rocketcar-cup",
+          "soccer-basketball",
+          "football-manager-26",
+          "flag-football",
+          "dream-football",
+          "challenge-football"
+        ],
+        "priority": "standard",
+        "passed": 0,
+        "pending": 10
+      },
+      {
+        "batch": 9,
+        "ids": [
+          "football-crash-2",
+          "footyzag",
+          "home-defense-zombie",
+          "pixel-zombie",
+          "zombie-survivor",
+          "join-clash",
+          "happy-moving-car",
+          "circle-drive",
+          "turn-left",
+          "car-sea-adventure"
+        ],
+        "priority": "standard",
+        "passed": 0,
+        "pending": 10
+      },
+      {
+        "batch": 10,
+        "ids": [
+          "parking-jam",
+          "billiard-hustlers",
+          "wizard-io",
+          "highway-car-racer",
+          "highway-car-racing",
+          "highway-racers",
+          "offroad-monster-truck",
+          "euro-truck-parking",
+          "american-truck-driver",
+          "mud-monster-truck"
+        ],
+        "priority": "standard",
+        "passed": 0,
+        "pending": 10
+      },
+      {
+        "batch": 11,
+        "ids": [
+          "octopus-run",
+          "urban-farm-simulator",
+          "sport-sort-puzzle",
+          "toilet-rush-race",
+          "find-the-set",
+          "fun-memory",
+          "zombie-bros-frozen",
+          "worm-slither",
+          "piecealive",
+          "unravel"
+        ],
+        "priority": "standard",
+        "passed": 0,
+        "pending": 10
+      },
+      {
+        "batch": 12,
+        "ids": [
+          "guess-which-game",
+          "block-puzzle-brain-blast",
+          "primezy",
+          "grid3",
+          "find-n-match",
+          "bridge-rush",
+          "box-rush",
+          "triangle-run",
+          "drive-pro-3d",
+          "boat-race-deluxe"
+        ],
+        "priority": "standard",
+        "passed": 0,
+        "pending": 10
+      }
     ]
   }
 }
