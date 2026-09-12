@@ -1016,8 +1016,19 @@
       "category": "Racing",
       "embedUrl": "https://html5.gamemonetize.co/3kw55mfc4rr4p75dfme64kwn5tzd0nt4/",
       "source": "GameMonetize",
-      "qaStatus": "replacement_pending_smoke",
-      "qaNote": "Replaced Mad Car because its Unity build explicitly reported no mobile support. Replacement candidate passed direct desktop/mobile render checks before catalog insertion."
+      "qaStatus": "smoke_passed",
+      "qaNote": "Replacement for mobile-incompatible Mad Car. Verified live inside NEXARC on desktop and mobile; canvas rendered and close/return worked normally.",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "home-car-builder",
@@ -1064,7 +1075,7 @@
       "category": "Sports",
       "embedUrl": "https://html5.gamemonetize.co/qk8pg1s97laofnwug5cv1fcgl7tmfqfv/",
       "source": "GameMonetize",
-      "qaStatus": "smoke_needs_manual",
+      "qaStatus": "smoke_passed",
       "qaPlatforms": [
         "desktop",
         "mobile"
@@ -1072,11 +1083,11 @@
       "qaChecks": [
         "live_load",
         "iframe_render",
-        "basic_input_attempted",
-        "close_return_review"
+        "basic_input",
+        "close_return"
       ],
       "qaDate": "2026-09-12",
-      "qaNote": "Needs manual mobile gameplay review. Game loads and renders, but after basic input the iframe entered fullscreen and intercepted the NEXARC close control; close/return required a forced automation exit."
+      "qaNote": "Previously held because embedded fullscreen could intercept NEXARC controls. Premium7 now keeps fullscreen under host-player control; desktop/mobile retest closed normally. A non-fatal showBanner console warning remains."
     },
     {
       "id": "derby-war",
@@ -2298,12 +2309,12 @@
       "qaDate": "2026-09-12"
     }
   ],
-  "smokeTested": 110,
-  "smokeTestedDesktop": 110,
-  "smokeTestedMobile": 110,
+  "smokeTested": 112,
+  "smokeTestedDesktop": 112,
+  "smokeTestedMobile": 112,
   "smokeTestDate": "2026-09-12",
   "smokeTestDefinition": "Live Vercel smoke test: game launch, iframe render, basic pointer/keyboard input, visual activity where needed, and close/return flow. This is not the same as final level-completion gameplay QA.",
-  "smokeNeedsManual": 9,
-  "smokeReviewed": 119,
-  "smokeUnreviewed": 1
+  "smokeNeedsManual": 8,
+  "smokeReviewed": 120,
+  "smokeUnreviewed": 0
 }
