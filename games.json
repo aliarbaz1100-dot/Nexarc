@@ -1485,7 +1485,18 @@
       "category": "Racing",
       "embedUrl": "https://html5.gamemonetize.co/7shqeyimxyx6qzdhd5y5qudrsnf3a7gh/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "agile-driver",
@@ -1493,7 +1504,19 @@
       "category": "Racing",
       "embedUrl": "https://html5.gamemonetize.co/rhzg2luy21b60r6t1o4h2l5bmvetabx1/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12",
+      "qaNote": "Smoke pass on desktop/mobile. A transient mobile showBanner error appeared on first run but was not reproduced in fresh targeted retest; visual progression confirmed."
     },
     {
       "id": "turn-left",
@@ -1501,7 +1524,18 @@
       "category": "Racing",
       "embedUrl": "https://html5.gamemonetize.co/2s5gxsh74opxnk6hfwnly5iczozhyvi1/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "car-sea-adventure",
@@ -1509,7 +1543,19 @@
       "category": "Racing",
       "embedUrl": "https://html5.gamemonetize.co/eio98g4rp8ec0nj0fpi2n78hhrbun3l1/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12",
+      "qaNote": "Smoke pass on desktop/mobile; targeted mobile retest confirmed loading/ad progression."
     },
     {
       "id": "ok-parking",
@@ -1517,7 +1563,19 @@
       "category": "Racing",
       "embedUrl": "https://html5.gamemonetize.co/ksaude6x3qto828z43hhuq1pi5ybtysd/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12",
+      "qaNote": "Smoke pass on desktop/mobile; targeted mobile retest advanced loader to 56% and showed rotate-device UI."
     },
     {
       "id": "parking-jam",
@@ -1525,7 +1583,18 @@
       "category": "Racing",
       "embedUrl": "https://html5.gamemonetize.co/jjn7j2vq5j59e0zum1y0n2zsi6qhszo8/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "billiard-hustlers",
@@ -1533,7 +1602,18 @@
       "category": "Sports",
       "embedUrl": "https://html5.gamemonetize.co/onu04le2kp3b3uqkjsrjoce329elcrm1/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "wizard-io",
@@ -1559,7 +1639,18 @@
       "category": "Racing",
       "embedUrl": "https://html5.gamemonetize.co/lkyqug7dh8worsk3z1hakch6nzkjlsf5/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "highway-car-racing",
@@ -1567,7 +1658,18 @@
       "category": "Racing",
       "embedUrl": "https://html5.gamemonetize.co/qbqv80h4e5r9avum225uy3hxqdxu5793/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "highway-racers",
@@ -1575,7 +1677,18 @@
       "category": "Racing",
       "embedUrl": "https://html5.gamemonetize.co/lofxtdyr7cixgg646un2yth7gnmywgtj/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "offroad-monster-truck",
@@ -1583,7 +1696,18 @@
       "category": "Racing",
       "embedUrl": "https://html5.gamemonetize.co/3tm2jblzh8w7cqusrcdvlbt193glxzd6/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "extreme-gear-shift",
@@ -1591,7 +1715,19 @@
       "category": "Racing",
       "embedUrl": "https://html5.gamemonetize.co/jqxmluxclvkhqcgno9v9re895mjn3h1l/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12",
+      "qaNote": "Smoke pass on desktop/mobile; targeted mobile retest advanced loader to 90%."
     },
     {
       "id": "euro-truck-parking",
@@ -1599,7 +1735,18 @@
       "category": "Racing",
       "embedUrl": "https://html5.gamemonetize.co/k133cm0rkh73azhza39qsqkfvvdy58ta/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "american-truck-driver",
@@ -1607,7 +1754,18 @@
       "category": "Racing",
       "embedUrl": "https://html5.gamemonetize.co/f4zr9lce7hh63a2sf7qy7hg37ai0u7x5/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "taxi-rush",
@@ -1615,7 +1773,19 @@
       "category": "Racing",
       "embedUrl": "https://html5.gamemonetize.co/5jzzwvgh5ljmtvgawdsjtio83tpqry6f/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12",
+      "qaNote": "Smoke pass on desktop/mobile; targeted mobile retest advanced loader to 90%."
     },
     {
       "id": "mud-monster-truck",
@@ -1623,7 +1793,18 @@
       "category": "Racing",
       "embedUrl": "https://html5.gamemonetize.co/ivsud7ecw97fwv94gcs1ff9sty869y0y/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "octopus-run",
@@ -1649,7 +1830,18 @@
       "category": "Adventure",
       "embedUrl": "https://html5.gamemonetize.co/dn1wiq5zo575nsrw9kilek1h8skj2c83/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "magic-battle-online",
@@ -1676,7 +1868,19 @@
       "category": "Puzzle",
       "embedUrl": "https://html5.gamemonetize.co/wtxa0pc697eocve1685m71y78xje0ecn/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12",
+      "qaNote": "Smoke pass on desktop/mobile. A transient WebAssembly streaming warning fell back to ArrayBuffer loading on first mobile run; clean targeted retest rendered normally."
     },
     {
       "id": "sport-sort-puzzle",
@@ -1684,7 +1888,18 @@
       "category": "Puzzle",
       "embedUrl": "https://html5.gamemonetize.co/3krfv60cepeo48qbi5r5ngeavynpztlk/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "toilet-rush-race",
@@ -1692,7 +1907,18 @@
       "category": "Puzzle",
       "embedUrl": "https://html5.gamemonetize.co/s6ti6t5djyxxs4gjnd38tvyt5iprmcuo/",
       "source": "GameMonetize",
-      "qaStatus": "source_verified"
+      "qaStatus": "smoke_passed",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "find-the-set",
@@ -1855,11 +2081,11 @@
       "qaStatus": "source_verified"
     }
   ],
-  "smokeTested": 73,
-  "smokeTestedDesktop": 73,
-  "smokeTestedMobile": 73,
+  "smokeTested": 93,
+  "smokeTestedDesktop": 93,
+  "smokeTestedMobile": 93,
   "smokeTestDate": "2026-09-12",
   "smokeTestDefinition": "Live Vercel smoke test: game launch, iframe render, basic pointer/keyboard input, visual activity where needed, and close/return flow. This is not the same as final level-completion gameplay QA.",
   "smokeNeedsManual": 7,
-  "smokeReviewed": 80
+  "smokeReviewed": 100
 }
