@@ -50,7 +50,7 @@
         const g=byId[id]||{}, d=g.deepQa||{}, c=d.checks||{};
         const req=required;
         const done=req.filter(k=>c[k]===true).length;
-        return '<div class="gameRow"><div class="pos">#'+(d.queuePosition||'—')+'</div><div><strong>'+(g.title||id)+'</strong><div class="checks">'+done+'/7 required checks · '+(g.category||'')+'</div></div><div class="status '+(isPassed(g)?'passed':'pending')+'">'+(isPassed(g)?'passed':'pending')+'</div></div>';
+        const fail=d.failure||{}; const failTxt=fail.code?(' · FAIL: '+fail.code+(fail.platform?' / '+fail.platform:'')):' '; return '<div class="gameRow"><div class="pos">#'+(d.queuePosition||'—')+'</div><div><strong>'+(g.title||id)+'</strong><div class="checks">'+done+'/7 required checks · '+(g.category||'')+failTxt+'</div></div><div class="status '+(isPassed(g)?'passed':'pending')+'">'+(isPassed(g)?'passed':'pending')+'</div></div>';
       }).join('');
       return '<section class="batch"><div class="batchHead"><h2>Batch '+b.batch+'</h2><span class="badge">'+(b.priority==='high'?'HIGH PRIORITY':'STANDARD')+'</span></div>'+rows+'</section>';
     }).join('');
