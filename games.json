@@ -3,7 +3,7 @@
   "target": 120,
   "fullyTested": 0,
   "qaDefinition": "final_pass only after load, controls, gameplay and restart/retry verification",
-  "catalogStatus": "120 source-verified candidates; final flagged games replaced with clean mobile-ready candidates and live smoke recheck in progress",
+  "catalogStatus": "120 source-verified candidates; final two replacement candidates awaiting live NEXARC smoke confirmation",
   "games": [
     {
       "id": "ninja-run",
@@ -24,13 +24,13 @@
       ]
     },
     {
-      "id": "woms-world-master-survivors",
-      "title": "WOMS World of Master Survivors",
+      "id": "zombie-defense-last-stand",
+      "title": "Zombie Defense: Last Stand",
       "category": "Zombie",
-      "embedUrl": "https://html5.gamemonetize.co/ucrwra0xix0cevrxifilv1by6wps90xf/",
+      "embedUrl": "https://html5.gamemonetize.co/zjyt0g4rnl8v44qxt0gw4umcyzyqoxjv/",
       "source": "GameMonetize",
       "qaStatus": "replacement_pending_smoke",
-      "qaNote": "Replaced Rise Zombies after repeated loading/container errors. Replacement passed direct desktop/mobile render checks."
+      "qaNote": "Second replacement for Rise Zombies. WOMS rendered but its mobile iframe interfered with host close interaction. Zombie Defense: Last Stand passed direct desktop/mobile render checks."
     },
     {
       "id": "moto-x3m",
@@ -111,8 +111,19 @@
       "category": "Sports",
       "embedUrl": "https://html5.gamemonetize.co/c9ymaapep3zsqe34exm9z3wa3vrhd1ey/",
       "source": "GameMonetize",
-      "qaStatus": "replacement_pending_smoke",
-      "qaNote": "Replaced Football Champs because gameplay progression could not be confirmed. Replacement passed direct desktop/mobile render checks."
+      "qaStatus": "smoke_passed",
+      "qaNote": "Replaced Football Champs because gameplay progression could not be confirmed. Replacement passed direct desktop/mobile render checks. Verified live inside NEXARC premium8 on desktop and mobile; player close/return worked normally.",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "football-flick",
@@ -708,8 +719,19 @@
       "category": "Zombie",
       "embedUrl": "https://html5.gamemonetize.co/8aboa18yi7mrhakas1xzjjamrg5vjqhh/",
       "source": "GameMonetize",
-      "qaStatus": "replacement_pending_smoke",
-      "qaNote": "Replaced Pixel Zombies after repeated SDK/network errors. Replacement passed direct desktop/mobile render checks."
+      "qaStatus": "smoke_passed",
+      "qaNote": "Replaced Pixel Zombies after repeated SDK/network errors. Replacement passed direct desktop/mobile render checks. Verified live inside NEXARC premium8 on desktop and mobile; player close/return worked normally.",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "garden-defense",
@@ -1136,13 +1158,13 @@
       "qaNote": "Smoke pass on desktop/mobile; targeted retest reached manager profile UI after initial loading."
     },
     {
-      "id": "coin-flick-soccer",
-      "title": "Coin Flick Soccer",
+      "id": "world-soccer-championship",
+      "title": "World Soccer Game Championship",
       "category": "Sports",
-      "embedUrl": "https://html5.gamemonetize.co/k4orfszy5grobv16zcyfg6fie450ivi2/",
+      "embedUrl": "https://html5.gamemonetize.co/tcmwqk752btbdxuthwtk5ilatulu5ioj/",
       "source": "GameMonetize",
       "qaStatus": "replacement_pending_smoke",
-      "qaNote": "Replaced Rolling Football after repeated container/loading errors. Replacement passed direct desktop/mobile render checks."
+      "qaNote": "Second replacement for Rolling Football. Coin Flick Soccer rendered but repeatedly interfered with host close interaction. World Soccer Game Championship passed direct desktop/mobile render checks."
     },
     {
       "id": "flag-football",
@@ -1188,8 +1210,19 @@
       "category": "Sports",
       "embedUrl": "https://html5.gamemonetize.co/tf0usn5yp3zl9e70xl8qhspky9k8qvx5/",
       "source": "GameMonetize",
-      "qaStatus": "replacement_pending_smoke",
-      "qaNote": "Replaced Foot Starts after document.domain/offlineClient errors. Replacement passed direct desktop/mobile render checks."
+      "qaStatus": "smoke_passed",
+      "qaNote": "Replaced Foot Starts after document.domain/offlineClient errors. Replacement passed direct desktop/mobile render checks. Verified live inside NEXARC premium8 on desktop and mobile; player close/return worked normally.",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "challenge-football",
@@ -1890,8 +1923,19 @@
       "category": "Puzzle",
       "embedUrl": "https://html5.gamemonetize.co/xgn9yb9unobxe0wia9u4yu58e4vuapi8/",
       "source": "GameMonetize",
-      "qaStatus": "replacement_pending_smoke",
-      "qaNote": "Replaced Find gems because of a repeated missing audio asset and decode warnings. Replacement passed direct desktop/mobile render checks."
+      "qaStatus": "smoke_passed",
+      "qaNote": "Replaced Find gems because of a repeated missing audio asset and decode warnings. Replacement passed direct desktop/mobile render checks. Verified live inside NEXARC premium8 on desktop and mobile; player close/return worked normally.",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "new-mahjong-2026",
@@ -1899,8 +1943,19 @@
       "category": "Puzzle",
       "embedUrl": "https://html5.gamemonetize.co/dc922e213zbyl32xnapwgfrgxi3h9n14/",
       "source": "GameMonetize",
-      "qaStatus": "replacement_pending_smoke",
-      "qaNote": "Replaced Connectors because multiple image assets repeatedly returned 404. Replacement passed direct desktop/mobile render checks."
+      "qaStatus": "smoke_passed",
+      "qaNote": "Replaced Connectors because multiple image assets repeatedly returned 404. Replacement passed direct desktop/mobile render checks. Verified live inside NEXARC premium8 on desktop and mobile; player close/return worked normally.",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "fun-memory",
@@ -1927,8 +1982,19 @@
       "category": "Arcade",
       "embedUrl": "https://html5.gamemonetize.co/j6wx8bdeotxayx4e21cpt54qy7o4w9h9/",
       "source": "GameMonetize",
-      "qaStatus": "replacement_pending_smoke",
-      "qaNote": "Replaced Jelly runner platform because index.css repeatedly returned 404. Replacement passed direct desktop/mobile render checks."
+      "qaStatus": "smoke_passed",
+      "qaNote": "Replaced Jelly runner platform because index.css repeatedly returned 404. Replacement passed direct desktop/mobile render checks. Verified live inside NEXARC premium8 on desktop and mobile; player close/return worked normally.",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "live_load",
+        "iframe_render",
+        "basic_input",
+        "close_return"
+      ],
+      "qaDate": "2026-09-12"
     },
     {
       "id": "zombie-bros-frozen",
@@ -2221,12 +2287,12 @@
       "qaDate": "2026-09-12"
     }
   ],
-  "smokeTested": 112,
+  "smokeTested": 118,
   "smokeTestedDesktop": 112,
   "smokeTestedMobile": 112,
   "smokeTestDate": "2026-09-12",
   "smokeTestDefinition": "Live Vercel smoke test: game launch, iframe render, basic pointer/keyboard input, visual activity where needed, and close/return flow. This is not the same as final level-completion gameplay QA.",
   "smokeNeedsManual": 0,
-  "smokeReviewed": 112,
-  "smokeUnreviewed": 8
+  "smokeReviewed": 118,
+  "smokeUnreviewed": 2
 }
