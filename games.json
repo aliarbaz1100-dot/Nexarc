@@ -8381,5 +8381,14 @@
       ],
       "repeatedBlockingFailureAction": "Flag replacementRequired=true after reproducible blocking failure on clean retest."
     }
+  },
+  "qaIntegrity": {
+    "date": "2026-09-12",
+    "status": "pass",
+    "issues": [],
+    "games": 120,
+    "queueEntries": 120,
+    "batchEntries": 120,
+    "derivedFullyTested": 0
   }
 }
