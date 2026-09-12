@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#e50914">
+  <meta name="robots" content="noindex,nofollow">
+  <title>NEXARC Deep QA Dashboard</title>
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="legal.css?v=20260912-deepqa1">
+  <style>
+    .qaTop{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:18px 0}
+    .qaStat{padding:16px;border:1px solid rgba(255,255,255,.12);border-radius:14px;background:rgba(255,255,255,.035)}
+    .qaStat b{display:block;font-size:26px;margin-top:6px}.qaStat span{opacity:.7;font-size:13px}
+    .batch{margin:16px 0;padding:16px;border:1px solid rgba(255,255,255,.12);border-radius:16px;background:rgba(255,255,255,.025)}
+    .batchHead{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:10px}
+    .badge{font-size:12px;padding:5px 9px;border-radius:999px;background:rgba(229,9,20,.18);border:1px solid rgba(229,9,20,.35)}
+    .gameRow{display:grid;grid-template-columns:44px 1fr auto;gap:10px;align-items:center;padding:10px 0;border-top:1px solid rgba(255,255,255,.07)}
+    .gameRow:first-of-type{border-top:0}.pos{opacity:.55}.status{font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+    .status.passed{color:#69e38a}.status.pending{color:#ffc857}.checks{font-size:12px;opacity:.62;margin-top:3px}
+    @media(max-width:720px){.qaTop{grid-template-columns:repeat(2,minmax(0,1fr))}.gameRow{grid-template-columns:34px 1fr}}
+  </style>
+</head>
+<body>
+  <main class="legalWrap">
+    <a class="back" href="/status.html">← Back to Status</a>
+    <section class="legalHero">
+      <span>INTERNAL QA</span>
+      <h1>Deep Gameplay QA</h1>
+      <p>10-game batches. A title counts as fully tested only after required gameplay/control checks are genuinely verified.</p>
+    </section>
+    <section id="summary" class="qaTop"></section>
+    <section id="batches"></section>
+  </main>
+  <script>
+  fetch('/games.json?qa=deep1').then(r=>r.json()).then(data=>{
+    const games=data.games||[], dq=data.deepQa||{}, byId=Object.fromEntries(games.map(g=>[g.id,g]));
+    const completed=games.filter(g=>g.deepQa&&g.deepQa.status==='passed').length;
+    const pending=games.length-completed;
+    document.getElementById('summary').innerHTML=
+      '<div class="qaStat"><span>Total games</span><b>'+games.length+'</b></div>'+
+      '<div class="qaStat"><span>Fully tested</span><b>'+completed+'</b></div>'+
+      '<div class="qaStat"><span>Pending</span><b>'+pending+'</b></div>'+
+      '<div class="qaStat"><span>High priority</span><b>'+(dq.highPriority||0)+'</b></div>';
+    const batches=dq.batchPlan||[];
+    document.getElementById('batches').innerHTML=batches.map(b=>{
+      const rows=(b.ids||[]).map(id=>{
+        const g=byId[id]||{}, d=g.deepQa||{}, c=d.checks||{};
+        const req=['start_game','gameplay_progression','primary_controls','retry_restart','fullscreen_exit','close_return','mobile_touch'];
+        const done=req.filter(k=>c[k]).length;
+        return '<div class="gameRow"><div class="pos">#'+(d.queuePosition||'—')+'</div><div><strong>'+(g.title||id)+'</strong><div class="checks">'+done+'/7 required checks · '+(g.category||'')+'</div></div><div class="status '+(d.status||'pending')+'">'+(d.status||'pending')+'</div></div>';
+      }).join('');
+      return '<section class="batch"><div class="batchHead"><h2>Batch '+b.batch+'</h2><span class="badge">'+(b.priority==='high'?'HIGH PRIORITY':'STANDARD')+'</span></div>'+rows+'</section>';
+    }).join('');
+  }).catch(()=>{document.getElementById('batches').innerHTML='<section class="legalCard"><p>QA data could not be loaded.</p></section>'});
+  </script>
+</body>
+</html>
