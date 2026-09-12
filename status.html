@@ -35,10 +35,17 @@
         <li><strong>Gameplay QA:</strong> Final level-completion/control-depth pass remains pending before custom domain launch.</li>
       </ul>
     </section>
+    <section class="legalCard" id="liveQaStatus">
+      <h2>Live QA gate</h2>
+      <p id="liveQaText">Loading current QA status…</p>
+    </section>
     <section class="legalCard">
       <h2>Domain gate</h2>
       <p>Custom domain should be connected only after the final gameplay checklist passes: game load, controls, retry, fullscreen, mobile layout and return-to-library flow.</p>
     </section>
   </main>
+  <script>
+  fetch("/games.json?status=live",{cache:"no-store"}).then(r=>r.json()).then(d=>{const total=(d.games||[]).length;const tested=Number(d.fullyTested||0);const pending=Math.max(0,total-tested);const batch=d.deepQa&&d.deepQa.currentBatch||1;const ready=!!(d.deepQa&&d.deepQa.launchGate&&d.deepQa.launchGate.ready);const el=document.getElementById("liveQaText");if(el)el.textContent=(ready?"LAUNCH READY":"DOMAIN HOLD")+" — "+tested+"/"+total+" fully tested, "+pending+" pending, current batch "+batch+"."}).catch(()=>{const el=document.getElementById("liveQaText");if(el)el.textContent="Current QA data could not be loaded.";});
+  </script>
 </body>
 </html>
