@@ -35,7 +35,9 @@
   <script>
   fetch('/games.json?qa=deep1').then(r=>r.json()).then(data=>{
     const games=data.games||[], dq=data.deepQa||{}, byId=Object.fromEntries(games.map(g=>[g.id,g]));
-    const completed=games.filter(g=>g.deepQa&&g.deepQa.status==='passed').length;
+    const required=(dq.requiredChecks||['start_game','gameplay_progression','primary_controls','retry_restart','fullscreen_exit','close_return','mobile_touch']);
+    const isPassed=g=>required.every(k=>g.deepQa&&g.deepQa.checks&&g.deepQa.checks[k]===true);
+    const completed=games.filter(isPassed).length;
     const pending=games.length-completed;
     document.getElementById('summary').innerHTML=
       '<div class="qaStat"><span>Total games</span><b>'+games.length+'</b></div>'+
@@ -46,9 +48,9 @@
     document.getElementById('batches').innerHTML=batches.map(b=>{
       const rows=(b.ids||[]).map(id=>{
         const g=byId[id]||{}, d=g.deepQa||{}, c=d.checks||{};
-        const req=['start_game','gameplay_progression','primary_controls','retry_restart','fullscreen_exit','close_return','mobile_touch'];
-        const done=req.filter(k=>c[k]).length;
-        return '<div class="gameRow"><div class="pos">#'+(d.queuePosition||'—')+'</div><div><strong>'+(g.title||id)+'</strong><div class="checks">'+done+'/7 required checks · '+(g.category||'')+'</div></div><div class="status '+(d.status||'pending')+'">'+(d.status||'pending')+'</div></div>';
+        const req=required;
+        const done=req.filter(k=>c[k]===true).length;
+        return '<div class="gameRow"><div class="pos">#'+(d.queuePosition||'—')+'</div><div><strong>'+(g.title||id)+'</strong><div class="checks">'+done+'/7 required checks · '+(g.category||'')+'</div></div><div class="status '+(isPassed(g)?'passed':'pending')+'">'+(isPassed(g)?'passed':'pending')+'</div></div>';
       }).join('');
       return '<section class="batch"><div class="batchHead"><h2>Batch '+b.batch+'</h2><span class="badge">'+(b.priority==='high'?'HIGH PRIORITY':'STANDARD')+'</span></div>'+rows+'</section>';
     }).join('');
