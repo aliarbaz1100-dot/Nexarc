@@ -1,10 +1,28 @@
 {
   "project": "NEXARC",
-  "target": 121,
+  "target": 122,
   "fullyTested": 0,
   "qaDefinition": "final_pass only after load, controls, gameplay and restart/retry verification",
-  "catalogStatus": "121 catalog entries: 120 embedded HTML5 games plus Metal Slug via a verified licensed Antstream Arcade browser launch. Deep gameplay/control QA remains separate before domain launch.",
+  "catalogStatus": "122 catalog entries: 120 legacy embedded casual games, Metal Slug via licensed provider, and Overdrive City as a self-hosted ad-free heavy game. Heavy-game migration is in progress.",
   "games": [
+    {
+      "id": "overdrive-city",
+      "title": "Overdrive City",
+      "category": "Open World",
+      "embedUrl": "/games/overdrive-city/index.html",
+      "source": "NEXARC Self-Hosted / appleweiping",
+      "hosted": true,
+      "tier": "heavy",
+      "adFree": true,
+      "featured": true,
+      "mobileReady": false,
+      "desktopReady": true,
+      "license": "MIT",
+      "thumbnail": "https://raw.githubusercontent.com/appleweiping/overdrive-city/main/docs/screenshots/night-chase.png",
+      "qaStatus": "integration_pending",
+      "qaDate": "2026-09-14",
+      "qaNote": "Self-hosted MIT-licensed open-world driving sandbox. No GameMonetize iframe or provider ads. Desktop-first; mobile controls are not yet supported by upstream."
+    },
     {
       "id": "ninja-run",
       "title": "Ninja on the Run",
