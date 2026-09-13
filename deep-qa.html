@@ -5,67 +5,37 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#e50914">
   <meta name="robots" content="noindex,nofollow">
-  <title>NEXARC Deep QA Dashboard</title>
+  <title>NEXARC Heavy Catalog QA</title>
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="legal.css?v=20260912-20664premium10">
+  <link rel="stylesheet" href="legal.css?v=20260914-heavy20">
   <style>
     .qaTop{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:18px 0}
-    .qaStat{padding:16px;border:1px solid rgba(255,255,255,.12);border-radius:14px;background:rgba(255,255,255,.035)}
-    .qaStat b{display:block;font-size:26px;margin-top:6px}.qaStat span{opacity:.7;font-size:13px}.launchGate{margin:14px 0;padding:14px 16px;border-radius:14px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.035);font-weight:700}.launchGate.ready{border-color:rgba(105,227,138,.45)}.launchGate.hold{border-color:rgba(255,200,87,.4)}.progressTrack{height:7px;border-radius:999px;background:rgba(255,255,255,.08);overflow:hidden;margin-top:8px}.progressTrack span{display:block;height:100%;background:currentColor;width:0}
-    .batch{margin:16px 0;padding:16px;border:1px solid rgba(255,255,255,.12);border-radius:16px;background:rgba(255,255,255,.025)}
-    .batchHead{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:10px}
-    .badge{font-size:12px;padding:5px 9px;border-radius:999px;background:rgba(229,9,20,.18);border:1px solid rgba(229,9,20,.35)}
-    .gameRow{display:grid;grid-template-columns:44px 1fr auto;gap:10px;align-items:center;padding:10px 0;border-top:1px solid rgba(255,255,255,.07)} .qaActions{display:flex;gap:7px;flex-wrap:wrap;margin-top:7px}.qaBtn{display:inline-flex;align-items:center;justify-content:center;padding:6px 9px;border-radius:9px;border:1px solid rgba(255,255,255,.14);text-decoration:none;font-size:11px;background:rgba(255,255,255,.05)}
-    .gameRow:first-of-type{border-top:0}.pos{opacity:.55}.status{font-size:12px;text-transform:uppercase;letter-spacing:.04em}
-    .status.passed{color:#69e38a}.status.pending{color:#ffc857}.checks{font-size:12px;opacity:.62;margin-top:3px}
-    @media(max-width:720px){.qaTop{grid-template-columns:repeat(2,minmax(0,1fr))}.gameRow{grid-template-columns:34px 1fr}}
+    .qaStat,.gameRow{padding:16px;border:1px solid rgba(255,255,255,.12);border-radius:14px;background:rgba(255,255,255,.035)}
+    .qaStat b{display:block;font-size:26px;margin-top:6px}.qaStat span,.meta{opacity:.72;font-size:13px}
+    .gameRow{margin:10px 0}.gameHead{display:flex;justify-content:space-between;gap:12px;align-items:center}.badge{font-size:11px;padding:5px 8px;border-radius:999px;border:1px solid rgba(105,227,138,.35)}
+    .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.actions a{padding:7px 10px;border-radius:9px;border:1px solid rgba(255,255,255,.14);text-decoration:none;font-size:12px}
+    @media(max-width:720px){.qaTop{grid-template-columns:repeat(2,minmax(0,1fr))}}
   </style>
 </head>
 <body>
-  <main class="legalWrap">
-    <a class="back" href="/status.html">← Back to Status</a>
-    <section class="legalHero">
-      <span>INTERNAL QA</span>
-      <h1>Deep Gameplay QA</h1>
-      <p>10-game batches. A title counts as fully tested only after required gameplay/control checks are genuinely verified.</p>
-    </section>
-    <section id="summary" class="qaTop"></section>
-    <section id="gate" class="launchGate hold">Launch gate calculating…</section>
-    <section id="integrity" class="launchGate">QA integrity calculating…</section>
-    <section id="batches"></section>
-  </main>
-  <script>
-  fetch('/games.json?qa=deep1').then(r=>r.json()).then(data=>{
-    const games=(data.games||[]).filter(g=>g.deepQa), dq=data.deepQa||{}, byId=Object.fromEntries(games.map(g=>[g.id,g]));
-    const required=(dq.requiredChecks||['start_game','gameplay_progression','primary_controls','retry_restart','fullscreen_exit','close_return','mobile_touch']);
-    const isPassed=g=>required.every(k=>g.deepQa&&g.deepQa.checks&&g.deepQa.checks[k]===true);
-    const completed=games.filter(isPassed).length;
-    const pending=games.length-completed;
-    const failed=games.filter(g=>g.deepQa&&g.deepQa.failure&&g.deepQa.failure.code).length;
-    const replacements=games.filter(g=>g.deepQa&&g.deepQa.failure&&g.deepQa.failure.replacementRequired===true).length;
-    document.getElementById('summary').innerHTML=
-      '<div class="qaStat"><span>Total games</span><b>'+games.length+'</b></div>'+
-      '<div class="qaStat"><span>Fully tested</span><b>'+completed+'</b></div>'+
-      '<div class="qaStat"><span>Pending</span><b>'+pending+'</b></div>'+
-      '<div class="qaStat"><span>High priority</span><b>'+(dq.highPriority||0)+'</b></div>'+
-      '<div class="qaStat"><span>Failures logged</span><b>'+failed+'</b></div>'+
-      '<div class="qaStat"><span>Replacement flags</span><b>'+replacements+'</b></div>';
-    const gate=document.getElementById('gate');
-    const ready=completed>=games.length&&games.length>0;
-    gate.className='launchGate '+(ready?'ready':'hold');
-    gate.textContent=ready?'LAUNCH READY — all '+games.length+' games passed required deep QA checks.':'DOMAIN HOLD — '+completed+'/'+games.length+' fully tested, '+pending+' pending, '+failed+' with logged failures.';
-    const queue=dq.queue||[]; const ids=games.map(g=>g.id); const uniqQueue=new Set(queue); const dupQueue=queue.length-uniqQueue.size; const missingQueue=ids.filter(id=>!uniqQueue.has(id)); const unknownQueue=queue.filter(id=>!byId[id]); const countMismatch=Number(data.fullyTested||0)!==completed; const batchIds=(dq.batchPlan||[]).flatMap(b=>b.ids||[]); const batchDup=batchIds.length-new Set(batchIds).size; const integrityIssues=[]; if(dupQueue)integrityIssues.push(dupQueue+' duplicate queue entries'); if(missingQueue.length)integrityIssues.push(missingQueue.length+' games missing from queue'); if(unknownQueue.length)integrityIssues.push(unknownQueue.length+' unknown queue IDs'); if(countMismatch)integrityIssues.push('fullyTested mismatch'); if(batchDup)integrityIssues.push(batchDup+' duplicate batch entries'); if(queue.length!==games.length)integrityIssues.push('queue size '+queue.length+' vs games '+games.length); const integ=document.getElementById('integrity'); integ.className='launchGate '+(integrityIssues.length?'hold':'ready'); integ.textContent=integrityIssues.length?'QA INTEGRITY WARNING — '+integrityIssues.join(' · '):'QA INTEGRITY PASS — queue, batches and derived fully-tested count are consistent.';
-    const batches=dq.batchPlan||[];
-    document.getElementById('batches').innerHTML=batches.map(b=>{
-      const rows=(b.ids||[]).map(id=>{
-        const g=byId[id]||{}, d=g.deepQa||{}, c=d.checks||{};
-        const req=required;
-        const done=req.filter(k=>c[k]===true).length;
-        const fail=d.failure||{}; const failTxt=fail.code?(' · FAIL: '+fail.code+(fail.platform?' / '+fail.platform:'')):' '; const live='/index.html?qaGame='+encodeURIComponent(id)+'#play-'+encodeURIComponent(id); return '<div class="gameRow"><div class="pos">#'+(d.queuePosition||'—')+'</div><div><strong>'+(g.title||id)+'</strong><div class="checks">'+done+'/7 required checks · '+(g.category||'')+failTxt+'</div><div class="qaActions"><a class="qaBtn" href="'+live+'" target="_blank" rel="noopener">Open Live NEXARC</a><a class="qaBtn" href="'+g.embedUrl+'" target="_blank" rel="noopener">Open Direct Game</a></div></div><div class="status '+(isPassed(g)?'passed':'pending')+'">'+(isPassed(g)?'passed':'pending')+'</div></div>';
-      }).join('');
-      const ids=b.ids||[]; const bp=ids.filter(id=>isPassed(byId[id]||{})).length; const pct=ids.length?Math.round(bp/ids.length*100):0; const current=(dq.currentBatch||1)===b.batch; return '<section class="batch"'+(current?' data-current="true"':'')+'><div class="batchHead"><div><h2>Batch '+b.batch+(current?' · CURRENT':'')+'</h2><div class="checks">'+bp+'/'+ids.length+' passed · '+pct+'%</div><div class="progressTrack"><span style="width:'+pct+'%"></span></div></div><span class="badge">'+(b.priority==='high'?'HIGH PRIORITY':'STANDARD')+'</span></div>'+rows+'</section>';
-    }).join('');
-  }).catch(()=>{document.getElementById('batches').innerHTML='<section class="legalCard"><p>QA data could not be loaded.</p></section>'});
-  </script>
-</body>
-</html>
+<main class="legalWrap">
+ <a class="back" href="/status.html">← Back to Status</a>
+ <section class="legalHero"><span>INTERNAL QA</span><h1>Heavy Catalog QA</h1><p>20 active games only. Source, license, performance target and device support are shown below.</p></section>
+ <section id="summary" class="qaTop"></section>
+ <section id="games"></section>
+</main>
+<script>
+fetch('/games.json?qa=heavy20',{cache:'no-store'}).then(r=>r.json()).then(d=>{
+ const games=d.games||[],hosted=games.filter(g=>g.hosted).length,mobile=games.filter(g=>g.mobileReady!==false).length,adfree=games.filter(g=>g.adFree===true).length;
+ document.getElementById('summary').innerHTML=
+ '<div class="qaStat"><span>Active games</span><b>'+games.length+'</b></div>'+
+ '<div class="qaStat"><span>Ad-free</span><b>'+adfree+'</b></div>'+
+ '<div class="qaStat"><span>Self-hosted</span><b>'+hosted+'</b></div>'+
+ '<div class="qaStat"><span>Mobile-ready</span><b>'+mobile+'</b></div>';
+ document.getElementById('games').innerHTML=games.map((g,i)=>{
+  const live='/index.html?qaGame='+encodeURIComponent(g.id)+'#play-'+encodeURIComponent(g.id);
+  return '<section class="gameRow"><div class="gameHead"><div><strong>#'+(i+1)+' · '+g.title+'</strong><div class="meta">'+g.category+' · '+(g.performance||'Browser game')+' · '+(g.mobileReady===false?'Desktop-first':'Desktop + Mobile')+'</div></div><span class="badge">'+(g.adFree?'AD-FREE':'CHECK')+'</span></div><div class="meta">Source: '+(g.source||'—')+' · License: '+(g.license||'—')+' · QA: '+(g.qaStatus||'pending')+'</div><div class="actions"><a href="'+live+'" target="_blank" rel="noopener">Open in NEXARC</a><a href="'+g.embedUrl+'" target="_blank" rel="noopener">Open source demo</a></div></section>';
+ }).join('');
+}).catch(()=>{document.getElementById('games').innerHTML='<section class="legalCard"><p>Catalog data could not be loaded.</p></section>'});
+</script>
+</body></html>
