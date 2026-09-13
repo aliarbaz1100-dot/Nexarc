@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>NEXARC Arena Wrestling</title>
+<style>
+html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#050608;color:#fff;font-family:Inter,system-ui,sans-serif}
+#hud{position:fixed;z-index:4;inset:0 0 auto 0;padding:14px 16px;pointer-events:none}
+.top{display:flex;gap:12px;align-items:center}.name{width:110px;font-weight:900;letter-spacing:.08em;font-size:12px}.bar{height:12px;flex:1;max-width:420px;background:#191d24;border:1px solid #414957;border-radius:999px;overflow:hidden}.bar i{display:block;height:100%;width:100%;background:linear-gradient(90deg,#e50914,#ff6b3d);transition:width .12s}.bar.enemy i{background:linear-gradient(90deg,#3d7bff,#69b7ff)}
+#timer{margin-left:auto;font:900 18px/1 ui-monospace,monospace;background:#0e1117cc;padding:8px 12px;border-radius:10px;border:1px solid #343b48}
+#msg{position:fixed;z-index:5;left:50%;top:46%;transform:translate(-50%,-50%);font-size:clamp(28px,6vw,72px);font-weight:1000;letter-spacing:.04em;text-shadow:0 5px 30px #000;pointer-events:none;text-align:center}
+#help{position:fixed;z-index:4;left:14px;bottom:14px;background:#07090dd9;border:1px solid #303744;border-radius:12px;padding:10px 12px;font-size:12px;line-height:1.55;color:#c9d0dc}
+#tag{position:fixed;right:14px;bottom:14px;z-index:4;background:#e50914;padding:7px 10px;border-radius:999px;font-weight:900;font-size:11px;letter-spacing:.08em}
+canvas{display:block}
+</style>
+</head>
+<body>
+<div id="hud"><div class="top"><span class="name">YOU</span><div class="bar"><i id="hp1"></i></div><div id="timer">90</div><div class="bar enemy"><i id="hp2"></i></div><span class="name" style="text-align:right">RIVAL</span></div></div>
+<div id="msg">FIGHT!</div>
+<div id="help"><b>WASD</b> move · <b>J</b> punch · <b>K</b> kick · <b>L</b> grapple · <b>Space</b> block · <b>Shift</b> sprint<br>Win by KO or higher health when time expires.</div>
+<div id="tag">NEXARC · 120HZ SIM</div>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js"}}</script>
+<script type="module">
+import * as THREE from 'three';
+const scene=new THREE.Scene();scene.background=new THREE.Color(0x050608);scene.fog=new THREE.Fog(0x050608,18,55);
+const camera=new THREE.PerspectiveCamera(58,innerWidth/innerHeight,.1,100);camera.position.set(0,9,14);
+const renderer=new THREE.WebGLRenderer({antialias:true,powerPreference:'high-performance'});renderer.setPixelRatio(Math.min(devicePixelRatio,1.7));renderer.setSize(innerWidth,innerHeight);renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.15;document.body.appendChild(renderer.domElement);
+scene.add(new THREE.HemisphereLight(0x99bbff,0x251216,1.8));const key=new THREE.DirectionalLight(0xffffff,3.5);key.position.set(6,12,7);key.castShadow=true;key.shadow.mapSize.set(1024,1024);scene.add(key);
+const rim1=new THREE.PointLight(0xe50914,45,18),rim2=new THREE.PointLight(0x2670ff,45,18);rim1.position.set(-7,5,-4);rim2.position.set(7,5,-4);scene.add(rim1,rim2);
+const mat=(c,rough=.55)=>new THREE.MeshStandardMaterial({color:c,roughness:rough,metalness:.12});
+const floor=new THREE.Mesh(new THREE.CylinderGeometry(9,9,.5,64),mat(0x11151c,.8));floor.receiveShadow=true;floor.position.y=-.35;scene.add(floor);
+const ring=new THREE.Group();scene.add(ring);const canvas=new THREE.Mesh(new THREE.BoxGeometry(9.2,.45,9.2),mat(0x353b46,.9));canvas.position.y=.2;canvas.receiveShadow=true;ring.add(canvas);
+for(const x of [-4.7,4.7])for(const z of [-4.7,4.7]){const p=new THREE.Mesh(new THREE.CylinderGeometry(.13,.16,3.5,10),mat(0xb8bec8,.35));p.position.set(x,1.7,z);p.castShadow=true;ring.add(p)}
+for(const y of [1,1.7,2.4]){for(const z of [-4.55,4.55]){const r=new THREE.Mesh(new THREE.CylinderGeometry(.035,.035,9.2,8),mat(y===1.7?0xe50914:0xf1f1f1,.3));r.rotation.z=Math.PI/2;r.position.set(0,y,z);ring.add(r)}for(const x of [-4.55,4.55]){const r=new THREE.Mesh(new THREE.CylinderGeometry(.035,.035,9.2,8),mat(y===1.7?0x2670ff:0xf1f1f1,.3));r.rotation.x=Math.PI/2;r.position.set(x,y,0);ring.add(r)}}
+function fighter(color,skin){const g=new THREE.Group();const body=new THREE.Mesh(new THREE.CapsuleGeometry(.52,1.15,8,14),mat(color,.48));body.position.y=1.55;body.castShadow=true;g.add(body);const head=new THREE.Mesh(new THREE.SphereGeometry(.42,18,14),mat(skin,.65));head.position.y=2.65;head.castShadow=true;g.add(head);const shorts=new THREE.Mesh(new THREE.BoxGeometry(1.05,.52,.7),mat(0x111111,.55));shorts.position.y=1.12;g.add(shorts);
+ const limbs=[];for(const sx of [-1,1]){const a=new THREE.Mesh(new THREE.CapsuleGeometry(.16,.72,5,8),mat(skin,.65));a.position.set(.68*sx,1.75,0);a.rotation.z=.15*sx;a.castShadow=true;g.add(a);limbs.push(a);const l=new THREE.Mesh(new THREE.CapsuleGeometry(.19,.78,5,8),mat(0x15171c,.7));l.position.set(.32*sx,.42,0);l.castShadow=true;g.add(l)}g.userData={limbs,vel:new THREE.Vector3(),hp:100,cool:0,block:false,hit:0};return g}
+const you=fighter(0xdd1726,0xc98b68),cpu=fighter(0x2069e0,0xb97755);you.position.set(-2,0,0);cpu.position.set(2,0,0);scene.add(you,cpu);
+const crowd=new THREE.Group();scene.add(crowd);for(let i=0;i<160;i++){const a=i/160*Math.PI*2,r=11+Math.random()*3;const m=new THREE.Mesh(new THREE.BoxGeometry(.22,.65,.22),mat(Math.random()>.5?0x252b34:0x171a20,1));m.position.set(Math.cos(a)*r,.15+Math.random()*.45,Math.sin(a)*r);crowd.add(m)}
+const keys={};addEventListener('keydown',e=>{keys[e.code]=true;if(['Space','KeyJ','KeyK','KeyL'].includes(e.code))e.preventDefault()});addEventListener('keyup',e=>keys[e.code]=false);
+let time=90,over=false,acc=0,last=performance.now(),hitFlash=0;const hp1=document.querySelector('#hp1'),hp2=document.querySelector('#hp2'),timer=document.querySelector('#timer'),msg=document.querySelector('#msg');setTimeout(()=>msg.textContent='',900);
+function face(a,b){const d=b.position.clone().sub(a.position);a.rotation.y=Math.atan2(d.x,d.z)}
+function clampRing(f){f.position.x=THREE.MathUtils.clamp(f.position.x,-4.05,4.05);f.position.z=THREE.MathUtils.clamp(f.position.z,-4.05,4.05)}
+function strike(att,def,type){if(att.userData.cool>0||over)return;const dist=att.position.distanceTo(def.position),range=type==='grapple'?1.55:type==='kick'?2.05:1.72;if(dist>range){att.userData.cool=.24;return}const dmg=type==='grapple'?18:type==='kick'?13:8;att.userData.cool=type==='grapple'?.78:type==='kick'?.52:.31;const blocked=def.userData.block;def.userData.hp=Math.max(0,def.userData.hp-dmg*(blocked?.3:1));def.userData.hit=.18;const push=def.position.clone().sub(att.position).normalize().multiplyScalar(type==='grapple'?1.3:.6);def.userData.vel.add(push);const limb=att.userData.limbs[type==='kick'?1:0];limb.rotation.x=-1.6;setTimeout(()=>limb.rotation.x=0,120);if(def.userData.hp<=0)finish(att===you?'K.O. — YOU WIN':'K.O. — RIVAL WINS')}
+function finish(t){over=true;msg.textContent=t+'\nPress R to restart'}
+addEventListener('keydown',e=>{if(e.code==='KeyR'&&over)location.reload()});
+function step(dt){if(over)return;time=Math.max(0,time-dt);timer.textContent=Math.ceil(time);if(time<=0)finish(you.userData.hp===cpu.userData.hp?'DRAW':you.userData.hp>cpu.userData.hp?'TIME — YOU WIN':'TIME — RIVAL WINS');
+ for(const f of [you,cpu]){f.userData.cool=Math.max(0,f.userData.cool-dt);f.userData.hit=Math.max(0,f.userData.hit-dt);f.position.addScaledVector(f.userData.vel,dt);f.userData.vel.multiplyScalar(Math.pow(.06,dt));clampRing(f)}
+ const mv=new THREE.Vector3((keys.KeyD?1:0)-(keys.KeyA?1:0),0,(keys.KeyS?1:0)-(keys.KeyW?1:0));if(mv.lengthSq()){mv.normalize().multiplyScalar(keys.ShiftLeft?5.4:3.7);you.position.addScaledVector(mv,dt);clampRing(you)}you.userData.block=!!keys.Space;face(you,cpu);
+ if(keys.KeyJ){strike(you,cpu,'punch');keys.KeyJ=false}if(keys.KeyK){strike(you,cpu,'kick');keys.KeyK=false}if(keys.KeyL){strike(you,cpu,'grapple');keys.KeyL=false}
+ const d=cpu.position.distanceTo(you.position);face(cpu,you);cpu.userData.block=Math.random()<.015&&d<2.2;if(d>1.55){const v=you.position.clone().sub(cpu.position).normalize();cpu.position.addScaledVector(v,dt*(d>3?3.6:2.5));clampRing(cpu)}else if(cpu.userData.cool<=0){const r=Math.random();strike(cpu,you,r<.18?'grapple':r<.55?'kick':'punch')}
+ hp1.style.width=you.userData.hp+'%';hp2.style.width=cpu.userData.hp+'%';
+}
+function render(){const target=you.position.clone().add(cpu.position).multiplyScalar(.5);const sep=Math.min(13,Math.max(8,you.position.distanceTo(cpu.position)*2.1+7));camera.position.lerp(new THREE.Vector3(target.x,7.2,target.z+sep),.08);camera.lookAt(target.x,1.25,target.z);renderer.render(scene,camera)}
+function loop(now){const dt=Math.min(.05,(now-last)/1000);last=now;acc+=dt;const fixed=1/120;let n=0;while(acc>=fixed&&n<8){step(fixed);acc-=fixed;n++}render();requestAnimationFrame(loop)}requestAnimationFrame(loop);
+addEventListener('resize',()=>{camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();renderer.setSize(innerWidth,innerHeight)});
+</script></body></html>
