@@ -22,14 +22,14 @@
     <section class="legalCard">
       <h2>Current status</h2>
       <ul>
-        <li><strong>Catalog:</strong> 121 entries — 120 embedded browser games plus Metal Slug via a licensed Antstream Arcade launch.</li>
+        <li><strong>Catalog:</strong> 122 entries — 120 legacy embedded games, Metal Slug via licensed Antstream Arcade, and 1 self-hosted ad-free heavy game.</li>
         <li><strong>Pages:</strong> Home, All Games, Categories, Trending, Install, Shortcuts, FAQ, About, Contact, Privacy and Terms.</li>
         <li><strong>PWA:</strong> Install page and app manifest ready for supported browsers.</li>
         <li><strong>SEO:</strong> Sitemap, robots.txt, canonical tags and legal pages ready.</li>
-        <li><strong>Live smoke QA:</strong> 120/120 embedded games passed on desktop and mobile for launch, iframe render, basic input, and close/return flow. Licensed external titles are tracked separately.</li>
+        <li><strong>Live smoke QA:</strong> 120/120 legacy embedded games passed on desktop and mobile for launch, iframe render, basic input, and close/return flow. Licensed external titles are tracked separately.</li>
         <li><strong>Launch interaction audit:</strong> Desktop + mobile search, category filtering, game open, retry, fullscreen, and close/return flow passed on the live premium9 build.</li>
-        <li><strong>QA metadata audit:</strong> 120/120 embedded entries reviewed; 0 duplicate IDs, 0 duplicate embed URLs, required smoke checks complete, plus 1 licensed external-provider entry.</li>
-        <li><strong>Gameplay QA queue:</strong> 120 embedded games tracked with per-game deep checks; 30 warning-history titles are prioritized first. External licensed launches are excluded from emulator/player QA.</li>
+        <li><strong>QA metadata audit:</strong> 120/120 legacy embedded entries reviewed; 0 duplicate IDs, 0 duplicate embed URLs, required smoke checks complete, plus 1 licensed external-provider entry.</li>
+        <li><strong>Gameplay QA queue:</strong> 120 legacy embedded games tracked with per-game deep checks; 30 warning-history titles are prioritized first. External licensed launches are excluded from emulator/player QA.</li>
         <li><strong>Internal QA dashboard:</strong> <a href="/deep-qa.html">Deep Gameplay QA tracker</a> with 12 batches of 10 games.</li>
         <li><strong>Deployment note:</strong> Latest self-check commit is pending live deployment because Vercel hit a build-rate limit; previous QA integrity build remains the last confirmed successful deployment.</li>
         <li><strong>Deep QA gate:</strong> <code>fullyTested</code> is derived only from 7/7 required gameplay checks; manual PASS labels do not count.</li>
@@ -46,7 +46,7 @@
     </section>
   </main>
   <script>
-  fetch("/games.json?status=live",{cache:"no-store"}).then(r=>r.json()).then(d=>{const games=(d.games||[]).filter(g=>g.embedUrl);const req=d.deepQa&&d.deepQa.requiredChecks||["start_game","gameplay_progression","primary_controls","retry_restart","fullscreen_exit","close_return","mobile_touch"];const isPassed=g=>req.every(k=>g.deepQa&&g.deepQa.checks&&g.deepQa.checks[k]===true);const total=games.length;const tested=games.filter(isPassed).length;const pending=Math.max(0,total-tested);const batch=d.deepQa&&d.deepQa.currentBatch||1;const ready=total>0&&tested===total;const mismatch=Number(d.fullyTested||0)!==tested;const el=document.getElementById("liveQaText");if(el)el.textContent=(ready?"LAUNCH READY":"DOMAIN HOLD")+" — "+tested+"/"+total+" embedded games fully tested, "+pending+" pending, current batch "+batch+(mismatch?" · QA count mismatch detected":"")+"."}).catch(()=>{const el=document.getElementById("liveQaText");if(el)el.textContent="Current QA data could not be loaded.";});
+  fetch("/games.json?status=live",{cache:"no-store"}).then(r=>r.json()).then(d=>{const games=(d.games||[]).filter(g=>g.deepQa);const req=d.deepQa&&d.deepQa.requiredChecks||["start_game","gameplay_progression","primary_controls","retry_restart","fullscreen_exit","close_return","mobile_touch"];const isPassed=g=>req.every(k=>g.deepQa&&g.deepQa.checks&&g.deepQa.checks[k]===true);const total=games.length;const tested=games.filter(isPassed).length;const pending=Math.max(0,total-tested);const batch=d.deepQa&&d.deepQa.currentBatch||1;const ready=total>0&&tested===total;const mismatch=Number(d.fullyTested||0)!==tested;const el=document.getElementById("liveQaText");if(el)el.textContent=(ready?"LAUNCH READY":"DOMAIN HOLD")+" — "+tested+"/"+total+" embedded games fully tested, "+pending+" pending, current batch "+batch+(mismatch?" · QA count mismatch detected":"")+"."}).catch(()=>{const el=document.getElementById("liveQaText");if(el)el.textContent="Current QA data could not be loaded.";});
   </script>
 </body>
 </html>
