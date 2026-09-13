@@ -1,9 +1,9 @@
 {
   "project": "NEXARC",
-  "target": 120,
+  "target": 121,
   "fullyTested": 0,
   "qaDefinition": "final_pass only after load, controls, gameplay and restart/retry verification",
-  "catalogStatus": "All 120 current catalog games passed live desktop and mobile smoke QA. Final deep gameplay/control QA remains separate before domain launch.",
+  "catalogStatus": "121 catalog entries: 120 embedded HTML5 games plus Metal Slug via a verified licensed Antstream Arcade browser launch. Deep gameplay/control QA remains separate before domain launch.",
   "games": [
     {
       "id": "ninja-run",
@@ -7967,6 +7967,30 @@
           "mobile": null
         }
       }
+    },
+    {
+      "id": "metal-slug-antstream",
+      "title": "Metal Slug",
+      "category": "Arcade",
+      "launchUrl": "https://www2.antstream.com/game-info/metal-slug/arcade",
+      "source": "Antstream Arcade",
+      "provider": "Antstream Arcade",
+      "delivery": "external_licensed_stream",
+      "licenseStatus": "licensed_provider",
+      "qaStatus": "provider_verified",
+      "qaPlatforms": [
+        "desktop",
+        "mobile"
+      ],
+      "qaChecks": [
+        "official_listing",
+        "browser_provider_available",
+        "licensed_external_launch"
+      ],
+      "qaDate": "2026-09-14",
+      "qaNote": "Official Metal Slug listing verified on Antstream Arcade. NEXARC does not host or emulate the ROM; Play opens the licensed provider in a new tab.",
+      "mobileReady": true,
+      "featured": false
     }
   ],
   "smokeTested": 120,
