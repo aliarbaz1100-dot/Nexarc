@@ -26,7 +26,7 @@
   function storeWrite(k,v){try{localStorage.setItem(k,JSON.stringify(v.slice(0,80)));}catch(e){}}
   function toast(m){if(window.nexarcToast){window.nexarcToast(m);return;}var t=document.createElement('div');t.className='miniToast show';t.textContent=m;document.body.appendChild(t);setTimeout(function(){try{t.remove();}catch(e){}},1800);}
   function gameKey(g){try{return g&&g.embedUrl?new URL(g.embedUrl).pathname.split('/').filter(Boolean)[0]||'':'';}catch(e){return '';}}
-  function artList(g){var a=[],arr=[g.thumbnail,g.image,g.thumb],i,x;for(i=0;i<arr.length;i++){x=arr[i];if(x&&a.indexOf(x)<0)a.push(x);}return a;}
+  function artList(g){var a=[],arr=[(window.NEXARC_COVERS||{})[g.id],g.thumbnail,g.image,g.thumb],i,x;for(i=0;i<arr.length;i++){x=arr[i];if(x&&a.indexOf(x)<0)a.push(x);}return a;}
   function fallbackArt(){return 'linear-gradient(135deg,#28070c,#101216 55%,#050505)';}
   function valid(g){if(!g||!g.id||!g.title||!g.embedUrl||blocked[g.id]||g.duplicateCandidate)return false;try{if(g.hosted===true&&/^\/games\//.test(g.embedUrl))return true;var u=new URL(g.embedUrl);return u.protocol==='https:'&&g.adFree===true;}catch(e){return false;}}
   function clean(data){var src=(Object.prototype.toString.call(data)==='[object Array]')?data:((data&&data.games)||[]),seenU={},seenI={},out=[],i,g,key,cap=Math.max(1,Number((data&&data.target)||src.length||20));for(i=0;i<src.length&&out.length<cap;i++){g=src[i];key=g&&(g.embedUrl||g.launchUrl);if(valid(g)&&key&&!seenU[key]&&!seenI[g.id]){seenU[key]=1;seenI[g.id]=1;out.push(g);}}if(!out.length)out=fallback.slice(0);window.NEXARC_CATALOG_STATS={loaded:out.length,target:cap,fullyTested:Number((data&&data.fullyTested)||0),source:out.length===cap?'heavy-master-games-json':'heavy-fallback'};return out;}
