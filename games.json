@@ -41,8 +41,9 @@
       "performance": "60 FPS target",
       "featured": true,
       "mobileReady": true,
-      "thumbnail": "https://opengraph.githubassets.com/nexarc/pranshuparmar/neon-mayhem",
-      "qaStatus": "source_verified"
+      "thumbnail": "/assets/game-covers/neon-mayhem.webp",
+      "qaStatus": "source_verified",
+      "coverStyle": "NEXARC cinematic"
     },
     {
       "id": "apex-formula",
@@ -57,8 +58,9 @@
       "performance": "120 Hz vehicle physics",
       "featured": true,
       "mobileReady": false,
-      "thumbnail": "https://opengraph.githubassets.com/nexarc/bridge-mind/apex-formula",
-      "qaStatus": "source_verified"
+      "thumbnail": "/assets/game-covers/apex-formula.webp",
+      "qaStatus": "source_verified",
+      "coverStyle": "NEXARC cinematic"
     },
     {
       "id": "turbo-kart-rush",
@@ -139,8 +141,9 @@
       "performance": "Three.js FPS",
       "featured": true,
       "mobileReady": false,
-      "thumbnail": "https://opengraph.githubassets.com/nexarc/DamiJJJ/Status-1",
-      "qaStatus": "source_verified"
+      "thumbnail": "/assets/game-covers/status-1.webp",
+      "qaStatus": "source_verified",
+      "coverStyle": "NEXARC cinematic"
     },
     {
       "id": "webgl-fps",
@@ -171,8 +174,9 @@
       "performance": "60 Hz combat simulation",
       "featured": true,
       "mobileReady": true,
-      "thumbnail": "https://opengraph.githubassets.com/nexarc/Kevin-Liu-01/Claude-of-Tanks",
-      "qaStatus": "source_verified"
+      "thumbnail": "/assets/game-covers/armored-warfare-3d.webp",
+      "qaStatus": "source_verified",
+      "coverStyle": "NEXARC cinematic"
     },
     {
       "id": "claude-of-iron",
@@ -187,8 +191,9 @@
       "performance": "120 Hz fighting engine",
       "featured": true,
       "mobileReady": false,
-      "thumbnail": "https://opengraph.githubassets.com/nexarc/usama-shiranai90/Claude-of-Iron",
-      "qaStatus": "source_verified"
+      "thumbnail": "/assets/game-covers/iron-arena-3d.webp",
+      "qaStatus": "source_verified",
+      "coverStyle": "NEXARC cinematic"
     },
     {
       "id": "sky-combat",
