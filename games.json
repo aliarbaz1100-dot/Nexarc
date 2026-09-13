@@ -24,8 +24,9 @@
       "performance": "60 Hz physics",
       "featured": true,
       "mobileReady": false,
-      "thumbnail": "https://raw.githubusercontent.com/appleweiping/overdrive-city/main/docs/screenshots/night-chase.png",
-      "qaStatus": "source_verified"
+      "thumbnail": "/assets/game-covers/overdrive-city.webp",
+      "qaStatus": "source_verified",
+      "coverStyle": "NEXARC cinematic"
     },
     {
       "id": "neon-mayhem",
@@ -121,7 +122,9 @@
       "performance": "120 Hz vehicle simulation",
       "featured": true,
       "mobileReady": false,
-      "qaStatus": "integration_pending"
+      "qaStatus": "integration_pending",
+      "thumbnail": "/assets/game-covers/apex-street.webp",
+      "coverStyle": "NEXARC cinematic"
     },
     {
       "id": "status-1",
@@ -216,8 +219,9 @@
       "performance": "11v11 canvas simulation",
       "featured": true,
       "mobileReady": true,
-      "thumbnail": "https://opengraph.githubassets.com/nexarc/modelence/open-soccer",
-      "qaStatus": "source_verified"
+      "thumbnail": "/assets/game-covers/world-cup-2026.webp",
+      "qaStatus": "source_verified",
+      "coverStyle": "NEXARC cinematic"
     },
     {
       "id": "cricket-3d",
@@ -297,7 +301,9 @@
       "performance": "120 Hz simulation",
       "featured": true,
       "mobileReady": false,
-      "qaStatus": "integration_pending"
+      "qaStatus": "integration_pending",
+      "thumbnail": "/assets/game-covers/arena-wrestling.webp",
+      "coverStyle": "NEXARC cinematic"
     },
     {
       "id": "flight-sim",
