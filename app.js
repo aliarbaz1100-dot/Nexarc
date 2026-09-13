@@ -8,7 +8,7 @@
   var loadTimer=null;
   var currentView='all';
   var rows,count,player,frame,title,hero,heroTitle,heroMeta,loading,intro,searchPanel,searchInput;
-  var order=['Open World','Racing','FPS','Combat','Fighting','Football','Cricket','Snooker','Chess','Cards','Board','Simulation','Shooter'];
+  var order=['Open World','Racing','FPS','Combat','Wrestling','Fighting','Football','Cricket','Snooker','Carrom','Chess','Cards','Simulation'];
   var blocked={'fiva-26':1,'football-random':1,'weight-puzzle-alt':1};
   var recentKey='nexarc_recent_games_v2';
   var listKey='nexarc_my_list_v1';
