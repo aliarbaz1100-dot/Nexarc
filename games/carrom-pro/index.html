@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>NEXARC Carrom Pro</title>
+<style>
+html,body{margin:0;height:100%;overflow:hidden;background:#07090d;color:#fff;font-family:Inter,system-ui,sans-serif}body{display:grid;place-items:center}#wrap{position:relative;width:min(94vw,860px);aspect-ratio:1}canvas{width:100%;height:100%;display:block;border-radius:20px;box-shadow:0 30px 90px #000;border:1px solid #2e333e;touch-action:none}.hud{position:absolute;left:16px;right:16px;top:14px;display:flex;justify-content:space-between;pointer-events:none;font-weight:900;text-shadow:0 2px 8px #000}.badge{background:#e50914;border-radius:999px;padding:7px 10px;font-size:11px;letter-spacing:.07em}.score{background:#090c11d9;border:1px solid #39404c;border-radius:12px;padding:8px 11px}.tip{position:fixed;bottom:10px;font-size:12px;color:#aeb6c3;text-align:center;padding:0 16px}
+</style></head>
+<body><div id="wrap"><canvas id="c" width="900" height="900"></canvas><div class="hud"><span class="badge">NEXARC · 60HZ PHYSICS</span><span class="score" id="score">YOU 0 · CPU 0</span></div></div><div class="tip">Drag striker left/right on the baseline. Drag backward to aim and set power, release to shoot. Pocket your coins before the CPU.</div>
+<script>
+const cv=document.querySelector('#c'),x=cv.getContext('2d'),scoreEl=document.querySelector('#score'),W=900,H=900,margin=70,play=760,pockets=[[95,95],[805,95],[95,805],[805,805]];
+let balls=[],striker,turn='you',drag=null,you=0,cpu=0,acc=0,last=performance.now(),settle=0;
+function B(px,py,r,color,val=1){return{x:px,y:py,r,vx:0,vy:0,color,val,pocket:false}}
+function reset(){balls=[];const cx=450,cy=450;let k=0;for(let ring=0;ring<3;ring++){const n=ring===0?1:ring*6;for(let i=0;i<n;i++){const a=i/n*Math.PI*2,rr=ring*39;balls.push(B(cx+Math.cos(a)*rr,cy+Math.sin(a)*rr,18,(k++%2)?'#141414':'#eee'))}}balls.push(B(cx,cy,19,'#cf1730',3));newStriker()}
+function newStriker(){striker=B(450,turn==='you'?745:155,23,'#f0b32a');drag=null;settle=0}
+function circle(ax,ay,r,fill,stroke){x.beginPath();x.arc(ax,ay,r,0,Math.PI*2);x.fillStyle=fill;x.fill();if(stroke){x.strokeStyle=stroke;x.lineWidth=2;x.stroke()}}
+function draw(){x.clearRect(0,0,W,H);const g=x.createLinearGradient(0,0,W,H);g.addColorStop(0,'#8b4c21');g.addColorStop(1,'#4a230f');x.fillStyle=g;x.fillRect(0,0,W,H);x.fillStyle='#e4c58f';x.fillRect(margin,margin,play,play);x.strokeStyle='#452818';x.lineWidth=5;x.strokeRect(85,85,730,730);
+ for(const [px,py] of pockets)circle(px,py,34,'#111');
+ x.strokeStyle='#7b2929';x.lineWidth=3;circle(450,450,88,'transparent','#7b2929');circle(450,450,16,'#7b2929');
+ for(const y of [155,745]){x.beginPath();x.moveTo(180,y);x.lineTo(720,y);x.stroke();circle(180,y,24,'transparent','#7b2929');circle(720,y,24,'transparent','#7b2929')}
+ for(const b of balls){if(b.pocket)continue;circle(b.x+4,b.y+5,b.r,'#0003');circle(b.x,b.y,b.r,b.color,'#222');if(b.val===3)circle(b.x,b.y,6,'#fff')}
+ if(striker&&!striker.pocket){circle(striker.x+5,striker.y+6,striker.r,'#0004');circle(striker.x,striker.y,striker.r,striker.color,'#6d3e08')}
+ if(drag&&turn==='you'){x.beginPath();x.moveTo(striker.x,striker.y);x.lineTo(drag.x,drag.y);x.strokeStyle='#e50914';x.lineWidth=5;x.stroke()}
+}
+function collide(a,b){if(a.pocket||b.pocket)return;let dx=b.x-a.x,dy=b.y-a.y,d=Math.hypot(dx,dy),min=a.r+b.r;if(d<=0||d>=min)return;let nx=dx/d,ny=dy/d,over=min-d;a.x-=nx*over*.5;a.y-=ny*over*.5;b.x+=nx*over*.5;b.y+=ny*over*.5;let rvx=b.vx-a.vx,rvy=b.vy-a.vy,sep=rvx*nx+rvy*ny;if(sep>0)return;let imp=-sep*.94;a.vx-=imp*nx;a.vy-=imp*ny;b.vx+=imp*nx;b.vy+=imp*ny}
+function bounds(b){if(b.pocket)return;for(const [px,py] of pockets){if(Math.hypot(b.x-px,b.y-py)<30){b.pocket=true;b.vx=b.vy=0;if(b!==striker){if(turn==='you')you+=b.val;else cpu+=b.val;scoreEl.textContent='YOU '+you+' · CPU '+cpu}return}}
+ if(b.x-b.r<88){b.x=88+b.r;b.vx=Math.abs(b.vx)*.92}if(b.x+b.r>812){b.x=812-b.r;b.vx=-Math.abs(b.vx)*.92}if(b.y-b.r<88){b.y=88+b.r;b.vy=Math.abs(b.vy)*.92}if(b.y+b.r>812){b.y=812-b.r;b.vy=-Math.abs(b.vy)*.92}}
+function step(dt){const all=[...balls,striker].filter(Boolean);let moving=false;for(const b of all){if(b.pocket)continue;b.x+=b.vx*dt;b.y+=b.vy*dt;const drag=Math.pow(.18,dt);b.vx*=drag;b.vy*=drag;if(Math.hypot(b.vx,b.vy)<2)b.vx=b.vy=0;else moving=true;bounds(b)}for(let i=0;i<all.length;i++)for(let j=i+1;j<all.length;j++)collide(all[i],all[j]);
+ if(moving)settle=0;else if(!drag){settle+=dt;if(settle>.7){if(balls.every(b=>b.pocket)){setTimeout(()=>location.reload(),1000);return}turn=turn==='you'?'cpu':'you';newStriker();if(turn==='cpu')setTimeout(cpuShot,450)}}
+}
+function cpuShot(){if(turn!=='cpu'||!striker)return;const targets=balls.filter(b=>!b.pocket);if(!targets.length)return;targets.sort((a,b)=>Math.hypot(a.x-striker.x,a.y-striker.y)-Math.hypot(b.x-striker.x,b.y-striker.y));const t=targets[0],dx=t.x-striker.x,dy=t.y-striker.y,d=Math.hypot(dx,dy)||1;striker.vx=dx/d*(760+Math.random()*180);striker.vy=dy/d*(760+Math.random()*180)}
+function pos(e){const r=cv.getBoundingClientRect(),p=e.touches?e.touches[0]:e;return{x:(p.clientX-r.left)/r.width*W,y:(p.clientY-r.top)/r.height*H}}
+function down(e){if(turn!=='you'||!striker||Math.hypot(striker.vx,striker.vy)>1)return;const p=pos(e);if(Math.hypot(p.x-striker.x,p.y-striker.y)<65)drag=p}
+function move(e){if(!drag||turn!=='you')return;e.preventDefault();const p=pos(e);if(Math.abs(p.y-745)<55&&Math.abs(p.x-striker.x)<220){striker.x=Math.max(190,Math.min(710,p.x));drag=p}else drag=p}
+function up(e){if(!drag||turn!=='you')return;const p=pos(e),dx=striker.x-p.x,dy=striker.y-p.y,d=Math.min(180,Math.hypot(dx,dy));if(d>18){const m=5.2*d;striker.vx=dx/(Math.hypot(dx,dy)||1)*m;striker.vy=dy/(Math.hypot(dx,dy)||1)*m}drag=null}
+cv.addEventListener('pointerdown',down);cv.addEventListener('pointermove',move);cv.addEventListener('pointerup',up);cv.addEventListener('pointercancel',()=>drag=null);
+function loop(t){const dt=Math.min(.04,(t-last)/1000);last=t;acc+=dt;const fixed=1/60;let n=0;while(acc>=fixed&&n<5){step(fixed);acc-=fixed;n++}draw();requestAnimationFrame(loop)}reset();requestAnimationFrame(loop);
+</script></body></html>
