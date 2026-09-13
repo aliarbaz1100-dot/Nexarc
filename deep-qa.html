@@ -36,7 +36,7 @@
   </main>
   <script>
   fetch('/games.json?qa=deep1').then(r=>r.json()).then(data=>{
-    const games=(data.games||[]).filter(g=>g.embedUrl), dq=data.deepQa||{}, byId=Object.fromEntries(games.map(g=>[g.id,g]));
+    const games=(data.games||[]).filter(g=>g.deepQa), dq=data.deepQa||{}, byId=Object.fromEntries(games.map(g=>[g.id,g]));
     const required=(dq.requiredChecks||['start_game','gameplay_progression','primary_controls','retry_restart','fullscreen_exit','close_return','mobile_touch']);
     const isPassed=g=>required.every(k=>g.deepQa&&g.deepQa.checks&&g.deepQa.checks[k]===true);
     const completed=games.filter(isPassed).length;
