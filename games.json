@@ -108,20 +108,20 @@
       "qaStatus": "source_verified"
     },
     {
-      "id": "hexgl",
-      "title": "HexGL",
+      "id": "apex-street",
+      "title": "NEXARC Apex Street",
       "category": "Racing",
-      "embedUrl": "https://bkcore.github.io/HexGL/",
-      "source": "BKcore/HexGL",
-      "sourceRepo": "BKcore/HexGL",
-      "license": "MIT",
+      "embedUrl": "/games/apex-street/index.html",
+      "source": "NEXARC Original",
+      "sourceRepo": "aliarbaz1100-dot/Nexarc",
+      "license": "NEXARC original code",
+      "hosted": true,
       "adFree": true,
       "tier": "heavy",
-      "performance": "WebGL racing",
-      "featured": false,
-      "mobileReady": true,
-      "thumbnail": "https://opengraph.githubassets.com/nexarc/BKcore/HexGL",
-      "qaStatus": "source_verified"
+      "performance": "120 Hz vehicle simulation",
+      "featured": true,
+      "mobileReady": false,
+      "qaStatus": "integration_pending"
     },
     {
       "id": "status-1",
