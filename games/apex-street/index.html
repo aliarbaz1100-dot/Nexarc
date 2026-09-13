@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>NEXARC Apex Street</title>
+<style>
+html,body{margin:0;height:100%;overflow:hidden;background:#03050a;color:#fff;font-family:Inter,system-ui,sans-serif}canvas{display:block}
+#hud{position:fixed;inset:0;z-index:3;pointer-events:none}.top{display:flex;justify-content:space-between;padding:16px}.panel{background:#050811d9;border:1px solid #293242;border-radius:14px;padding:10px 13px;backdrop-filter:blur(10px)}.big{font:1000 28px/1 ui-monospace,monospace}.small{font-size:10px;letter-spacing:.12em;color:#9ca9bc;font-weight:900;margin-top:5px}.lap{font-weight:1000}
+#pos{position:fixed;left:50%;top:18px;transform:translateX(-50%);font-size:13px;font-weight:1000;letter-spacing:.08em}
+#nitro{position:fixed;left:18px;bottom:18px;width:220px}.track{height:8px;background:#121722;border-radius:999px;overflow:hidden;margin-top:7px}.fill{height:100%;width:100%;background:linear-gradient(90deg,#176dff,#60d5ff)}
+#help{position:fixed;right:18px;bottom:18px;text-align:right;color:#b6c0cf;font-size:11px;line-height:1.5}.tag{display:inline-block;background:#e50914;color:#fff;padding:6px 9px;border-radius:999px;font-weight:1000;letter-spacing:.08em}
+#msg{position:fixed;left:50%;top:42%;transform:translate(-50%,-50%);font-size:clamp(30px,6vw,76px);font-weight:1000;text-align:center;text-shadow:0 8px 40px #000}
+</style></head>
+<body>
+<div id="hud"><div class="top"><div class="panel"><div class="big"><span id="speed">0</span><small> KM/H</small></div><div class="small">NEXARC APEX STREET</div></div><div id="pos" class="panel">P1 / 6</div><div class="panel lap">LAP <span id="lap">1</span>/3<br><span class="small" id="time">00:00.000</span></div></div><div id="nitro" class="panel"><span class="small">NITRO</span><div class="track"><div id="nf" class="fill"></div></div></div><div id="help"><span class="tag">120HZ VEHICLE SIM</span><br><b>WASD / ARROWS</b> drive · <b>Shift</b> nitro · <b>R</b> reset<br>Rendering FPS depends on your device/display.</div><div id="msg">3</div></div>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js"}}</script>
+<script type="module">
+import * as THREE from 'three';
+const scene=new THREE.Scene();scene.background=new THREE.Color(0x03050a);scene.fog=new THREE.FogExp2(0x03050a,.014);
+const camera=new THREE.PerspectiveCamera(65,innerWidth/innerHeight,.1,450);
+const renderer=new THREE.WebGLRenderer({antialias:true,powerPreference:'high-performance'});renderer.setPixelRatio(Math.min(devicePixelRatio,1.6));renderer.setSize(innerWidth,innerHeight);renderer.shadowMap.enabled=true;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.2;document.body.appendChild(renderer.domElement);
+scene.add(new THREE.HemisphereLight(0x6d88cc,0x080a0e,1.8));const sun=new THREE.DirectionalLight(0xdde9ff,3.2);sun.position.set(-30,40,20);sun.castShadow=true;sun.shadow.mapSize.set(1024,1024);scene.add(sun);
+const red=new THREE.PointLight(0xe50914,130,55),blue=new THREE.PointLight(0x166dff,130,55);red.position.set(-35,9,0);blue.position.set(35,9,0);scene.add(red,blue);
+const mat=(c,m=.1,r=.55)=>new THREE.MeshStandardMaterial({color:c,metalness:m,roughness:r});
+const ground=new THREE.Mesh(new THREE.PlaneGeometry(420,420),mat(0x080b10,0,.95));ground.rotation.x=-Math.PI/2;ground.receiveShadow=true;scene.add(ground);
+const A=58,B=38,road=11;function ellipse(t,a=A,b=B){return new THREE.Vector3(Math.cos(t)*a,0,Math.sin(t)*b)}function tangent(t){return new THREE.Vector3(-Math.sin(t)*A,0,Math.cos(t)*B).normalize()}
+const curve=[];for(let i=0;i<180;i++)curve.push(ellipse(i/180*Math.PI*2));
+const trackGeo=new THREE.BufferGeometry();const verts=[],idx=[];for(let i=0;i<180;i++){const t=i/180*Math.PI*2,p=ellipse(t),tan=tangent(t),n=new THREE.Vector3(-tan.z,0,tan.x);for(const s of [-1,1]){const q=p.clone().addScaledVector(n,s*road/2);verts.push(q.x,.03,q.z)}}
+for(let i=0;i<180;i++){const ni=(i+1)%180,a=i*2,b=a+1,c=ni*2,d=c+1;idx.push(a,c,b,b,c,d)}trackGeo.setAttribute('position',new THREE.Float32BufferAttribute(verts,3));trackGeo.setIndex(idx);trackGeo.computeVertexNormals();const roadMesh=new THREE.Mesh(trackGeo,mat(0x151922,.05,.82));roadMesh.receiveShadow=true;scene.add(roadMesh);
+for(let i=0;i<180;i+=5){const t=i/180*Math.PI*2,p=ellipse(t),tan=tangent(t),n=new THREE.Vector3(-tan.z,0,tan.x);for(const s of [-1,1]){const q=p.clone().addScaledVector(n,s*(road/2+.45));const b=new THREE.Mesh(new THREE.BoxGeometry(1.8,.55,.25),mat((i/5)%2?0xffffff:0xe50914,.05,.5));b.position.copy(q);b.position.y=.28;b.rotation.y=Math.atan2(tan.x,tan.z);scene.add(b)}}
+for(let i=0;i<55;i++){const a=Math.random()*Math.PI*2,r=82+Math.random()*80,p=new THREE.Vector3(Math.cos(a)*r,0,Math.sin(a)*r*.78);const h=5+Math.random()*26,w=4+Math.random()*9,d=4+Math.random()*9;const b=new THREE.Mesh(new THREE.BoxGeometry(w,h,d),mat(Math.random()>.5?0x151b28:0x10141d,.25,.55));b.position.set(p.x,h/2,p.z);scene.add(b);if(Math.random()>.45){const glow=new THREE.Mesh(new THREE.PlaneGeometry(w*.65,h*.65),new THREE.MeshBasicMaterial({color:Math.random()>.5?0x174cff:0xe50914,transparent:true,opacity:.18}));glow.position.set(p.x,h*.55,p.z+d/2+.01);scene.add(glow)}}
+function car(color){const g=new THREE.Group();const body=new THREE.Mesh(new THREE.BoxGeometry(1.85,.52,3.7),mat(color,.72,.28));body.position.y=.62;body.castShadow=true;g.add(body);const cab=new THREE.Mesh(new THREE.BoxGeometry(1.45,.48,1.7),mat(0x10151f,.55,.16));cab.position.set(0,1.02,-.15);cab.castShadow=true;g.add(cab);for(const x of [-.92,.92])for(const z of [-1.18,1.18]){const w=new THREE.Mesh(new THREE.CylinderGeometry(.35,.35,.24,14),mat(0x090909,.1,.75));w.rotation.z=Math.PI/2;w.position.set(x,.38,z);g.add(w)}const tail=new THREE.PointLight(color,12,4);tail.position.set(0,.65,1.9);g.add(tail);return g}
+const player={mesh:car(0xe50914),t:0,lane:0,speed:0,nitro:100,lap:1,progress:0,lastT:0};scene.add(player.mesh);
+const colors=[0x2574ff,0xffaa17,0x9d4edd,0x2dd4bf,0xffffff],ai=colors.map((c,i)=>({mesh:car(c),t:-.055*(i+1),lane:(i%3-1)*2.25,speed:27+Math.random()*5,lap:1,progress:0}));ai.forEach(a=>scene.add(a.mesh));
+const keys={};addEventListener('keydown',e=>{keys[e.code]=true;if(e.code==='KeyR')reset()});addEventListener('keyup',e=>keys[e.code]=false);
+let race=false,finished=false,startAt=0,count=3,acc=0,last=performance.now();const speedEl=document.querySelector('#speed'),lapEl=document.querySelector('#lap'),timeEl=document.querySelector('#time'),posEl=document.querySelector('#pos'),nf=document.querySelector('#nf'),msg=document.querySelector('#msg');
+const countdown=setInterval(()=>{count--;if(count>0)msg.textContent=count;else{clearInterval(countdown);msg.textContent='GO!';race=true;startAt=performance.now();setTimeout(()=>msg.textContent='',700)}},800);
+function place(obj){const p=ellipse(obj.t),tan=tangent(obj.t),n=new THREE.Vector3(-tan.z,0,tan.x);obj.mesh.position.copy(p).addScaledVector(n,obj.lane);obj.mesh.position.y=.15;obj.mesh.rotation.y=Math.atan2(tan.x,tan.z)}
+function reset(){player.t=0;player.speed=0;player.lane=0;player.nitro=100;player.lap=1;finished=false;race=true;startAt=performance.now()}
+function advanceLap(o,old){if(old>5.7&&o.t<.5){o.lap++;if(o===player){lapEl.textContent=Math.min(o.lap,3);if(o.lap>3){finished=true;race=false;msg.textContent='FINISH!';}}}}
+function step(dt){for(const a of ai){const old=a.t;a.speed+=((29+Math.sin(a.t*4)*3)-a.speed)*dt*.5;a.t=(a.t+a.speed*dt/49)%(Math.PI*2);advanceLap(a,old);place(a)}
+ if(!race||finished){place(player);return}const gas=keys.KeyW||keys.ArrowUp,brake=keys.KeyS||keys.ArrowDown,left=keys.KeyA||keys.ArrowLeft,right=keys.KeyD||keys.ArrowRight,nit=(keys.ShiftLeft||keys.ShiftRight)&&player.nitro>0&&gas;
+ const max=nit?49:38;player.speed+=gas?20*dt:-7*dt;if(brake)player.speed-=27*dt;player.speed=THREE.MathUtils.clamp(player.speed,0,max);if(nit){player.speed+=18*dt;player.nitro=Math.max(0,player.nitro-23*dt)}else player.nitro=Math.min(100,player.nitro+6*dt);
+ const steer=(right?1:0)-(left?1:0);player.lane+=steer*(4.2+player.speed*.03)*dt;player.lane*=Math.pow(.985,dt*60);if(Math.abs(player.lane)>road/2-1){player.speed*=Math.pow(.70,dt*5);player.lane=THREE.MathUtils.clamp(player.lane,-road/2+.4,road/2-.4)}
+ const old=player.t;player.t=(player.t+player.speed*dt/49)%(Math.PI*2);advanceLap(player,old);place(player);
+ for(const a of ai){const d=player.mesh.position.distanceTo(a.mesh.position);if(d<2.2){player.speed*=.78;player.lane+=(player.lane-a.lane>=0?1:-1)*.08}}
+ speedEl.textContent=Math.round(player.speed*7.1);nf.style.width=player.nitro+'%';
+ const racers=[player,...ai].map(o=>({o,score:(o.lap-1)*Math.PI*2+o.t})).sort((a,b)=>b.score-a.score);posEl.textContent='P'+(racers.findIndex(r=>r.o===player)+1)+' / 6';
+ const ms=performance.now()-startAt,m=Math.floor(ms/60000),s=Math.floor(ms/1000)%60,z=Math.floor(ms)%1000;timeEl.textContent=String(m).padStart(2,'0')+':'+String(s).padStart(2,'0')+'.'+String(z).padStart(3,'0');
+}
+function render(){const tan=tangent(player.t),back=tan.clone().multiplyScalar(-9.8),p=player.mesh.position.clone();const desired=p.clone().add(back).add(new THREE.Vector3(0,5.2,0));camera.position.lerp(desired,.11);camera.lookAt(p.clone().add(tan.clone().multiplyScalar(7)).add(new THREE.Vector3(0,1,0)));renderer.render(scene,camera)}
+function loop(now){const dt=Math.min(.04,(now-last)/1000);last=now;acc+=dt;const fixed=1/120;let n=0;while(acc>=fixed&&n<8){step(fixed);acc-=fixed;n++}render();requestAnimationFrame(loop)}place(player);ai.forEach(place);requestAnimationFrame(loop);addEventListener('resize',()=>{camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();renderer.setSize(innerWidth,innerHeight)});
+</script></body></html>
