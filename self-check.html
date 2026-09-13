@@ -27,14 +27,15 @@
  const add=(name,ok,detail)=>rows.push({name,ok,detail});
  try{
    const r=await fetch('/games.json?selfcheck=1',{cache:'no-store'});
-   const d=await r.json(), games=d.games||[], dq=d.deepQa||{}, req=dq.requiredChecks||[];
-   const ids=games.map(g=>g.id), queue=dq.queue||[], batches=(dq.batchPlan||[]).flatMap(b=>b.ids||[]);
+   const d=await r.json(), games=d.games||[], qaGames=games.filter(g=>g.embedUrl), externalGames=games.filter(g=>g.launchUrl), dq=d.deepQa||{}, req=dq.requiredChecks||[];
+   const ids=qaGames.map(g=>g.id), queue=dq.queue||[], batches=(dq.batchPlan||[]).flatMap(b=>b.ids||[]);
    const uniq=a=>new Set(a).size===a.length;
-   const passed=games.filter(g=>req.every(k=>g.deepQa&&g.deepQa.checks&&g.deepQa.checks[k]===true)).length;
-   add('Catalog count',games.length===120,games.length+'/120');
+   const passed=qaGames.filter(g=>req.every(k=>g.deepQa&&g.deepQa.checks&&g.deepQa.checks[k]===true)).length;
+   add('Catalog count',games.length===121,games.length+'/121');
+   add('Licensed external entries',externalGames.length===1,externalGames.length+' external');
    add('Unique game IDs',uniq(ids),new Set(ids).size+'/'+ids.length);
-   add('QA queue coverage',queue.length===games.length&&ids.every(id=>queue.includes(id)),queue.length+'/'+games.length);
-   add('Batch coverage',batches.length===games.length&&uniq(batches),batches.length+'/'+games.length);
+   add('QA queue coverage',queue.length===qaGames.length&&ids.every(id=>queue.includes(id)),queue.length+'/'+qaGames.length);
+   add('Batch coverage',batches.length===qaGames.length&&uniq(batches),batches.length+'/'+qaGames.length);
    add('Derived fullyTested',Number(d.fullyTested||0)===passed,passed+' derived');
    add('Integrity snapshot',d.qaIntegrity&&d.qaIntegrity.status==='pass',d.qaIntegrity?d.qaIntegrity.status:'missing');
  }catch(e){ add('games.json fetch',false,String(e&&e.message||e)); }
