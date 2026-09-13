@@ -3,7 +3,7 @@
   "mode": "HEAVY_AD_FREE",
   "target": 20,
   "fullyTested": 0,
-  "catalogStatus": "20-game Heavy Launch Catalog. Legacy GameMonetize catalog removed from active site and archived. No active title uses GameMonetize or an ad-supported game iframe.",
+  "catalogStatus": "20-game Heavy Launch Catalog. Legacy GameMonetize catalog removed from active site and archived. Includes self-hosted NEXARC open-world, wrestling and carrom titles plus curated ad-free browser demos.",
   "policy": {
     "ads": "No in-game ad-supported providers in active catalog.",
     "delivery": "Self-hosted or curated public browser demos loaded inside the NEXARC player.",
@@ -284,20 +284,20 @@
       "qaStatus": "source_verified"
     },
     {
-      "id": "go-board",
-      "title": "Go",
-      "category": "Board",
-      "embedUrl": "https://ismyrnow.github.io/Go",
-      "source": "ismyrnow/Go",
-      "sourceRepo": "ismyrnow/Go",
-      "license": "MIT",
+      "id": "arena-wrestling",
+      "title": "NEXARC Arena Wrestling",
+      "category": "Wrestling",
+      "embedUrl": "/games/arena-wrestling/index.html",
+      "source": "NEXARC Original",
+      "sourceRepo": "aliarbaz1100-dot/Nexarc",
+      "license": "NEXARC original code",
+      "hosted": true,
       "adFree": true,
       "tier": "heavy",
-      "performance": "HTML5 board engine",
-      "featured": false,
-      "mobileReady": true,
-      "thumbnail": "https://opengraph.githubassets.com/nexarc/ismyrnow/Go",
-      "qaStatus": "source_verified"
+      "performance": "120 Hz simulation",
+      "featured": true,
+      "mobileReady": false,
+      "qaStatus": "integration_pending"
     },
     {
       "id": "flight-sim",
@@ -316,20 +316,20 @@
       "qaStatus": "source_verified"
     },
     {
-      "id": "danmaku",
-      "title": "Negative-Space Ward",
-      "category": "Shooter",
-      "embedUrl": "https://danmaku.t-h-e-s-p-a-c-e.com",
-      "source": "aaajiao/Danmaku",
-      "sourceRepo": "aaajiao/Danmaku",
-      "license": "MIT",
+      "id": "carrom-pro",
+      "title": "NEXARC Carrom Pro",
+      "category": "Carrom",
+      "embedUrl": "/games/carrom-pro/index.html",
+      "source": "NEXARC Original",
+      "sourceRepo": "aliarbaz1100-dot/Nexarc",
+      "license": "NEXARC original code",
+      "hosted": true,
       "adFree": true,
       "tier": "heavy",
-      "performance": "Fixed 60 Hz simulation",
+      "performance": "60 Hz physics",
       "featured": false,
       "mobileReady": true,
-      "thumbnail": "https://opengraph.githubassets.com/nexarc/aaajiao/Danmaku",
-      "qaStatus": "source_verified"
+      "qaStatus": "integration_pending"
     }
   ]
 }
