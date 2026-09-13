@@ -6,47 +6,51 @@
   <meta name="theme-color" content="#e50914">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://nexarc-rouge.vercel.app/status.html">
-  <title>NEXARC Status — Launch Readiness</title>
-  <meta name="description" content="NEXARC launch readiness, catalog status, app install readiness and final gameplay QA status.">
+  <title>NEXARC Status — Heavy Catalog</title>
+  <meta name="description" content="NEXARC Heavy Mode catalog and deployment status.">
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="legal.css?v=20260912-20664premium10">
+  <link rel="stylesheet" href="legal.css?v=20260914-heavy20">
 </head>
 <body>
   <main class="legalWrap">
     <a class="back" href="/">← Back to NEXARC</a>
     <section class="legalHero">
       <span>NEXARC STATUS</span>
-      <h1>Launch Readiness</h1>
-      <p>Current build is prepared for public preview. Domain connection remains on hold until hands-on gameplay QA is complete.</p>
+      <h1>Heavy Mode</h1>
+      <p>The old ad-supported casual catalog is no longer active. NEXARC now loads a curated 20-game heavy catalog.</p>
     </section>
     <section class="legalCard">
       <h2>Current status</h2>
       <ul>
-        <li><strong>Catalog:</strong> 122 entries — 120 legacy embedded games, Metal Slug via licensed Antstream Arcade, and 1 self-hosted ad-free heavy game.</li>
-        <li><strong>Pages:</strong> Home, All Games, Categories, Trending, Install, Shortcuts, FAQ, About, Contact, Privacy and Terms.</li>
-        <li><strong>PWA:</strong> Install page and app manifest ready for supported browsers.</li>
-        <li><strong>SEO:</strong> Sitemap, robots.txt, canonical tags and legal pages ready.</li>
-        <li><strong>Live smoke QA:</strong> 120/120 legacy embedded games passed on desktop and mobile for launch, iframe render, basic input, and close/return flow. Licensed external titles are tracked separately.</li>
-        <li><strong>Launch interaction audit:</strong> Desktop + mobile search, category filtering, game open, retry, fullscreen, and close/return flow passed on the live premium9 build.</li>
-        <li><strong>QA metadata audit:</strong> 120/120 legacy embedded entries reviewed; 0 duplicate IDs, 0 duplicate embed URLs, required smoke checks complete, plus 1 licensed external-provider entry.</li>
-        <li><strong>Gameplay QA queue:</strong> 120 legacy embedded games tracked with per-game deep checks; 30 warning-history titles are prioritized first. External licensed launches are excluded from emulator/player QA.</li>
-        <li><strong>Internal QA dashboard:</strong> <a href="/deep-qa.html">Deep Gameplay QA tracker</a> with 12 batches of 10 games.</li>
-        <li><strong>Deployment note:</strong> Latest self-check commit is pending live deployment because Vercel hit a build-rate limit; previous QA integrity build remains the last confirmed successful deployment.</li>
-        <li><strong>Deep QA gate:</strong> <code>fullyTested</code> is derived only from 7/7 required gameplay checks; manual PASS labels do not count.</li>
-        <li><strong>Gameplay QA:</strong> Final level-completion/control-depth pass remains pending before custom domain launch.</li>
+        <li><strong>Active catalog:</strong> 20 heavy games.</li>
+        <li><strong>Ad-supported providers:</strong> 0 active GameMonetize titles.</li>
+        <li><strong>Game types:</strong> open world, racing, FPS, combat, fighting, football, cricket, snooker, chess, cards, board, flight simulation and shooter.</li>
+        <li><strong>Delivery:</strong> one self-hosted game plus curated public browser demos inside the NEXARC player.</li>
+        <li><strong>Legacy catalog:</strong> archived only; it is not loaded by the public site.</li>
+        <li><strong>Performance:</strong> selected titles use fixed 60 Hz or 120 Hz simulation. Actual rendered FPS depends on device, browser, GPU and display refresh rate.</li>
       </ul>
     </section>
     <section class="legalCard" id="liveQaStatus">
-      <h2>Live QA gate</h2>
-      <p id="liveQaText">Loading current QA status…</p>
+      <h2>Live catalog gate</h2>
+      <p id="liveQaText">Loading current catalog status…</p>
     </section>
     <section class="legalCard">
-      <h2>Domain gate</h2>
-      <p>Custom domain should be connected only after the final gameplay checklist passes: game load, controls, retry, fullscreen, mobile layout and return-to-library flow.</p>
+      <h2>QA</h2>
+      <p><a href="/deep-qa.html">Open Heavy Catalog QA</a> to review source, performance target and device support per title.</p>
     </section>
   </main>
   <script>
-  fetch("/games.json?status=live",{cache:"no-store"}).then(r=>r.json()).then(d=>{const games=(d.games||[]).filter(g=>g.deepQa);const req=d.deepQa&&d.deepQa.requiredChecks||["start_game","gameplay_progression","primary_controls","retry_restart","fullscreen_exit","close_return","mobile_touch"];const isPassed=g=>req.every(k=>g.deepQa&&g.deepQa.checks&&g.deepQa.checks[k]===true);const total=games.length;const tested=games.filter(isPassed).length;const pending=Math.max(0,total-tested);const batch=d.deepQa&&d.deepQa.currentBatch||1;const ready=total>0&&tested===total;const mismatch=Number(d.fullyTested||0)!==tested;const el=document.getElementById("liveQaText");if(el)el.textContent=(ready?"LAUNCH READY":"DOMAIN HOLD")+" — "+tested+"/"+total+" embedded games fully tested, "+pending+" pending, current batch "+batch+(mismatch?" · QA count mismatch detected":"")+"."}).catch(()=>{const el=document.getElementById("liveQaText");if(el)el.textContent="Current QA data could not be loaded.";});
+  fetch("/games.json?status=heavy20",{cache:"no-store"}).then(r=>r.json()).then(d=>{
+    const games=d.games||[];
+    const uniqueIds=new Set(games.map(g=>g.id)).size===games.length;
+    const uniqueUrls=new Set(games.map(g=>g.embedUrl)).size===games.length;
+    const noAdProvider=games.every(g=>g.adFree===true&&!/gamemonetize/i.test(g.embedUrl||""));
+    const ready=games.length===20&&uniqueIds&&uniqueUrls&&noAdProvider;
+    const desktop=games.filter(g=>g.mobileReady===false).length;
+    const hosted=games.filter(g=>g.hosted===true).length;
+    const el=document.getElementById("liveQaText");
+    if(el)el.textContent=(ready?"CATALOG PASS":"CATALOG CHECK")+" — "+games.length+"/20 titles · "+hosted+" self-hosted · "+desktop+" desktop-first · "+(noAdProvider?"0 ad-supported provider URLs":"ad-provider URL detected")+".";
+  }).catch(()=>{const el=document.getElementById("liveQaText");if(el)el.textContent="Current catalog data could not be loaded.";});
   </script>
 </body>
 </html>
