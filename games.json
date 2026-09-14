@@ -241,8 +241,9 @@
       "performance": "60 FPS target",
       "featured": true,
       "mobileReady": true,
-      "thumbnail": "https://opengraph.githubassets.com/nexarc/Ganeshlekurwale/Cricket-Game",
-      "qaStatus": "source_verified"
+      "thumbnail": "/assets/game-covers/3d-cricket.webp",
+      "qaStatus": "source_verified",
+      "coverStyle": "NEXARC cinematic"
     },
     {
       "id": "chess-stockfish",
