@@ -75,8 +75,9 @@
       "performance": "60 FPS target",
       "featured": true,
       "mobileReady": true,
-      "thumbnail": "https://opengraph.githubassets.com/nexarc/bridge-mind/turbo-kart-rush",
-      "qaStatus": "source_verified"
+      "thumbnail": "/assets/game-covers/turbo-kart-rush.webp",
+      "qaStatus": "source_verified",
+      "coverStyle": "NEXARC cinematic"
     },
     {
       "id": "super-kart-3d",
@@ -91,8 +92,9 @@
       "performance": "60 FPS target",
       "featured": false,
       "mobileReady": true,
-      "thumbnail": "https://opengraph.githubassets.com/nexarc/fecolinhares/super-kart-3djs",
-      "qaStatus": "source_verified"
+      "thumbnail": "/assets/game-covers/super-kart-3d.webp",
+      "qaStatus": "source_verified",
+      "coverStyle": "NEXARC cinematic"
     },
     {
       "id": "neon-velocity",
@@ -107,8 +109,9 @@
       "performance": "60 FPS target",
       "featured": false,
       "mobileReady": true,
-      "thumbnail": "https://opengraph.githubassets.com/nexarc/bhanu2006-24/neon-velocity",
-      "qaStatus": "source_verified"
+      "thumbnail": "/assets/game-covers/neon-velocity.webp",
+      "qaStatus": "source_verified",
+      "coverStyle": "NEXARC cinematic"
     },
     {
       "id": "apex-street",
@@ -158,8 +161,9 @@
       "performance": "Raw WebGL",
       "featured": false,
       "mobileReady": false,
-      "thumbnail": "https://opengraph.githubassets.com/nexarc/OmerBilget/webgl-fps-shooter",
-      "qaStatus": "source_verified"
+      "thumbnail": "/assets/game-covers/webgl-fps.webp",
+      "qaStatus": "source_verified",
+      "coverStyle": "NEXARC cinematic"
     },
     {
       "id": "claude-of-tanks",
@@ -208,8 +212,9 @@
       "performance": "3D aerial combat",
       "featured": false,
       "mobileReady": false,
-      "thumbnail": "https://opengraph.githubassets.com/nexarc/Gallind/Sky-Combat",
-      "qaStatus": "source_verified"
+      "thumbnail": "/assets/game-covers/sky-combat.webp",
+      "qaStatus": "source_verified",
+      "coverStyle": "NEXARC cinematic"
     },
     {
       "id": "world-cup-2026",
@@ -258,8 +263,9 @@
       "performance": "Stockfish WASM",
       "featured": false,
       "mobileReady": true,
-      "thumbnail": "https://opengraph.githubassets.com/nexarc/99fk/chess-html",
-      "qaStatus": "source_verified"
+      "thumbnail": "/assets/game-covers/chess-stockfish.webp",
+      "qaStatus": "source_verified",
+      "coverStyle": "NEXARC cinematic"
     },
     {
       "id": "billiards-snooker",
@@ -274,8 +280,9 @@
       "performance": "WebGL physics",
       "featured": true,
       "mobileReady": true,
-      "thumbnail": "https://opengraph.githubassets.com/nexarc/tailuge/billiards",
-      "qaStatus": "source_verified"
+      "thumbnail": "/assets/game-covers/billiards-snooker.webp",
+      "qaStatus": "source_verified",
+      "coverStyle": "NEXARC cinematic"
     },
     {
       "id": "blackjack",
@@ -290,8 +297,9 @@
       "performance": "Instant browser play",
       "featured": false,
       "mobileReady": true,
-      "thumbnail": "https://opengraph.githubassets.com/nexarc/lucasdcampos/blackjack",
-      "qaStatus": "source_verified"
+      "thumbnail": "/assets/game-covers/blackjack.webp",
+      "qaStatus": "source_verified",
+      "coverStyle": "NEXARC cinematic"
     },
     {
       "id": "arena-wrestling",
@@ -324,8 +332,9 @@
       "performance": "Three.js flight physics",
       "featured": true,
       "mobileReady": false,
-      "thumbnail": "https://opengraph.githubassets.com/nexarc/Sanjays2402/flight-sim",
-      "qaStatus": "source_verified"
+      "thumbnail": "/assets/game-covers/flight-sim.webp",
+      "qaStatus": "source_verified",
+      "coverStyle": "NEXARC cinematic"
     },
     {
       "id": "carrom-pro",
@@ -341,7 +350,9 @@
       "performance": "60 Hz physics",
       "featured": false,
       "mobileReady": true,
-      "qaStatus": "integration_pending"
+      "qaStatus": "integration_pending",
+      "thumbnail": "/assets/game-covers/carrom-pro.webp",
+      "coverStyle": "NEXARC cinematic"
     }
   ]
 }
